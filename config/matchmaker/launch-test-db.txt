@@ -1,0 +1,59 @@
+Database: test-db
+Collection method: launch with an agent, dump to file
+
+Actions:
+* Start Eclipse.
+* XML file is open in an editor.
+* Enter <a> (</a> autocompleted)
+* Close XML file. Java file editor comes to focus.
+* Invoke content assist inside Javadocs (by typing @)
+* Invoke Content assist in Java source (by typing a. and expecting f)
+* Close Java file. Close Eclipse.
+
+Dump file size: 6.6G
+Time for processing by DB server: 145 mins
+
+Transformed: 9k classes
+
+Configuration:
+
+vm.server.name=localhost
+vm.server.port=8000
+
+agent.server.name=localhost
+agent.server.port=16000
+
+agent.dump.file=dump
+
+agent.admin=false
+agent.admin.wait=false
+agent.admin.port=16001
+
+db.server.name=sketch1.csail.mit.edu
+db.name=test_db
+db.user=root
+db.password=lambda1337ARMANDO
+
+listen.fields=true
+
+listen.abstract=\
+	java.util.ArrayList.get,\
+	java.util.ArrayList.set,\
+	java.util.ArrayList.add,\
+	java.util.ArrayList.addAll,\
+	java.util.ArrayList.clear,\
+	java.util.ArrayList.remove,\
+	java.util.HashMap.put,\
+  java.util.HashMap.remove,\
+  java.util.HashMap.clear	
+
+listen.exclude=\
+	cap.*, \
+	org.objectweb.asm.*,\
+	sun.*,\
+	com.sun.*,\
+	com.apple.*,\
+	java.*,\
+	javax.*,\
+  com.ibm.*		
+			

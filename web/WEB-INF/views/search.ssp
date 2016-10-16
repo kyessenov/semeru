@@ -1,0 +1,88 @@
+#import(edu.mit.csail.cap.query._)
+<%@ val data: web.DataProvider %>
+#{
+  val target = params.getOrElse("target", "swing_components")
+  val query = params.getOrElse("q", "");
+  val group = params.getOrElse("group","false") == "true"
+
+  val symbols = params.getOrElse("print", "false").toBoolean;
+  val matches = params.getOrElse("matches", data.p.Matches.toString).toInt
+  val cover = params.getOrElse("cover", data.p.CoverDepth.toString).toInt
+
+  val q = analysis.CallQuery.fromString(data.meta, params.getOrElse("q", ""))
+
+  val traces = data.get(target).traces
+  val p = data.p.copy(Matches = matches, CoverDepth = cover)
+  implicit val ctx = web.RenderContext(AllFramework, if (group) true else symbols)
+}# 
+<div class='container-fluid'>
+<h1>Search</h1>
+<p style='font:small'>Pass 'cover=?' to limit the slice size</p>
+
+<form>
+Query: 
+<select name='q'>
+  <option value='${query}' selected>${data.render(q)}</option>
+#for(name <- experiments.Queries.ids.keys.toList.sorted; s = experiments.Queries.ids(name))
+  <option value='${s}'>${name}</option>
+#end
+</select>
+
+Target: <select name='target'>
+#for(name <- data.config.names)
+<option value='${name}' ${ if (name == target) "selected" else ""}>${name}</option>
+#end
+</select>
+
+Group: <select name='group'>
+<option value='true' ${ if (group) "selected" else "" }>yes</option>
+<option value='false' ${ if (!group) "selected" else "" }>no</option>
+</select>
+
+Matches:
+<input type="number" name="matches" min="1" max="100" value=${matches}>
+
+Symbols: <select name='print'>
+<option value='true' ${ if (symbols) "selected" else "" }>yes</option>
+<option value='false' ${ if (!symbols) "selected" else "" }>no</option>
+</select>
+
+<input class='btn btn-default' type='submit' value='Run'>
+</form>
+
+<h2>Results</h2>
+Query: ${ data.render(q) }, target: ${ target }, matches per trace: ${ matches }
+
+#if(group)
+#{
+val out = 
+  for (u <- traces;
+       r <- u.synthesize(q)(p))
+    yield r
+
+val ctx2 = web.RenderContext(AllFramework, params.getOrElse("print", "true").toBoolean)
+val grouped = out.groupBy(_.code.print(Parameters(PrintSourceSymbols = false, PrintPrimitives = false, PrintStrings = false)))
+}#
+<br>
+${ grouped.size } groups, ${ out.size } matches, ${ out.map(_.code.c.name).toSet.size } traces.
+<table class='table'>
+#for ((text, codes) <- grouped)
+<tr>
+<td>${ data.render(codes(0))(ctx2) }
+<td><pre>${text }</pre>
+<td>
+  #for (code <- codes)
+    ${ code.code.c.name } ${ data.render(code.start) }
+  #end
+#end
+</table>
+#else
+<ul>
+#for (u <- traces if q.has(u))
+<li>${ data.render(u) }: found ${ q.count(u) }
+<td>${ data.render(u.synthesize(q)(p)) }
+#end
+</ul>
+#end
+
+</div>

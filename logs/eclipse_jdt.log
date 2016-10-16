@@ -1,0 +1,379 @@
+> cl[4G[Kompile
+> time
+[0m[[31merror[0m] [0mNot a valid command: time[0m
+[0m[[31merror[0m] [0mNot a valid project ID: time[0m
+[0m[[31merror[0m] [0mExpected ':' (if selecting a configuration)[0m
+[0m[[31merror[0m] [0mNot a valid key: time (similar: test, name, state)[0m
+[0m[[31merror[0m] [0mtime[0m
+[0m[[31merror[0m] [0m    ^[0m
+> ru[4G[K[3G[Km
+mainClass                    makePom                      
+makePomConfiguration         managedClasspath             
+managedDirectory             managedResourceDirectories   
+managedResources             managedScalaInstance         
+managedSourceDirectories     managedSources               
+maxErrors                    moduleConfigurations         
+moduleName                   moduleSettings               
+> m
+mainClass                    makePom                      
+makePomConfiguration         managedClasspath             
+managedDirectory             managedResourceDirectories   
+managedResources             managedScalaInstance         
+managedSourceDirectories     managedSources               
+maxErrors                    moduleConfigurations         
+moduleName                   moduleSettings               
+> m[3G[Krun
+::         runMain    runner     runtime:   
+> run
+::         runMain    runner     runtime:   
+> run [6G[KMain ex
+{invalid input}   
+> runMain ex
+{invalid input}   
+> runMain ex[12G[K[11G[Kexper
+{invalid input}   
+> runMain exper
+{invalid input}   
+> runMain exper[15G[K[14G[K[13G[K[12G[K[11G[K
+edu.mit.csail.cap.instrument.Agent                
+edu.mit.csail.cap.query.experiments.Experiments   
+edu.mit.csail.cap.query.ingest.Processor          
+edu.mit.csail.cap.query.web.Server                
+test.cap.AbstractTest                             
+test.cap.ArrayTest                                
+test.cap.CollectionTest                           
+test.cap.ControlFlowTest                          
+test.cap.DataFlowTest                             
+test.cap.Empty                                    
+test.cap.FailedArray                              
+test.cap.HeapChainTest                            
+test.cap.HelloHeap                                
+test.cap.Outer                                    
+test.cap.PrimitiveValues                          
+test.cap.Test                                     
+test.cap.TestStack                                
+test.cap.framework.FrameworkUsage                 
+> runMain 
+edu.mit.csail.cap.instrument.Agent                
+edu.mit.csail.cap.query.experiments.Experiments   
+edu.mit.csail.cap.query.ingest.Processor          
+edu.mit.csail.cap.query.web.Server                
+test.cap.AbstractTest                             
+test.cap.ArrayTest                                
+test.cap.CollectionTest                           
+test.cap.ControlFlowTest                          
+test.cap.DataFlowTest                             
+test.cap.Empty                                    
+test.cap.FailedArray                              
+test.cap.HeapChainTest                            
+test.cap.HelloHeap                                
+test.cap.Outer                                    
+test.cap.PrimitiveValues                          
+test.cap.Test                                     
+test.cap.TestStack                                
+test.cap.framework.FrameworkUsage                 
+> runMain edu> runMain edu.mit.csail.cap.qu> runMain edu.mit.csail.cap.query.exp> runMain edu.mit.csail.cap.query.experiments.Experiments.
+{invalid input}   
+> runMain edu.mit.csail.cap.query.experiments.Experiments.[58G[K.[58G[K[3G[4G[5G[6G[7G[8G[9G[10G[11G[12G[13G[14G[15G[16G[17G[18G[19G[20G[21G[22G[23G[24G[25G[26G[27G[28G[29G[30G[31G[32G[33G[34G[35G[36G[37G[38G[39G[40G[41G[42G[43G[44G[45G[46G[47G[48G[49G[50G[51G[52G[53G[54G[55G[56G[57G[58G false eclipse_jdt
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.experiments.Experiments false eclipse_jdt[0m
+java.lang.RuntimeException: Nonzero exit code returned from runner: 1
+	at scala.sys.package$.error(package.scala:27)
+[0m[[31mtrace[0m] [0mStack trace suppressed: run [34mlast compile:runMain[0m for the full output.[0m
+[0m[[31merror[0m] [0m(compile:[31mrunMain[0m) Nonzero exit code returned from runner: 1[0m
+> runMain edu.mit.csail.cap.query.experiments.Experiments false eclipse_jdt[75G[74G[73G[72G[71G[70G[69G[68G[67G[66G[65G[64G[63G[62G[61G[60G[59Gefalse eclipse_jdt[60Gcfalse eclipse_jdt[61Glfalse eclipse_jdt[62Gifalse eclipse_jdt [1A[63Gpfalse eclipse_jd t[1A[64Gsfalse eclipse_j dt[1A[65Gefalse eclipse_ jdt[1A[66G false eclipse _jdt[1A[67G[1B[5G
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_jdt[0m
+02:00:55.724 [34mINFO [0;39m semeru - *** Running in full mode ***
+02:00:55.728 [39mDEBUG[0;39m semeru - writing agent JAR file
+02:00:55.797 [34mINFO [0;39m semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/eclipse
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist: org.eclipse.jface.util.Util org.eclipse.jdt.internal.core.index.DiskIndex org.eclipse.jdt.internal.core.util.Util org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct org.eclipse.jdt.core.compiler.CharOperation org.eclipse.jdt.internal.core.util.SimpleWordSet org.python.pydev.shared_core.string.FastStringBuffer org.python.pydev.core.FastBufferedReader org.python.antlr.runtime.* org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: org.eclipse.osgi.* org.osgi.* org.eclipse.emf.* org.eclipse.swt.* org.eclipse.e4.* org.eclipse.core.runtime.Path org.eclipse.core.internal.registry.* com.ibm.* com.sun.* org.xml.* org.w3c.* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 425 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] closing output streams
+02:02:00.418 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_eclipse
+02:02:02.276 [39mDEBUG[0;39m semeru - saving metadata 75403 fields, 143283 methods, 14463 classes
+02:02:02.276 [39mDEBUG[0;39m semeru - create database meta_eclipse
+02:02:03.200 [39mDEBUG[0;39m semeru - create and load 14079 rows into TYPE from csv/TYPE-REPLACE.csv
+02:02:03.269 [39mDEBUG[0;39m semeru - create and load 384 rows into TYPE from csv/TYPE-IGNORE.csv
+02:02:03.272 [39mDEBUG[0;39m semeru - create and load 20255 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+02:02:03.347 [39mDEBUG[0;39m semeru - create and load 143282 rows into METHOD from csv/METHOD-REPLACE.csv
+02:02:03.834 [39mDEBUG[0;39m semeru - create and load 75398 rows into FIELD from csv/FIELD-REPLACE.csv
+02:02:04.083 [39mDEBUG[0;39m semeru - committing metadata
+02:02:04.084 [34mINFO [0;39m semeru - processing /tmp/log.bin
+02:02:04.087 [34mINFO [0;39m semeru - create log eclipse_jdt
+02:02:06.879 [34mINFO [0;39m semeru - LOG counter = 1M
+02:02:08.832 [34mINFO [0;39m semeru - LOG counter = 2M
+02:02:11.035 [34mINFO [0;39m semeru - LOG counter = 3M
+02:02:12.733 [34mINFO [0;39m semeru - PARAMS counter = 1M
+02:02:13.190 [34mINFO [0;39m semeru - LOG counter = 4M
+02:02:15.530 [34mINFO [0;39m semeru - LOG counter = 5M
+02:02:18.066 [34mINFO [0;39m semeru - LOG counter = 6M
+02:02:20.517 [34mINFO [0;39m semeru - LOG counter = 7M
+02:02:21.262 [34mINFO [0;39m semeru - PARAMS counter = 2M
+02:02:23.127 [34mINFO [0;39m semeru - LOG counter = 8M
+02:02:25.907 [34mINFO [0;39m semeru - LOG counter = 9M
+02:02:28.414 [34mINFO [0;39m semeru - LOG counter = 10M
+02:02:30.553 [34mINFO [0;39m semeru - PARAMS counter = 3M
+02:02:30.771 [34mINFO [0;39m semeru - LOG counter = 11M
+02:02:33.253 [34mINFO [0;39m semeru - LOG counter = 12M
+02:02:35.569 [34mINFO [0;39m semeru - LOG counter = 13M
+02:02:37.931 [34mINFO [0;39m semeru - LOG counter = 14M
+02:02:38.053 [34mINFO [0;39m semeru - PARAMS counter = 4M
+02:02:40.354 [34mINFO [0;39m semeru - LOG counter = 15M
+02:02:42.760 [34mINFO [0;39m semeru - LOG counter = 16M
+02:02:44.747 [34mINFO [0;39m semeru - PARAMS counter = 5M
+02:02:46.799 [34mINFO [0;39m semeru - LOG counter = 17M
+02:02:49.727 [34mINFO [0;39m semeru - LOG counter = 18M
+02:02:53.278 [34mINFO [0;39m semeru - PARAMS counter = 6M
+02:02:53.786 [34mINFO [0;39m semeru - LOG counter = 19M
+02:02:56.895 [34mINFO [0;39m semeru - OBJECTS counter = 1M
+02:02:57.738 [34mINFO [0;39m semeru - LOG counter = 20M
+02:03:01.050 [34mINFO [0;39m semeru - LOG counter = 21M
+02:03:02.414 [34mINFO [0;39m semeru - PARAMS counter = 7M
+02:03:04.072 [34mINFO [0;39m semeru - LOG counter = 22M
+02:03:06.487 [34mINFO [0;39m semeru - LOG counter = 23M
+02:03:08.325 [34mINFO [0;39m semeru - PARAMS counter = 8M
+02:03:08.972 [34mINFO [0;39m semeru - LOG counter = 24M
+02:03:11.322 [34mINFO [0;39m semeru - LOG counter = 25M
+02:03:13.188 [34mINFO [0;39m semeru - PARAMS counter = 9M
+02:03:13.736 [34mINFO [0;39m semeru - LOG counter = 26M
+02:03:16.147 [34mINFO [0;39m semeru - LOG counter = 27M
+02:03:18.484 [34mINFO [0;39m semeru - LOG counter = 28M
+02:03:20.849 [34mINFO [0;39m semeru - LOG counter = 29M
+02:03:21.287 [34mINFO [0;39m semeru - PARAMS counter = 10M
+02:03:21.409 [34mINFO [0;39m semeru - detected missing closing event for 8 threads
+02:03:21.409 [39mDEBUG[0;39m semeru - drop database eclipse_jdt
+02:03:21.427 [39mDEBUG[0;39m semeru - delete cache var/localhost/eclipse_jdt
+02:03:21.428 [39mDEBUG[0;39m semeru - create database eclipse_jdt
+02:03:21.450 [39mDEBUG[0;39m semeru - create and load 29269599 rows into LOG from csv/LOG-REPLACE.csv
+02:04:42.952 [39mDEBUG[0;39m semeru - create and load 10017157 rows into PARAMS from csv/PARAMS-REPLACE.csv
+02:04:58.333 [39mDEBUG[0;39m semeru - create and load 1354459 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+02:05:02.318 [39mDEBUG[0;39m semeru - create and load 489666 rows into STRINGS from csv/STRINGS-REPLACE.csv
+02:05:03.444 [39mDEBUG[0;39m semeru - committing log
+02:05:03.445 [34mINFO [0;39m semeru - postprocessing
+02:05:03.454 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+02:05:03.495 [39mDEBUG[0;39m semeru - SQL update to eclipse_jdt: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+02:08:01.198 [39mDEBUG[0;39m semeru - SQL update to eclipse_jdt: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+02:10:09.575 [39mDEBUG[0;39m semeru - SQL update to eclipse_jdt: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+02:10:14.377 [39mDEBUG[0;39m semeru - SQL update to eclipse_jdt: ANALYZE TABLE `LOG`
+java.lang.RuntimeException: Nonzero exit code returned from runner: 1
+	at scala.sys.package$.error(package.scala:27)
+[0m[[31mtrace[0m] [0mStack trace suppressed: run [34mlast compile:runMain[0m for the full output.[0m
+[0m[[31merror[0m] [0m(compile:[31mrunMain[0m) Nonzero exit code returned from runner: 1[0m
+> 
+> 
+> 
+> 
+> test [7G[KOnl> testOnly 
+--                       test.ConceptSpec         test.FullExamples        
+test.GraphSpec           test.IntervalSpec        test.SyntheticExamples   
+test.TreeSpec            
+> testOnly test.S[17G[KFu> testOnly test.FullExamples
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+02:16:24.102 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes
+02:16:25.877 [34mINFO [0;39m semeru - loading metadata meta_test into 75403 fields, 143283 methods, 14463 classes
+02:16:26.044 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 75456 fields, 143410 methods, 14498 classes
+02:16:26.175 [34mINFO [0;39m semeru - initialized 3 traces, 166 missing, 75460 fields, 143448 methods, 14509 classes
+[0m[[0minfo[0m] [0m[31m- TextAreaDemo: moveCaretPosition *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: 2735924226236465025[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap.apply(LongMap.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.Metadata.method(Metadata.scala:100)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples.moveCaretPosition(FullExamples.scala:36)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$1.apply(FullExamples.scala:42)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$1.apply(FullExamples.scala:41)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.fixture.Suite$TestFunAndConfigMap$$anonfun$apply$1.apply$mcV$sp(Suite.scala:155)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- TextAreaDemo: actionPerformed *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: 2146939348418227012[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap.apply(LongMap.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.Metadata.method(Metadata.scala:100)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples.actionPerformed(FullExamples.scala:33)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$2.apply(FullExamples.scala:47)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$2.apply(FullExamples.scala:46)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.fixture.Suite$TestFunAndConfigMap$$anonfun$apply$1.apply$mcV$sp(Suite.scala:155)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+02:16:26.244 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+02:16:26.254 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+02:16:26.324 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+02:16:26.377 [34mINFO [0;39m semeru - building heap series for eclipse_jdt@localhost
+02:16:26.380 [39mDEBUG[0;39m semeru - building field abstraction
+02:16:31.321 [39mDEBUG[0;39m semeru - transferring active fields graph with 329972 nodes and 498272 edges
+02:16:37.036 [39mDEBUG[0;39m semeru - done field heap graph with 329972 nodes and 552553 edges
+02:16:37.037 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+02:19:22.471 [39mDEBUG[0;39m semeru - transferring final state to heap
+02:19:22.676 [39mDEBUG[0;39m semeru - transferring heap of 121792 arrays
+02:19:23.777 [39mDEBUG[0;39m semeru - transferring 123296 arrays
+02:19:23.851 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+02:19:23.917 [34mINFO [0;39m semeru - building heap abstraction for graph with 639976 nodes and 2386376 edges
+02:19:32.684 [34mINFO [0;39m semeru - streaming 1000000 rows from database...
+02:19:32.971 [39mDEBUG[0;39m semeru - loaded types for all objects: 1354459
+02:19:41.618 [39mDEBUG[0;39m semeru - done graph with 133525 nodes and 252013 edges class types: 5014 array types: 0 instance types: 128511
+02:19:41.693 [39mDEBUG[0;39m semeru - batch insert graph with 639976 nodes and 2386376 edges into neo4j at var/localhost/eclipse_jdt/neo
+02:19:42.115 [39mDEBUG[0;39m semeru - creating nodes
+02:19:47.459 [39mDEBUG[0;39m semeru - creating edges
+02:19:56.426 [39mDEBUG[0;39m semeru - finished adding edges
+02:19:57.828 [39mDEBUG[0;39m semeru - done
+02:19:58.111 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+02:19:58.143 [31mWARN [0;39m o.n.k.EmbeddedReadOnlyGraphDatabase - You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+02:19:58.684 [31mWARN [0;39m semeru - exceeded 3 m execution time
+02:19:58.685 [39mDEBUG[0;39m semeru - done expanding to graph with 10 nodes and 9 edges
+02:19:58.708 [39mDEBUG[0;39m semeru - simplify: 1
+02:19:58.757 [39mDEBUG[0;39m semeru - (heap,3 m), (local,27 ms), (cover,11 ms), (static,1 ms), ($contents,1 ms), ($iterator,1 ms), ($values,0 ms), ($array,0 ms), (#runtime,3 m), (#expansions,3/5120), (graph,graph with 10 nodes and 9 edges), (lines,0/0), (#project,10 ms), (#generate,6 ms), (#simplify,31 ms), (max-depth,-1/1)
+02:19:58.758 [31mWARN [0;39m semeru - class UIContentAssistProcessor implements IContentAssistProcessor {
+  @Override ICompletionProposal[] computeCompletionProposals(ITextViewer a0, int a1) {
+  }
+}
+[0m[[0minfo[0m] [0m[31m- eclipse_jdt: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  eclipse_jdt-computeCompletionProposals code changed (CodeComparison.scala:30)[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_py: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_py[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$5.apply(FullExamples.scala:65)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$5.apply(FullExamples.scala:64)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_ant: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_ant[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$6.apply(FullExamples.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$6.apply(FullExamples.scala:69)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 3 minutes, 36 seconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 6[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 0, failed 6, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 6 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> 
+> testOnly test.FullExamples
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+02:20:52.196 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes
+02:20:53.635 [34mINFO [0;39m semeru - loading metadata meta_test into 75403 fields, 143283 methods, 14463 classes
+02:20:53.748 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 75456 fields, 143410 methods, 14498 classes
+02:20:53.820 [34mINFO [0;39m semeru - initialized 3 traces, 166 missing, 75460 fields, 143448 methods, 14509 classes
+[0m[[0minfo[0m] [0m[31m- TextAreaDemo: moveCaretPosition *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: 2735924226236465025[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap.apply(LongMap.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.Metadata.method(Metadata.scala:100)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples.moveCaretPosition(FullExamples.scala:36)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$1.apply(FullExamples.scala:42)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$1.apply(FullExamples.scala:41)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.fixture.Suite$TestFunAndConfigMap$$anonfun$apply$1.apply$mcV$sp(Suite.scala:155)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- TextAreaDemo: actionPerformed *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.util.NoSuchElementException: 2146939348418227012[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap$$anonfun$1.apply(LongMap.scala:512)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at scala.collection.mutable.LongMap.apply(LongMap.scala:220)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.Metadata.method(Metadata.scala:100)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples.actionPerformed(FullExamples.scala:33)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$2.apply(FullExamples.scala:47)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$2.apply(FullExamples.scala:46)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.fixture.Suite$TestFunAndConfigMap$$anonfun$apply$1.apply$mcV$sp(Suite.scala:155)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$class.outcomeOf(OutcomeOf.scala:85)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+02:20:53.881 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+02:20:53.893 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+02:20:53.929 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+02:20:53.954 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+02:20:54.031 [31mWARN [0;39m o.n.k.EmbeddedReadOnlyGraphDatabase - You are using an unsupported version of the Java runtime. Please use Oracle(R) Java(TM) Runtime Environment 7 or OpenJDK(TM) 7.
+02:20:54.770 [39mDEBUG[0;39m semeru - done expanding to graph with 133 nodes and 376 edges
+02:20:54.828 [39mDEBUG[0;39m semeru - simplify: 11
+02:20:54.838 [39mDEBUG[0;39m semeru - simplify: 10
+02:20:54.914 [39mDEBUG[0;39m semeru - (heap,612 ms), (local,155 ms), (cover,32 ms), ($values,10 ms), ($iterator,2 ms), (static,1 ms), ($contents,1 ms), ($array,1 ms), (#runtime,814 ms), (#expansions,124/5120), (graph,graph with 133 nodes and 376 edges), (lines,6/10), (#project,17 ms), (#generate,15 ms), (#simplify,61 ms), (max-depth,9/9)
+[0m[[0minfo[0m] [0m[32m- eclipse_jdt: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_py: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_py[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$5.apply(FullExamples.scala:65)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$5.apply(FullExamples.scala:64)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_ant: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_ant[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$6.apply(FullExamples.scala:70)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$6.apply(FullExamples.scala:69)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 4 seconds, 86 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 6[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 1, failed 5, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 5 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> exit

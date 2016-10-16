@@ -1,0 +1,813 @@
+{
+  "modules":["org.eclipse.help.*","org.eclipse.pdf.*","org.eclipse.core.*","org.eclipse.ui.*","org.eclipse.jface.*","org.eclipse.swt.*","org.eclipse.jdt.*","org.eclipse.compare.*","org.eclipse.wst.*","org.eclipse.e4.ui.*","org.eclipse.e4.core.*","org.eclipse.e4.model.*","org.eclipse.egit.*","org.eclipse.emf.*","org.eclipse.osgi.*","org.eclipse.ant.*","org.eclipse.debug.*","org.eclipse.team.*","org.eclipse.epp.*","org.eclipse.ecf.*","org.eclipse.mylyn.*","org.eclipse.batik.*","org.eclipse.recommenders.*","org.eclipse.ltk.*","org.eclipse.jgit.*","org.eclipse.felix.*","org.eclipse.equinox.*","org.eclipse.update.*","org.eclipse.aether.*","org.eclipse.text.*","org.eclipse.m2e.*","com.sun.org.apache.xerces.*","com.sun.org.apache.xalan.*","org.apache.xerces.*","org.apache.xalan.*","org.apache.commons.*","org.apache.felix.*","org.apache.batik.*","org.apache.maven.*","org.apache.lucene.*","org.codehaus.plexus.*","org.osgi.*","org.slf4j.*","ch.qos.*","org.xml.*","com.ibm.*","com.google.*","org.apache.tools.ant.*","org.w3c.*","sun.misc.*","sun.net.*","sun.reflect.*","sun.security.*","components.*","java.*","javax.*"],
+  "databases":[{
+    "name":"demo",
+    "customMeta":"meta_swing",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_demo",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_eclipse_py_brackets",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_tex_brackets",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_brackets",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_ant_outline",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_py_outline",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_tex_brackets",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_py_errormarker",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_py_save",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_jdt_activatedeactivate",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_jdt_errormarker",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"demo_eclipse_jdt_menu",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_menu",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_py_menu",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"demo_eclipse_jdt_brackets",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_jdt_brackets",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"demo_eclipse_tex_outline",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_tex_outline",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_py_outline",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"demo_eclipse_ant_outline",
+    "user":"org.eclipse.ant.*"
+  },{
+    "name":"demo_eclipse_jdt_outline",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_jdt_outline",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"demo_eclipse_jdt_type",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_baseline",
+    "user":"org.eclipse.jdt.*,org.eclipse.mylyn.*,org.eclipse.ant.*,org.python.*,com.python.*,net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_swing_components_TextAreaDemo_enter",
+    "user":"components.*"
+  },{
+    "name":"demo_stocks_stocktooltip",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_invalidstock",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_portfoliokey",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_saveasbutton",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_tabletooltip",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_refreshkey",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_toolbarout",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_treeselect",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_treecollapse",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_refresh",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_sort",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_stocks_baseline",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_passwordstore_listadd",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_undocut",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_generate",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_listhostedit",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_paste",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_cut",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_tableswitch",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_sort",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_filter",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_selectlistitem",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_baseline",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_movies_reorder_columns",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_baseline",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_delete",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_edit_wrong_rating",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_sort",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_doubleclick",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_add_commit",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_movies_add_invoke",
+    "user":"hirondelle.*"
+  },{
+    "name":"demo_rtext_fold",
+    "user":"org.fife.*"
+  },{
+    "name":"demo_jedit_type",
+    "user":"org.gjt.*"
+  },{
+    "name":"jedit_all",
+    "user":"org.gjt.*"
+  },{
+    "name":"demo_jedit_undo",
+    "user":"org.gjt.*"
+  },{
+    "name":"swing_components_TablePrintDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ColorChooserDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html\">How to Use Color Choosers</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ColorChooserDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/colorchooser.html\">How to Use Color Choosers</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_TextCutPaste",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/textpaste.html\">CCP in a Text Component</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_LocationSensitiveDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/locsensitivedemo.html\">Demo - LocationSensitiveDemo</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_ListCutPaste",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/listpaste.html\">CCP in a non-Text Component</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_FillViewportHeightDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/emptytable.html\">Empty Table Drop</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_DropDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/dropmodedemo.html\">Demo - Drop List</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_ChooseDropActionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/dropactiondemo.html\">Demo - ChooseDropAction</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_dnd_BasicDnD",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/dnd/basicdemo.html\">Demo - BasicDnD</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_WindowEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/windowlistener.html\">How to Write Window Listeners</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_MultiListener",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/intro.html\">Some Simple Event-Handling Examples</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_MouseWheelEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/mousewheellistener.html\">How to Write a Mouse-Wheel Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_MouseMotionEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/mousemotionlistener.html\">How to Write a Mouse-Motion Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_MouseEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/mouselistener.html\">How to Write a Mouse Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_TableListSelectionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html\">How to Write a List Selection Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_ListSelectionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/listselectionlistener.html\">How to Write a List Selection Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_InternalFrameEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/internalframelistener.html\">How to Write an Internal Frame Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_InputVerificationDialogDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html\">How to Use the Focus Subsystem</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_InputVerificationDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html\">How to Use the Focus Subsystem</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_FieldValidator",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/jlayer.html#validation\">How to Decorate Components with JLayer</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_ModalityDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/modality.html\">How to Use Modality in Dialogs</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_Diva",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/jlayer.html#events\">How to Decorate Components with JLayer</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_GradientTranslucentWindowDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/trans_shaped_windows.html\">How to Create Translucent and Shaped Windows</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_ShapedWindowDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/trans_shaped_windows.html\">How to Create Translucent and Shaped Windows</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_TranslucentWindowDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/trans_shaped_windows.html\">How to Create Translucent and Shaped Windows</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_TrayIconDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/systemtray.html\">How to Use the System Tray</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_TapTapTap",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/jlayer.html#animating\">How to Decorate Components with JLayer</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_Myopia",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/jlayer.html#drawing\">How to Decorate Components with JLayer</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_Wallpaper",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/jlayer.html#drawing\">How to Decorate Components with JLayer</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_DesktopDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/desktop.html\">How to Integrate with the Desktop Class</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_AccessibleScrollDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/access.html\">How to Support Assistive Technologies</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TreeIconDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tree.html\">How to Use Trees</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ToolBarDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/toolbar.html\">How to Use Tool Bars</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TopLevelDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/toplevel.html\">Using Top-Level Containers</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextInputDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html\">How to Use Formatted Text Fields</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SplitPaneDividerDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html\">How to Use Split Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SplitPaneDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html\">How to Use Split Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SplitPaneDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/splitpane.html\">How to Use Split Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SpinnerDemo4",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html\">How to Use Spinners</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SpinnerDemo3",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html\">How to Use Spinners</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SpinnerDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html\">How to Use Spinners</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SpinnerDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/spinner.html\">How to Use Spinners</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SliderDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/slider.html\">How to Use Sliders</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SliderDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/slider.html\">How to Use Sliders</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SimpleTableSelectionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ScrollDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/scrollpane.html\">How to Use Scroll Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ScrollDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/scrollpane.html\">How to Use Scroll Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_RootLayeredPaneDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html\">How to Use Root Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_RadioButtonDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/button.html\">How to Use Buttons, <em>...</em></a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ProgressMonitorDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html\">How to Monitor Progress</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ProgressBarDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html\">How to Monitor Progress</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ProgressBarDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/progress.html\">How to Monitor Progress</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_MenuLookDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_MenuSelectionManagerDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_MenuLayoutDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_MenuGlueDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_LayeredPaneDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/layeredpane.html\">How to Use Layered Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_LayeredPaneDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/layeredpane.html\">How to Use Layered Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_LabelDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/label.html\">How to Use Labels</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_InternalFrameDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/internalframe.html\">How to Use Internal Frames</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_HtmlDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/html.html\">Using HTML in Swing Components</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_GlassPaneDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/rootpane.html\">How to Use Root Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_Framework",
+    "desc":"Nowhere",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FrameDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/frame.html\">How to Make Frames</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FrameDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/frame.html\">How to Make Frames</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FileChooserDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html\">How to Use File Choosers</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_DialogDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html\">How to Use Dialogs</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_CheckBoxDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/button.html\">How to Use Buttons, <em>...</em></a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ButtonHtmlDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/button.html\">How to Use Buttons, <em>...</em></a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_BorderDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/border.html\">How to Use Borders</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FileChooserDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html\">How to Use File Choosers</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_DocumentEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/documentlistener.html\">How to Write a Document Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_FocusConceptsDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html\">How to Use the Focus Subsystem</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_FocusEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/focuslistener.html\">How to Write a Focus Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_FocusTraversalDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html\">How to Use the Focus Subsystem</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_ActionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/action.html\">How to Use Actions</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_Converter",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/panel.html\">How to Use Panels</a> and <a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/model.html\">Using Models</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_CustomIconDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/icon.html\">How to Use Icons</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ButtonDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/button.html\">How to Use Buttons, <em>...</em></a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FormattedTextFieldDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html\">How to Use Formatted Text Fields</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_FormatterFactoryDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/formattedtextfield.html\">How to Use Formatted Text Fields</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_IconDemoApp",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/icon.html\">How to Use Icons</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ListDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/list.html\">How to Use Lists</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ListDialogRunner",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/button.html\">How to Use Buttons, <em>...</em></a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_MenuDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_PasswordDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/passwordfield.html\">How to Use Password Fields</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_PopupMenuDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/menu.html\">How to Use Menus</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SharedModelDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/model.html\">Using Models</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_SimpleTableDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableDialogEditDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableFTFEditDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableFilterDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableRenderDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableSelectionDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableSortDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TableToolTipsDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/table.html\">How to Use Tables</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextComponentDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/generaltext.html\">Text Component Features</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/textfield.html\">How&nbsp;to&nbsp;Use Text&nbsp;Fields</a> and <a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/textarea.html\">How&nbsp;to&nbsp;Use Text&nbsp;Areas</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextFieldDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/textfield.html\">How&nbsp;to&nbsp;Use Text&nbsp;Fields</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_misc_TrackFocusDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/misc/focus.html\">How to Use the Focus Subsystem</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ComboBoxDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/combobox.html\">How to Use Combo Boxes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ComboBoxDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/combobox.html\">How to Use Combo Boxes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_CustomComboBoxDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/combobox.html\">How to Use Combo Boxes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_DynamicTreeDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tree.html\">How to Use Trees</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_GenealogyExample",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tree.html\">How to Use Trees</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TabComponentsDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html\">How to Use Tabbed Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TabbedPaneDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tabbedpane.html\">How to Use Tabbed Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextSamplerDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/text.html\">Using&nbsp;Text&nbsp;Components</a> and <a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/editorpane.html\">How&nbsp;to&nbsp;Use Editor&nbsp;Panes and Text&nbsp;Panes</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_ToolBarDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/toolbar.html\">How to Use Tool Bars</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TreeDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tree.html\">How to Use Trees</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TreeIconDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/tree.html\">How to Use Trees</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_ContainerEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/containerlistener.html\">How to Write a Container Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_ComponentEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/componentlistener.html\">How to Write a Component Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_ListDataEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/listdatalistener.html\">How to Write a List Data Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_KeyEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/keylistener.html\">How to Write a Key Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_Beeper",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/intro.html\">Some Simple Event-Handling Examples</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_TreeExpandEventDemo2",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/treewillexpandlistener.html\">How to Write a Tree Will Expand Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_events_TreeExpandEventDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/events/treeexpansionlistener.html\">How to Write a Tree Expansion Listener</a>",
+    "user":"components.*"
+  },{
+    "name":"swing_components_TextAreaDemo",
+    "desc":"<a href=\"http://docs.oracle.com/javase/tutorial/uiswing/components/textarea.html\">How&nbsp;to&nbsp;Use Text&nbsp;Areas</a>",
+    "user":"components.*"
+  },{
+    "name":"demo_swing_components_TextAreaDemo_invoke",
+    "user":"components.*"
+  },{
+    "name":"eclipse_jdt",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_test",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_jdt_fold",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"demo_eclipse_jdt_autocomplete",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"demo_eclipse_jdt_fold",
+    "user":"org.eclipse.jdt.*"
+  },{
+    "name":"eclipse_wiki",
+    "user":"org.eclipse.mylyn.*"
+  },{
+    "name":"demo_eclipse_wiki_autocomplete",
+    "user":"org.eclipse.mylyn.*"
+  },{
+    "name":"eclipse_py",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"eclipse_py_fold",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"demo_eclipse_py_fold",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"demo_eclipse_py_autocomplete",
+    "user":"org.python.*,com.python.*"
+  },{
+    "name":"eclipse_tex",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"eclipse_tex_fold",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_tex_autocomplete",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_tex_fold",
+    "user":"net.sourceforge.texlipse.*"
+  },{
+    "name":"demo_eclipse_ant_autocomplete",
+    "user":"org.eclipse.ant.*"
+  },{
+    "name":"demo_eclipse_ant_fold",
+    "user":"org.eclipse.ant.*"
+  },{
+    "name":"eclipse_ant",
+    "user":"org.eclipse.ant.*"
+  },{
+    "name":"eclipse_ant_fold",
+    "user":"org.eclipse.ant.*"
+  },{
+    "name":"demo_rtext",
+    "user":"org.fife.*"
+  },{
+    "name":"demo_rtext_autocomplete",
+    "user":"org.fife.*"
+  },{
+    "name":"stocks",
+    "user":"hirondelle.*"
+  },{
+    "name":"jgnash",
+    "user":"jgnash.*"
+  },{
+    "name":"movies",
+    "user":"hirondelle.*"
+  },{
+    "name":"passwordstore",
+    "user":"passwordstore.*"
+  },{
+    "name":"rtext",
+    "user":"org.fife.*"
+  },{
+    "name":"rtext_all",
+    "user":"org.fife.*"
+  },{
+    "name":"test",
+    "user":"test.cap.*"
+  },{
+    "name":"FrameworkUsage",
+    "desc":"Synthesis test",
+    "user":"test.cap.client.*",
+    "framework":"test.cap.framework.*"
+  }],
+  "groups":[{
+    "name":"all",
+    "pat":".*"
+  },{
+    "name":"swing_components",
+    "pat":"swing_components_.*"
+  },{
+    "name":"swing",
+    "pat":"swing_components_.*|passwordstore.*|movies.*|stocks.*|rtext.*|jedit.*|jgnash.*"
+  },{
+    "name":"eclipse",
+    "pat":"eclipse_.*"
+  },{
+    "name":"eclipse_outline",
+    "pat":"eclipse_.*_outline"
+  },{
+    "name":"eclipse_fold",
+    "pat":"eclipse_.*_fold"
+  },{
+    "name":"demos",
+    "pat":"demo.*"
+  },{
+    "name":"demo_swing",
+    "pat":"demo_swing_.*|demo_movies_.*|demo_stocks_.*|demo_passwordstore_.*"
+  },{
+    "name":"demo_passwordstore",
+    "pat":"demo_passwordstore_.*"
+  },{
+    "name":"demo_stocks",
+    "pat":"demo_stocks_.*"
+  },{
+    "name":"demo_movies",
+    "pat":"demo_movies_.*"
+  },{
+    "name":"demo_eclipse",
+    "pat":"demo_eclipse_.*"
+  },{
+    "name":"demo_eclipse_fold",
+    "pat":"demo_eclipse_.*_fold"
+  },{
+    "name":"demo_eclipse_autocomplete",
+    "pat":"demo_eclipse_.*_autocomplete"
+  },{
+    "name":"demo_eclipse_brackets",
+    "pat":"demo_eclipse_.*_brackets"
+  },{
+    "name":"demo_eclipse_outline",
+    "pat":"demo_eclipse_.*_outline"
+  }]
+}

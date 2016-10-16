@@ -1,0 +1,14 @@
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} %highlight(%-5level) %logger{15} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="debug"><appender-ref ref="STDOUT" /></root>
+
+	<logger name="org.eclipse.jetty" level="WARN" />
+	<logger name="org.fusesource.scalate" level="WARN" />
+	<logger name="org.neo4j.kernel" level="WARN" />
+	<logger name="org.scalatra.scalate" level="WARN" />
+</configuration>

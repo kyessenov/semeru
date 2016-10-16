@@ -1,0 +1,40 @@
+Data rates:
+
+2/8/2011
+Measuring on Eclipse dump file. 
+Disk read by java: 1Mb/s
+Disk write by mysql: 500K/s
+Time to process 1,000,000 log items:  
+real	2m25.881s
+user	0m14.181s
+sys		0m9.601s
+
+(after commit, disk read activity appears to be missing because of caching?)
+
+real	2m19.530s
+user	0m12.697s
+sys		0m10.693s
+
+(after commit, no autocommit)
+
+real	2m40.346s
+user	0m15.865s
+sys	0m11.569s
+
+(after commit, enable batch LOG updates with 1024*1024 in a batch)
+
+real	2m29.149s
+user	0m36.938s
+sys		0m11.045s
+
+(after commit, enable batch to all statements)
+
+real	2m22.893s
+user	0m32.594s
+sys		0m13.845s
+
+(after commit, enabled LOAD DATA INFILE)
+
+real	0m47.051s
+user	0m9.893s
+sys		0m2.616s

@@ -1,0 +1,8 @@
+listen.library=java.*, javax.*, org.eclipse.core*, org.osgi*, org.eclipse.osgi*, org.eclipse.swt*, org.eclipse.e4*
+# conflicts with projectionannotationmodel , org.eclipse.jface*
+listen.fields=false
+listen.arrays=false
+listen.strings=true
+agent.management=true
+
+# vim: set filetype=jproperties :

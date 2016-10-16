@@ -1,0 +1,18 @@
+#import(edu.mit.csail.cap.query._)
+<%@ val data: web.DataProvider %>
+<%@ val key: String %>
+<%@ val id: String %>
+
+<select name=${id} id=${id}>
+<optgroup label='Traces'>
+<option value=''>--</option>
+#for(t <- data.traces if t.isDemo)
+<option value=${t.name} ${ if (t.name == key) "selected" else ""}>${t.name}</option>
+#end
+</optgroup>
+<optgroup label='Groups'>
+#for(t <- data.config.groups)
+<option value=${t.name} ${ if (t.name == key) "selected" else ""}>${t.name}</option>
+#end
+</optgroup>
+</select>

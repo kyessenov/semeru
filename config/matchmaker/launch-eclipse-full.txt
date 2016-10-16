@@ -1,0 +1,41 @@
+Monitoring Eclipse with fields, abstractions.
+
+User actions: launch eclipse, close eclipse
+
+Set-up:
+
+listen.fields=true
+listen.abstract=\
+        java.util.ArrayList.get,\
+        java.util.ArrayList.set,\
+        java.util.ArrayList.add,\
+        java.util.ArrayList.addAll,\
+        java.util.ArrayList.clear,\
+        java.util.ArrayList.remove              
+listen.exclude=\
+        cap.*,\
+        org.objectweb.asm.*,\
+        sun.*,\
+        com.sun.*,\
+        com.apple.*,\
+        java.*,\
+        javax.*,\
+        org.xml.*,\
+        org.w3c.*,\
+        org.eclipse.swt.*,\
+        org.eclipse.equinox.*,\
+        org.aspectj.*,\
+        org.eclipse.osgi.*,\
+        org.osgi.*,\
+        com.ibm.*       
+
+Database: eclipse-full
+     [java]     717559 objects;
+     [java]     12594 fields;
+     [java]     21158 methods;
+     [java]     4872 types
+
+DB server execution time: 58 minutes
+Size: 1212M
+Number of events: 19M
+

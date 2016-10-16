@@ -1,0 +1,32 @@
+*** Command line
+time java -javaagent:agent.jar=tracecollector.properties -jar ../alloy4.jar
+
+*** Result
+real	2m57.524s
+user	0m18.665s
+sys		0m1.488s
+
+*** Database size
+rows:	1728836
+data:	66Mb
+     [java] 	61100 objects;
+     [java] 	1138 fields;
+     [java] 	1860 methods;
+     [java] 	523 types
+
+*** Rate
+3.3Mb/s
+86441e/s
+
+*** Configuration
+listen.fields=true
+listen.exclude=\
+	cap.*,\
+	org.objectweb.asm.*,\
+	sun.*,\
+	com.sun.*,\
+	com.apple.*,\
+	java.*,\
+	javax.*,\
+	org.xml.*,\
+	org.w3c.*		

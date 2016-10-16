@@ -1,0 +1,25 @@
+# Port to connector instrumentor and DB
+# agent.port=13337
+
+# Store message exchange between instrumentor and DB as a file
+agent.dump=dump
+
+db.server=localhost
+db.metadata=meta_idea
+db.user=root
+db.password=
+db.usefiles=true
+
+listen.exclude=sun.*
+listen.forceInclude=java.lang.reflect.*
+listen.library=\
+  org.apache.xerces.*,\
+  org.jdom.*,\
+  gnu.trove.*,\
+  com.intellij.util.*
+
+db.log=idea_2_11
+# Demo mode
+#listen.fields=false
+#listen.arrays=false
+#agent.management=true

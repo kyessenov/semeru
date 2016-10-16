@@ -1,0 +1,52 @@
+Database: test-xmleditor
+Collection method: launch with an agent, dump to file
+
+Actions:
+* Start Eclipse. No window is open.
+* Open xml file. Type a tag and a few characters. Close xml file.
+* Open Java file. Add a field. Close Java file.
+* Open properties file. Add a property. CLose properties file.
+* Close Eclipse.
+
+Dump file size: 3.6G
+Time for uploading to DB: 63 minutes 24 seconds
+Time for post-processing: 9 minutes 2 seconds
+
+Transformed: ?? classes
+
+Configuration:
+agent.server.name=localhost
+agent.server.port=16000
+
+agent.dump.file=dump
+
+db.server.name=sketch1.csail.mit.edu
+db.log=test_xmleditor
+db.metadata=metadata
+db.user=root
+db.password=lambda1337ARMANDO
+
+listen.fields=true
+
+listen.abstract=\
+  java.util.ArrayList.get,\
+  java.util.ArrayList.set,\
+  java.util.ArrayList.add,\
+  java.util.ArrayList.addAll,\
+  java.util.ArrayList.clear,\
+  java.util.ArrayList.remove,\
+  java.util.HashMap.put,\
+  java.util.HashMap.remove,\
+  java.util.HashMap.clear 
+
+listen.exclude=\
+  cap.*, \
+  org.objectweb.asm.*,\
+  sun.*,\
+  com.sun.*,\
+  com.apple.*,\
+  java.*,\
+  javax.*,\
+  com.ibm.*,\
+  org.eclipse.swt.internal.*
+

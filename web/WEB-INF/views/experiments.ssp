@@ -1,0 +1,72 @@
+#import(edu.mit.csail.cap.query._)
+<%@ val data: web.DataProvider %>
+
+<div class='container-fluid'>
+<h2>Record demonstration</h2>
+<form class='form-inline' method='post'>
+<label>Application</label>
+<select class='form-control' name="app">
+#for(app <- experiments.Experiments.All)
+  <option value=${app.name} ${if (data.LogApp == Some(app.name)) "selected" else "" }>${app.name}</option>
+#end
+</select>
+<label>Trace</label> 
+<input required class='form-control' name='log' value=${ data.LogName.getOrElse("demo") } />
+<button class='btn btn-default' type='submit' formaction='/collect'>Launch</button>
+#if (!data.LogApp.isEmpty && data.LogBin.isEmpty)
+<button class='btn btn-danger' type='submit' formaction='/start'>Start</button>
+#end
+#if (!data.LogBin.isEmpty)
+<button class='btn btn-info' type='submit' formaction='/stop'>Stop</button>
+#end
+</form>
+
+<h4>Status</h4>
+Name: <code>${data.LogApp}</code>, log file: <code>${data.LogBin}</code>, log name:<code>${data.LogName}</code>
+
+<h2>Experiments</h2>
+
+<% val traces = data.traces.sortBy(_.isDemo) %>
+<table class='table table-condensed table-hover'>
+<thead>
+  <tr>
+  <th>Name
+  <th>Traces
+<tbody>
+#import(edu.mit.csail.cap.query.experiments.Experiments)
+#for (app <- Experiments.All)
+  <tr>
+  <td><b>${app.name}</b>, ${app.meta}
+  <td>
+  #for (trace <- traces if trace.experiment == app)  
+    ${data.render(trace)(web.RenderContext(trace.b))}
+  #end
+
+#end
+</table>
+
+<h2>Extra</h2>
+<ol>
+#for (extra <- data.extra)
+<li>
+<form class='form-inline' method='post' action='/drop'>
+${extra}
+<input type='hidden' name='t' value=${extra}>
+<input type='submit' value='Drop'>
+</form> 
+#end
+</ol>
+
+<h2>Missing</h2>
+<ol>
+#for (missing <- data.missing)
+<li>
+<form class='form-inline' method='post' action='/remove'>
+${missing.name}
+<input type='hidden' name='t' value=${missing.name}>
+<input type='submit' value='Remove'>
+</form>
+#end
+</ol>
+
+</div>

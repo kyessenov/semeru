@@ -1,0 +1,69 @@
+A few ideas for next iterations of trace collector. Please put the date of the idea and its status.
+
+[10/20/2010] detect and store object death events. It seems that the only way to accomplish this is by instrumenting Object.finalize() and adding finalize() methods to classes that don't override that call super-class finalize() method.
+[2/25/2010] rework attaching agent mode: dump heap and stack traces in the beginning and continue normal execution.
+
+[12/12/12] some additional ideas on improving the collector:
+  * value rules: would be useful to record certain values for objects (integers, strings)
+  * asmdex: instrumentation of Android APKs
+  * array creation instruction
+  * object death monitoring
+  * fix Java 7 verifier errors (not possible with the current state of ASM 4.2)
+  * treat arrays of primitives as unknowns
+  * special treatment of strings
+
+[1/25/13] Need to rename ASM package dependency since the subject programs may load an older API-incompatible version
+
+Infrastructure:
+
+[4/1/2010, invariant testing] unit testing strategy
+
+Collection:
+
+[3/9/2012, 3/12/2012] Compress class strings in messages. Import hash function for strings.
+
+[3/3/2011, 3/11/12] report number of sent messages and total runtime in the collector client
+
+[11/4/2010, 11/10/2010] bug in succ field of enter events: some of them are not set (30 out 30M, 340 events have negative stack depth): 
+SELECT * FROM `LOG` L, metadata.METHOD M, metadata.TYPE T where  (event_type = 1) and (succ is null) and (L.id = M.id) and (M.type = T.id)
+  one potential cause is System.exit(.) which terminates the execution. It seems like the bug was caused by unsynchronized depth variable in instrumentor runtime
+
+[11/12/2010, done] investigate how our instrumentation handles control transfer in finally blocks
+
+[11/22/2010, 2/7/2011] add handling of array events; make sure it doesn't overwhelm collection infrastructure; this should be prioritized
+
+[1/27/2010, 2/4/2011] make filtering more intuitive: the goal is to optimize tracing of user classes and hide as much of framework as possible
+
+[11/22/2010, unsolved] better handling of different subtypes of abstraction classes; this may not be needed since subtyping is hard to compute during transforming
+
+[2/4/2010, done] improve time to load to MySQL
+
+[2/15/2010, done] avoid collecting events related to org.asm.objectweb.Type: there appears to be list operations involving them in the beginning. There are not many of them overall: about 5K for a typical short Eclipse run.
+
+Storage:
+
+[2009, 10/30/2010] design indexes and foreign keys to optimize SQL queries
+added foreign keys to metadata; referencing across databases is not possible and likely unnecessary
+
+[10/28/2010, use autocommit] metadata database writes are not transactional. Cannot write to it concurrently.
+
+Post processing:
+
+[11/10/2010, 11/18/2010] indexes to speed up slicing computation; added a multi-column index on stack_depth, counter
+
+[2009, done] line number from debugging information as part of an event (for heap events); switch to annotating calls instead of invocations to accomplish this for method events
+
+[2009, 10/30/2010] static typing information: sub-typing, invisibility
+
+[2009, move to collection] lifespan of objects: first and last event that mention the object as a participant, or, alternatively, as a receiver
+
+[10/20/2010, 10/30/2010] indexes of parameters 
+
+[10/20/2010, 10/30/2010] value field populated for enter events from their exit events
+
+[10/20/2010, 10/30/2010] columns to log for a few first parameters
+
+[2009, abandon] column to log containing concatenation of argument list
+
+
+vim: set spell :

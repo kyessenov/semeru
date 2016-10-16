@@ -1,0 +1,12 @@
+target=/home/kuat/opt/jEdit/5.1.0/jedit.jar
+
+db.metadata=meta_jedit
+db.log=jedit_camelcomplete
+
+listen.forceInclude=java.lang.reflect.*
+listen.library=org.gjt.sp.jedit.bsh.*
+
+# Demo mode
+# listen.fields=false
+# listen.arrays=false
+# agent.management=true

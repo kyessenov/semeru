@@ -1,0 +1,4 @@
+#!/bin/bash
+# Generate documentation XML
+# Provide root directory to sources as input
+find $1 -type f -name "*.java" | xargs javadoc -doclet com.jeldoclet.JELDoclet -docletpath data/jeldoclet.jar

@@ -1,0 +1,11 @@
+target=/home/kuat/opt/java/alloy.jar
+
+db.metadata=meta_alloy
+db.log=alloy_demo_syntax
+
+listen.library=javax.*
+
+# Demo mode
+listen.fields=false
+listen.arrays=false
+agent.management=true

@@ -1,0 +1,30 @@
+#listen.library=\
+#  org.jdom.*,\
+#  gnu.trove.*,\
+#  com.sun.*,\
+#  org.apache.*,\
+#  org.xml.*,\
+#  org.eclipse.osgi.*,\
+#  org.eclipse.core.*
+#  org.netbeans.core.*,\
+#  org.openide.util.*,\
+#  org.openide.filesystems.*,\
+#  org.netbeans.util.*,\
+#  org.netbeans.modules.spellchecker.*,\
+#  org.netbeans.modules.classfile.*,\
+#  org.netbeans.modules.masterfs.*,\
+#  org.netbeans.Module,\
+#  org.netbeans.Stamps
+
+db.log=netbeans_demo
+db.metadata=meta_netbeans
+
+# Demo mode
+listen.fields=false
+listen.arrays=false
+agent.management=true
+
+# Metadata mode
+# listen.cfg=false
+# listen.forceInclude=*
+

@@ -1,0 +1,1408 @@
+> te[4G[K[3G[KrunMain[3G[Kexit[3G[KtestOnly test.SyntheticExamples[3G[Kexit[3G[Ktest[3G[K∫�[3G[Ktest[3G[KrunMain edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_py[3G[Kexit[3G[KrunMain edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_py[82G[83G[82G[K[81G[Kant
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_ant[0m
+13:08:10.121 [34mINFO [0;39m semeru - *** Running in full mode ***
+13:08:10.125 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:08:10.190 [34mINFO [0;39m semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/eclipse
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist: org.eclipse.jface.util.Util org.eclipse.jdt.internal.core.index.DiskIndex org.eclipse.jdt.internal.core.util.Util org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct org.eclipse.jdt.core.compiler.CharOperation org.eclipse.jdt.internal.core.util.SimpleWordSet org.python.pydev.shared_core.string.FastStringBuffer org.python.pydev.core.FastBufferedReader org.python.antlr.runtime.* org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: org.eclipse.osgi.* org.osgi.* org.eclipse.emf.* org.eclipse.swt.* org.eclipse.e4.* org.eclipse.core.runtime.Path org.eclipse.core.internal.registry.* com.ibm.* com.sun.* org.xml.* org.w3c.* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 425 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] closing output streams
+[agent] failed to send a message enter method: 7223735363358482214
+[agent] failed to send a message exception: 1325998577
+[agent] failed to send a message exit method: 1
+[agent] failed to send a message exception: 268623993
+13:09:00.502 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_eclipse
+13:09:00.725 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes
+13:09:03.456 [39mDEBUG[0;39m semeru - saving metadata 87945 fields, 179576 methods, 18955 classes
+13:09:03.457 [39mDEBUG[0;39m semeru - create database meta_eclipse
+13:09:04.743 [39mDEBUG[0;39m semeru - create and load 18929 rows into TYPE from csv/TYPE-REPLACE.csv
+13:09:04.932 [39mDEBUG[0;39m semeru - create and load 26 rows into TYPE from csv/TYPE-IGNORE.csv
+13:09:04.934 [39mDEBUG[0;39m semeru - create and load 40673 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:09:05.160 [39mDEBUG[0;39m semeru - create and load 179575 rows into METHOD from csv/METHOD-REPLACE.csv
+13:09:06.595 [39mDEBUG[0;39m semeru - create and load 87940 rows into FIELD from csv/FIELD-REPLACE.csv
+13:09:07.314 [39mDEBUG[0;39m semeru - committing metadata
+13:09:07.315 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:09:07.316 [34mINFO [0;39m semeru - create log eclipse_ant
+13:09:10.068 [34mINFO [0;39m semeru - LOG counter = 1M
+13:09:11.920 [34mINFO [0;39m semeru - LOG counter = 2M
+13:09:14.135 [34mINFO [0;39m semeru - LOG counter = 3M
+13:09:16.223 [34mINFO [0;39m semeru - LOG counter = 4M
+13:09:16.338 [34mINFO [0;39m semeru - PARAMS counter = 1M
+13:09:18.864 [34mINFO [0;39m semeru - LOG counter = 5M
+13:09:21.926 [34mINFO [0;39m semeru - LOG counter = 6M
+13:09:24.767 [34mINFO [0;39m semeru - LOG counter = 7M
+13:09:25.600 [34mINFO [0;39m semeru - PARAMS counter = 2M
+13:09:27.052 [34mINFO [0;39m semeru - LOG counter = 8M
+13:09:29.712 [34mINFO [0;39m semeru - LOG counter = 9M
+13:09:32.495 [34mINFO [0;39m semeru - PARAMS counter = 3M
+13:09:32.818 [34mINFO [0;39m semeru - LOG counter = 10M
+13:09:35.443 [34mINFO [0;39m semeru - LOG counter = 11M
+13:09:38.572 [34mINFO [0;39m semeru - LOG counter = 12M
+13:09:39.875 [34mINFO [0;39m semeru - PARAMS counter = 4M
+13:09:41.480 [34mINFO [0;39m semeru - LOG counter = 13M
+13:09:43.954 [34mINFO [0;39m semeru - LOG counter = 14M
+13:09:46.061 [34mINFO [0;39m semeru - PARAMS counter = 5M
+13:09:46.453 [34mINFO [0;39m semeru - LOG counter = 15M
+13:09:49.846 [34mINFO [0;39m semeru - LOG counter = 16M
+13:09:52.419 [34mINFO [0;39m semeru - LOG counter = 17M
+13:09:52.737 [34mINFO [0;39m semeru - PARAMS counter = 6M
+13:09:55.418 [34mINFO [0;39m semeru - LOG counter = 18M
+13:09:57.751 [34mINFO [0;39m semeru - LOG counter = 19M
+13:09:58.813 [34mINFO [0;39m semeru - PARAMS counter = 7M
+13:10:00.236 [34mINFO [0;39m semeru - LOG counter = 20M
+13:10:02.719 [34mINFO [0;39m semeru - LOG counter = 21M
+13:10:04.342 [34mINFO [0;39m semeru - PARAMS counter = 8M
+13:10:05.153 [34mINFO [0;39m semeru - LOG counter = 22M
+13:10:07.786 [34mINFO [0;39m semeru - LOG counter = 23M
+13:10:10.237 [34mINFO [0;39m semeru - OBJECTS counter = 1M
+13:10:10.660 [34mINFO [0;39m semeru - PARAMS counter = 9M
+13:10:10.898 [34mINFO [0;39m semeru - LOG counter = 24M
+13:10:13.835 [34mINFO [0;39m semeru - LOG counter = 25M
+13:10:16.383 [34mINFO [0;39m semeru - LOG counter = 26M
+13:10:16.848 [34mINFO [0;39m semeru - PARAMS counter = 10M
+13:10:18.781 [34mINFO [0;39m semeru - LOG counter = 27M
+13:10:21.099 [34mINFO [0;39m semeru - LOG counter = 28M
+13:10:21.835 [34mINFO [0;39m semeru - PARAMS counter = 11M
+13:10:22.636 [34mINFO [0;39m semeru - detected missing closing event for 3 threads
+13:10:22.636 [39mDEBUG[0;39m semeru - drop database eclipse_ant
+13:10:22.649 [39mDEBUG[0;39m semeru - delete cache var/localhost/eclipse_ant
+13:10:22.650 [39mDEBUG[0;39m semeru - create database eclipse_ant
+13:10:22.672 [39mDEBUG[0;39m semeru - create and load 28610756 rows into LOG from csv/LOG-REPLACE.csv
+13:11:38.459 [39mDEBUG[0;39m semeru - create and load 11162933 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:11:56.131 [39mDEBUG[0;39m semeru - create and load 1185782 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:11:59.238 [39mDEBUG[0;39m semeru - create and load 179545 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:11:59.628 [39mDEBUG[0;39m semeru - committing log
+13:11:59.629 [34mINFO [0;39m semeru - postprocessing
+13:11:59.636 [39mDEBUG[0;39m semeru - connected to eclipse_ant@localhost
+13:11:59.657 [39mDEBUG[0;39m semeru - SQL update to eclipse_ant: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:14:17.843 [39mDEBUG[0;39m semeru - SQL update to eclipse_ant: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:16:05.060 [39mDEBUG[0;39m semeru - SQL update to eclipse_ant: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:16:08.683 [39mDEBUG[0;39m semeru - SQL update to eclipse_ant: ANALYZE TABLE `LOG`
+13:16:15.572 [34mINFO [0;39m semeru - *** Configuration: eclipse_ant
+> test
+[0m[[0minfo[0m] [0m[32mSyntheticExamples:[0m[0m
+13:20:50.217 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:20:50.316 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/test -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.Test
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+a BB
+A
+arr[0]=4
+arr[1]=3
+arr[2]=2
+Finish!
+Lists:
+[Hi, World]
+[World]
+[]
+Linked list:
+1->2
+Arrays:
+0->1->2
+Hash map:
+one
+Finish!
+HelloHeap!
+stack tests passed
+int0long1double1.0booltruechar1greeting from 	
+ outer class
+[agent] closing output streams
+13:20:51.942 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_test
+13:20:52.218 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes
+13:20:53.831 [39mDEBUG[0;39m semeru - saving metadata 44566 fields, 85392 methods, 8478 classes
+13:20:53.832 [39mDEBUG[0;39m semeru - create database meta_test
+13:20:54.534 [39mDEBUG[0;39m semeru - create and load 8478 rows into TYPE from csv/TYPE-REPLACE.csv
+13:20:54.586 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:20:54.588 [39mDEBUG[0;39m semeru - create and load 12630 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:20:54.645 [39mDEBUG[0;39m semeru - create and load 85391 rows into METHOD from csv/METHOD-REPLACE.csv
+13:20:55.259 [39mDEBUG[0;39m semeru - create and load 44561 rows into FIELD from csv/FIELD-REPLACE.csv
+13:20:55.759 [39mDEBUG[0;39m semeru - committing metadata
+13:20:55.762 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:20:55.771 [34mINFO [0;39m semeru - create log test
+13:20:55.825 [39mDEBUG[0;39m semeru - drop database test
+13:20:55.862 [39mDEBUG[0;39m semeru - delete cache var/localhost/test
+13:20:55.873 [39mDEBUG[0;39m semeru - create database test
+13:20:55.894 [39mDEBUG[0;39m semeru - create and load 504 rows into LOG from csv/LOG-REPLACE.csv
+13:20:55.927 [39mDEBUG[0;39m semeru - create and load 143 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:20:55.955 [39mDEBUG[0;39m semeru - create and load 150 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:20:55.980 [39mDEBUG[0;39m semeru - create and load 134 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:20:56.006 [39mDEBUG[0;39m semeru - committing log
+13:20:56.007 [34mINFO [0;39m semeru - postprocessing
+13:20:56.032 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:20:56.090 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:20:56.126 [39mDEBUG[0;39m semeru - SQL update to test: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:20:56.130 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:20:56.144 [39mDEBUG[0;39m semeru - SQL update to test: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- collection[0m[0m
+13:20:56.200 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:20:56.305 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/FrameworkUsage -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.framework.FrameworkUsage
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+test succeeded
+[agent] closing output streams
+13:20:59.961 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_FrameworkUsage
+13:20:59.972 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 5 fields, 1 methods, 12 classes
+13:21:00.349 [39mDEBUG[0;39m semeru - saving metadata 1984 fields, 7260 methods, 472 classes
+13:21:00.349 [39mDEBUG[0;39m semeru - create database meta_FrameworkUsage
+13:21:00.567 [39mDEBUG[0;39m semeru - create and load 472 rows into TYPE from csv/TYPE-REPLACE.csv
+13:21:00.574 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:21:00.576 [39mDEBUG[0;39m semeru - create and load 1366 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:21:00.584 [39mDEBUG[0;39m semeru - create and load 7259 rows into METHOD from csv/METHOD-REPLACE.csv
+13:21:00.681 [39mDEBUG[0;39m semeru - create and load 1979 rows into FIELD from csv/FIELD-REPLACE.csv
+13:21:00.711 [39mDEBUG[0;39m semeru - committing metadata
+13:21:00.712 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:21:00.713 [34mINFO [0;39m semeru - create log FrameworkUsage
+13:21:00.727 [34mINFO [0;39m semeru - detected missing closing event for 1 threads
+13:21:00.727 [39mDEBUG[0;39m semeru - drop database FrameworkUsage
+13:21:00.755 [39mDEBUG[0;39m semeru - delete cache var/localhost/FrameworkUsage
+13:21:00.762 [39mDEBUG[0;39m semeru - create database FrameworkUsage
+13:21:00.787 [39mDEBUG[0;39m semeru - create and load 236 rows into LOG from csv/LOG-REPLACE.csv
+13:21:00.817 [39mDEBUG[0;39m semeru - create and load 71 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:21:00.845 [39mDEBUG[0;39m semeru - create and load 93 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:21:00.870 [39mDEBUG[0;39m semeru - create and load 113 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:21:00.897 [39mDEBUG[0;39m semeru - committing log
+13:21:00.899 [34mINFO [0;39m semeru - postprocessing
+13:21:00.899 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:21:00.900 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:21:00.922 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:21:00.925 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:21:00.938 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- framework usage collection[0m[0m
+13:21:01.203 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes
+13:21:02.319 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:21:02.323 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:21:02.369 [39mDEBUG[0;39m semeru - building field abstraction
+13:21:02.469 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:21:02.497 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:21:02.506 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:21:03.176 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:21:03.179 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:21:03.185 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:21:03.191 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:21:03.194 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:21:03.202 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:21:03.229 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:21:03.247 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:21:03.249 [39mDEBUG[0;39m semeru - building field abstraction
+13:21:03.288 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:21:03.306 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:21:03.308 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:21:03.379 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:21:03.380 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:21:03.380 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:21:03.380 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:21:03.381 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:21:03.385 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:21:03.393 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:21:03.395 [39mDEBUG[0;39m semeru - batch insert graph with 41 nodes and 50 edges into neo4j at var/localhost/test/neo
+13:21:04.511 [39mDEBUG[0;39m semeru - creating nodes
+13:21:04.608 [39mDEBUG[0;39m semeru - creating edges
+13:21:04.677 [39mDEBUG[0;39m semeru - finished adding edges
+13:21:05.016 [39mDEBUG[0;39m semeru - done
+13:21:05.033 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/test/neo
+13:21:05.927 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:21:05.930 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:21:05.934 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:21:05.947 [39mDEBUG[0;39m semeru - building call graph for test@localhost
+13:21:05.959 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- construction and storage[0m[0m
+13:21:06.199 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44566 fields, 85392 methods, 8478 classes
+13:21:06.594 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:21:06.739 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:06.813 [34mINFO [0;39m semeru - building heap series for FrameworkUsage@localhost
+13:21:06.813 [39mDEBUG[0;39m semeru - building field abstraction
+13:21:06.820 [39mDEBUG[0;39m semeru - transferring active fields graph with 8 nodes and 6 edges
+13:21:06.821 [39mDEBUG[0;39m semeru - done field heap graph with 8 nodes and 6 edges
+13:21:06.821 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:21:06.864 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:21:06.865 [39mDEBUG[0;39m semeru - transferring heap of 1 arrays
+13:21:06.865 [39mDEBUG[0;39m semeru - transferring 1 arrays
+13:21:06.866 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:21:06.866 [34mINFO [0;39m semeru - building heap abstraction for graph with 18 nodes and 15 edges
+13:21:06.869 [39mDEBUG[0;39m semeru - loaded types for all objects: 93
+13:21:06.870 [39mDEBUG[0;39m semeru - done graph with 16 nodes and 12 edges class types: 8 array types: 0 instance types: 8
+13:21:06.871 [39mDEBUG[0;39m semeru - batch insert graph with 18 nodes and 15 edges into neo4j at var/localhost/FrameworkUsage/neo
+13:21:06.919 [39mDEBUG[0;39m semeru - creating nodes
+13:21:06.922 [39mDEBUG[0;39m semeru - creating edges
+13:21:06.924 [39mDEBUG[0;39m semeru - finished adding edges
+13:21:07.043 [39mDEBUG[0;39m semeru - done
+13:21:07.044 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:21:07.609 [39mDEBUG[0;39m semeru - done expanding to graph with 37 nodes and 77 edges
+13:21:07.751 [39mDEBUG[0;39m semeru - simplify: 11
+13:21:07.780 [39mDEBUG[0;39m semeru - simplify: 10
+13:21:07.962 [39mDEBUG[0;39m semeru - ($contents,687 ms), (local,119 ms), (cover,17 ms), (heap,11 ms), ($iterator,2 ms), (static,2 ms), ($array,1 ms), ($values,0 ms), (#runtime,839 ms), (#expansions,37/5120), (graph,graph with 37 nodes and 77 edges), (lines,8/10), (#project,45 ms), (#generate,64 ms), (#simplify,124 ms), (max-depth,6/7)
+[0m[[0minfo[0m] [0m[32m- synthesis: basic[0m[0m
+13:21:08.093 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes
+13:21:08.377 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:21:08.442 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:08.480 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:21:09.164 [39mDEBUG[0;39m semeru - done expanding to graph with 28 nodes and 60 edges
+13:21:09.178 [39mDEBUG[0;39m semeru - simplify: 14
+13:21:09.181 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(24,96639997,java.util.Iterator), Var(20,1147985808,java.util.HashSet), Var(18,1349277854,java.util.HashMap))
+13:21:09.187 [39mDEBUG[0;39m semeru - simplify: 13
+13:21:09.208 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(27,1051754451,test.cap.client.Subtypes$Sub[]))
+13:21:09.214 [39mDEBUG[0;39m semeru - simplify: 5
+[0m[[0minfo[0m] [0m[32m- synthesis: container elimination[0m[0m
+13:21:09.388 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes
+13:21:09.490 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:21:09.667 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:09.674 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:21:10.116 [39mDEBUG[0;39m semeru - done expanding to graph with 22 nodes and 40 edges
+13:21:10.122 [39mDEBUG[0;39m semeru - simplify: 9
+[0m[[0minfo[0m] [0m[32m- synthesis: type hierarchy collapse[0m[0m
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+13:21:11.680 [34mINFO [0;39m semeru - loading metadata meta_swing into 5 fields, 1 methods, 12 classes
+13:21:12.224 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 20063 fields, 52199 methods, 4690 classes
+13:21:12.314 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:12.318 [31mWARN [0;39m semeru - field type collision for java.text.Collator.cache: sun.misc.SoftCache and java.util.concurrent.ConcurrentMap
+13:21:12.319 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:12.329 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:21:12.342 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:21:12.362 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.subKeyFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:21:12.421 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:21:12.531 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:21:12.534 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.valueFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:21:12.552 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:21:12.595 [31mWARN [0;39m semeru - field type collision for java.util.Currency.instances: java.util.HashMap and java.util.concurrent.ConcurrentMap
+13:21:12.601 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.LambdaForm$Name.type: char and java.lang.invoke.LambdaForm$BasicType
+13:21:12.664 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:21:14.429 [34mINFO [0;39m semeru - loading metadata meta_test into 103180 fields, 218034 methods, 22498 classes
+13:21:14.459 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:21:14.461 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:21:14.462 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:21:14.462 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:21:14.466 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:21:14.467 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:21:14.475 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:14.479 [31mWARN [0;39m semeru - field type collision for java.text.Collator.cache: sun.misc.SoftCache and java.util.concurrent.ConcurrentMap
+13:21:14.480 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:14.495 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.valueFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:21:14.516 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.subKeyFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:21:14.562 [31mWARN [0;39m semeru - field type collision for java.util.Currency.instances: java.util.HashMap and java.util.concurrent.ConcurrentMap
+13:21:14.570 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.LambdaForm$Name.type: char and java.lang.invoke.LambdaForm$BasicType
+13:21:15.183 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 103317 fields, 218249 methods, 22558 classes
+13:21:15.189 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:21:15.190 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:21:15.191 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:21:15.191 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:15.191 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:21:15.191 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:21:15.192 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:21:15.192 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:21:15.261 [34mINFO [0;39m semeru - initialized 128 traces, 41 missing, 103321 fields, 218287 methods, 22569 classes
+13:21:15.270 [39mDEBUG[0;39m semeru - connected to swing_components_TextAreaDemo@localhost
+13:21:15.271 [39mDEBUG[0;39m semeru - search =moveCaretPosition() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:21:15.282 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:15.304 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/swing_components_TextAreaDemo/neo
+13:21:16.008 [39mDEBUG[0;39m semeru - failed to resolve 1255446206:java.awt.event.InvocationEvent at 166049 inside java.awt.EventQueue
+13:21:16.086 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:21:16.118 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 164138 inside java.util.EventObject
+13:21:16.127 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 122993 inside java.util.EventObject
+13:21:16.129 [39mDEBUG[0;39m semeru - done expanding to graph with 135 nodes and 292 edges
+13:21:16.146 [39mDEBUG[0;39m semeru - simplify: 15
+13:21:16.147 [39mDEBUG[0;39m semeru - simplify: 14
+13:21:16.157 [39mDEBUG[0;39m semeru - (heap,512 ms), (local,211 ms), (cover,74 ms), ($array,4 ms), ($iterator,1 ms), ($contents,0 ms), ($values,0 ms), (static,0 ms), (#runtime,802 ms), (#expansions,135/5120), (graph,graph with 135 nodes and 292 edges), (lines,10/14), (#project,16 ms), (#generate,0 ms), (#simplify,4 ms), (max-depth,9/15)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: moveCaretPosition[0m[0m
+13:21:16.160 [39mDEBUG[0;39m semeru - search +actionPerformed() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:21:18.337 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:18.460 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 247537 inside java.awt.AWTKeyStroke
+13:21:18.489 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 21449 inside java.awt.AWTKeyStroke
+13:21:18.491 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 34268 inside java.awt.AWTKeyStroke
+13:21:18.565 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:21:18.682 [39mDEBUG[0;39m semeru - failed to resolve 591998098:sun.awt.CausedFocusEvent at 140016 inside java.awt.KeyboardFocusManager
+13:21:18.695 [39mDEBUG[0;39m semeru - failed to resolve 1506464818:java.awt.event.KeyEvent at 246905 inside java.awt.EventQueue
+13:21:18.698 [39mDEBUG[0;39m semeru - done expanding to graph with 202 nodes and 440 edges
+13:21:18.704 [39mDEBUG[0;39m semeru - simplify: 10
+13:21:18.707 [39mDEBUG[0;39m semeru - removeOwnedFields: textArea
+13:21:18.707 [39mDEBUG[0;39m semeru - simplify: 9
+13:21:18.708 [39mDEBUG[0;39m semeru - simplify: 7
+13:21:18.713 [39mDEBUG[0;39m semeru - (local,176 ms), (cover,106 ms), ($values,24 ms), (heap,22 ms), ($array,5 ms), (static,4 ms), ($contents,2 ms), ($iterator,0 ms), (#runtime,339 ms), (#expansions,202/5120), (graph,graph with 202 nodes and 440 edges), (lines,6/9), (#project,5 ms), (#generate,0 ms), (#simplify,5 ms), (max-depth,9/28)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: actionPerformed[0m[0m
+13:21:18.715 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+13:21:18.716 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+13:21:18.732 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+13:21:18.737 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+13:21:19.387 [39mDEBUG[0;39m semeru - done expanding to graph with 133 nodes and 376 edges
+13:21:19.393 [39mDEBUG[0;39m semeru - simplify: 11
+13:21:19.397 [39mDEBUG[0;39m semeru - simplify: 10
+13:21:19.403 [39mDEBUG[0;39m semeru - (heap,508 ms), (local,110 ms), (cover,18 ms), ($values,5 ms), (static,1 ms), ($contents,0 ms), ($iterator,0 ms), ($array,0 ms), (#runtime,642 ms), (#expansions,124/5120), (graph,graph with 133 nodes and 376 edges), (lines,6/10), (#project,3 ms), (#generate,1 ms), (#simplify,8 ms), (max-depth,9/9)
+[0m[[0minfo[0m] [0m[32m- eclipse_jdt: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+13:21:19.419 [39mDEBUG[0;39m semeru - connected to eclipse_py@localhost
+13:21:19.419 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_py, eclipse_py@localhost for 1 matches
+13:21:19.425 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:19.436 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_py/neo
+13:21:20.324 [39mDEBUG[0;39m semeru - failed to resolve 626349039:org.eclipse.jface.text.contentassist.ContentAssistant$2 at 18645483 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9
+13:21:24.538 [39mDEBUG[0;39m semeru - failed to resolve 659564984:org.eclipse.ui.internal.EditorReference at 5891380 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:21:24.584 [39mDEBUG[0;39m semeru - failed to resolve 302740522:org.eclipse.ui.internal.registry.EditorRegistry at 4188534 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:21:24.658 [39mDEBUG[0;39m semeru - done expanding to graph with 341 nodes and 1076 edges
+13:21:24.666 [39mDEBUG[0;39m semeru - simplify: 18
+13:21:24.667 [39mDEBUG[0;39m semeru - removeOwnedFields: editConfiguration
+13:21:24.668 [39mDEBUG[0;39m semeru - simplify: 17
+13:21:24.674 [39mDEBUG[0;39m semeru - (local,4 s), (heap,640 ms), (cover,43 ms), ($contents,40 ms), ($values,30 ms), ($array,16 ms), ($iterator,5 ms), (static,0 ms), (#runtime,5 s), (#expansions,341/5120), (graph,graph with 341 nodes and 1076 edges), (lines,12/17), (#project,7 ms), (#generate,0 ms), (#simplify,6 ms), (max-depth,10/21)
+[0m[[0minfo[0m] [0m[32m- eclipse_py: computeCompletionProposals[0m[0m
+13:21:24.676 [39mDEBUG[0;39m semeru - connected to eclipse_ant@localhost
+13:21:24.676 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_ant, eclipse_ant@localhost for 1 matches
+13:21:24.698 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:21:24.710 [34mINFO [0;39m semeru - building heap series for eclipse_ant@localhost
+13:21:24.710 [39mDEBUG[0;39m semeru - building field abstraction
+13:21:29.633 [39mDEBUG[0;39m semeru - transferring active fields graph with 389911 nodes and 522208 edges
+13:21:35.937 [39mDEBUG[0;39m semeru - done field heap graph with 389911 nodes and 568636 edges
+13:21:35.937 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:24:17.124 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:24:17.278 [39mDEBUG[0;39m semeru - transferring heap of 131128 arrays
+13:24:18.108 [39mDEBUG[0;39m semeru - transferring 119189 arrays
+13:24:18.182 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:24:18.237 [34mINFO [0;39m semeru - building heap abstraction for graph with 617792 nodes and 2160253 edges
+13:24:24.201 [34mINFO [0;39m semeru - streaming 1000000 rows from database...
+13:24:24.314 [39mDEBUG[0;39m semeru - loaded types for all objects: 1185782
+13:24:32.493 [39mDEBUG[0;39m semeru - done graph with 123496 nodes and 175775 edges class types: 3739 array types: 0 instance types: 119757
+13:24:32.552 [39mDEBUG[0;39m semeru - batch insert graph with 617792 nodes and 2160253 edges into neo4j at var/localhost/eclipse_ant/neo
+13:24:32.573 [39mDEBUG[0;39m semeru - creating nodes
+13:24:37.084 [39mDEBUG[0;39m semeru - creating edges
+13:24:43.752 [39mDEBUG[0;39m semeru - finished adding edges
+13:24:45.533 [39mDEBUG[0;39m semeru - done
+13:24:45.740 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_ant/neo
+13:24:46.375 [31mWARN [0;39m semeru - exceeded 3 m execution time
+13:24:46.375 [39mDEBUG[0;39m semeru - done expanding to graph with 9 nodes and 8 edges
+13:24:46.376 [39mDEBUG[0;39m semeru - simplify: 1
+13:24:46.378 [39mDEBUG[0;39m semeru - (heap,3 m), (local,11 ms), (cover,2 ms), ($contents,0 ms), ($iterator,0 ms), ($values,0 ms), ($array,0 ms), (static,0 ms), (#runtime,3 m), (#expansions,3/5120), (graph,graph with 9 nodes and 8 edges), (lines,0/0), (#project,0 ms), (#generate,0 ms), (#simplify,1 ms), (max-depth,-1/1)
+13:24:46.378 [31mWARN [0;39m semeru - class UTemplateCompletionProcessor extends TemplateCompletionProcessor {
+  @Override ICompletionProposal[] computeCompletionProposals(ITextViewer a0, int a1) {
+  }
+}
+[0m[[0minfo[0m] [0m[31m- eclipse_ant: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  eclipse_ant-computeCompletionProposals code changed (CodeComparison.scala:30)[0m[0m
+[0m[[0minfo[0m] [0m[32mGraphSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- digraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- multidigraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- subgraph[0m[0m
+13:24:46.488 [39mDEBUG[0;39m semeru - computing condensation
+13:24:46.491 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 1[0m[0m
+13:24:46.495 [39mDEBUG[0;39m semeru - computing condensation
+13:24:46.496 [39mDEBUG[0;39m semeru - done
+13:24:46.496 [39mDEBUG[0;39m semeru - computing condensation
+13:24:46.496 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- transitive[0m[0m
+[0m[[0minfo[0m] [0m[32mConceptSpec:[0m[0m
+[0m[[0minfo[0m] [0m[33m- FCA library !!! IGNORED !!![0m[0m
+[0m[[0minfo[0m] [0m[32mIntervalSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty, forever[0m[0m
+[0m[[0minfo[0m] [0m[32m- union, union normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- intersection, intersection normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- complement, complement normal form[0m[0m
+[0m[[0minfo[0m] [0m[32mTreeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- linked tree[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 3 minutes, 57 seconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 24[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 22, failed 2, canceled 0, ignored 1, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 2 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> test
+[0m[[0minfo[0m] [0m[32mSyntheticExamples:[0m[0m
+13:28:27.691 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:28:27.716 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/test -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.Test
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+a BB
+A
+arr[0]=4
+arr[1]=3
+arr[2]=2
+Finish!
+Lists:
+[Hi, World]
+[World]
+[]
+Linked list:
+1->2
+Arrays:
+0->1->2
+Hash map:
+one
+Finish!
+HelloHeap!
+stack tests passed
+int0long1double1.0booltruechar1greeting from 	
+ outer class
+[agent] closing output streams
+13:28:29.427 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_test
+13:28:29.630 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes
+13:28:30.704 [39mDEBUG[0;39m semeru - saving metadata 44566 fields, 85392 methods, 8478 classes
+13:28:30.704 [39mDEBUG[0;39m semeru - create database meta_test
+13:28:31.197 [39mDEBUG[0;39m semeru - create and load 8478 rows into TYPE from csv/TYPE-REPLACE.csv
+13:28:31.245 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:28:31.246 [39mDEBUG[0;39m semeru - create and load 12630 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:28:31.290 [39mDEBUG[0;39m semeru - create and load 85391 rows into METHOD from csv/METHOD-REPLACE.csv
+13:28:31.816 [39mDEBUG[0;39m semeru - create and load 44561 rows into FIELD from csv/FIELD-REPLACE.csv
+13:28:32.087 [39mDEBUG[0;39m semeru - committing metadata
+13:28:32.088 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:28:32.090 [34mINFO [0;39m semeru - create log test
+13:28:32.106 [39mDEBUG[0;39m semeru - drop database test
+13:28:32.114 [39mDEBUG[0;39m semeru - delete cache var/localhost/test
+13:28:32.118 [39mDEBUG[0;39m semeru - create database test
+13:28:32.128 [39mDEBUG[0;39m semeru - create and load 496 rows into LOG from csv/LOG-REPLACE.csv
+13:28:32.159 [39mDEBUG[0;39m semeru - create and load 143 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:28:32.186 [39mDEBUG[0;39m semeru - create and load 149 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:28:32.214 [39mDEBUG[0;39m semeru - create and load 134 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:28:32.242 [39mDEBUG[0;39m semeru - committing log
+13:28:32.243 [34mINFO [0;39m semeru - postprocessing
+13:28:32.250 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:28:32.271 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:28:32.295 [39mDEBUG[0;39m semeru - SQL update to test: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:28:32.296 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:28:32.310 [39mDEBUG[0;39m semeru - SQL update to test: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- collection[0m[0m
+13:28:32.324 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:28:32.350 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/FrameworkUsage -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.framework.FrameworkUsage
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+test succeeded
+[agent] closing output streams
+13:28:33.810 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_FrameworkUsage
+13:28:33.815 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 5 fields, 1 methods, 12 classes
+13:28:33.925 [39mDEBUG[0;39m semeru - saving metadata 1984 fields, 7260 methods, 472 classes
+13:28:33.925 [39mDEBUG[0;39m semeru - create database meta_FrameworkUsage
+13:28:33.973 [39mDEBUG[0;39m semeru - create and load 472 rows into TYPE from csv/TYPE-REPLACE.csv
+13:28:33.977 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:28:33.978 [39mDEBUG[0;39m semeru - create and load 1366 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:28:33.987 [39mDEBUG[0;39m semeru - create and load 7259 rows into METHOD from csv/METHOD-REPLACE.csv
+13:28:34.040 [39mDEBUG[0;39m semeru - create and load 1979 rows into FIELD from csv/FIELD-REPLACE.csv
+13:28:34.051 [39mDEBUG[0;39m semeru - committing metadata
+13:28:34.052 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:28:34.052 [34mINFO [0;39m semeru - create log FrameworkUsage
+13:28:34.056 [39mDEBUG[0;39m semeru - drop database FrameworkUsage
+13:28:34.068 [39mDEBUG[0;39m semeru - delete cache var/localhost/FrameworkUsage
+13:28:34.072 [39mDEBUG[0;39m semeru - create database FrameworkUsage
+13:28:34.081 [39mDEBUG[0;39m semeru - create and load 239 rows into LOG from csv/LOG-REPLACE.csv
+13:28:34.109 [39mDEBUG[0;39m semeru - create and load 71 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:28:34.134 [39mDEBUG[0;39m semeru - create and load 93 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:28:34.160 [39mDEBUG[0;39m semeru - create and load 113 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:28:34.188 [39mDEBUG[0;39m semeru - committing log
+13:28:34.189 [34mINFO [0;39m semeru - postprocessing
+13:28:34.189 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:28:34.189 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:28:34.209 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:28:34.210 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:28:34.223 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- framework usage collection[0m[0m
+13:28:34.318 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes
+13:28:34.786 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:28:34.787 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:28:34.792 [39mDEBUG[0;39m semeru - building field abstraction
+13:28:34.813 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:28:34.822 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:28:34.823 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:28:35.012 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:28:35.015 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:28:35.017 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:28:35.018 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:28:35.019 [34mINFO [0;39m semeru - building heap abstraction for graph with 40 nodes and 49 edges
+13:28:35.024 [39mDEBUG[0;39m semeru - loaded types for all objects: 149
+13:28:35.033 [39mDEBUG[0;39m semeru - done graph with 18 nodes and 14 edges class types: 11 array types: 0 instance types: 7
+13:28:35.037 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:28:35.037 [39mDEBUG[0;39m semeru - building field abstraction
+13:28:35.040 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:28:35.040 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:28:35.041 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:28:35.053 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:28:35.053 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:28:35.054 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:28:35.054 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:28:35.054 [34mINFO [0;39m semeru - building heap abstraction for graph with 40 nodes and 49 edges
+13:28:35.055 [39mDEBUG[0;39m semeru - loaded types for all objects: 149
+13:28:35.057 [39mDEBUG[0;39m semeru - done graph with 18 nodes and 14 edges class types: 11 array types: 0 instance types: 7
+13:28:35.058 [39mDEBUG[0;39m semeru - batch insert graph with 40 nodes and 49 edges into neo4j at var/localhost/test/neo
+13:28:35.376 [39mDEBUG[0;39m semeru - creating nodes
+13:28:35.427 [39mDEBUG[0;39m semeru - creating edges
+13:28:35.437 [39mDEBUG[0;39m semeru - finished adding edges
+13:28:35.641 [39mDEBUG[0;39m semeru - done
+13:28:35.646 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/test/neo
+13:28:36.182 [34mINFO [0;39m semeru - building heap abstraction for graph with 40 nodes and 49 edges
+13:28:36.185 [39mDEBUG[0;39m semeru - loaded types for all objects: 149
+13:28:36.186 [39mDEBUG[0;39m semeru - done graph with 18 nodes and 14 edges class types: 11 array types: 0 instance types: 7
+13:28:36.199 [39mDEBUG[0;39m semeru - building call graph for test@localhost
+13:28:36.208 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- construction and storage[0m[0m
+13:28:36.267 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44566 fields, 85392 methods, 8478 classes
+13:28:36.344 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:28:36.459 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:36.498 [34mINFO [0;39m semeru - building heap series for FrameworkUsage@localhost
+13:28:36.498 [39mDEBUG[0;39m semeru - building field abstraction
+13:28:36.503 [39mDEBUG[0;39m semeru - transferring active fields graph with 8 nodes and 6 edges
+13:28:36.504 [39mDEBUG[0;39m semeru - done field heap graph with 8 nodes and 6 edges
+13:28:36.504 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:28:36.514 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:28:36.514 [39mDEBUG[0;39m semeru - transferring heap of 1 arrays
+13:28:36.514 [39mDEBUG[0;39m semeru - transferring 1 arrays
+13:28:36.514 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:28:36.515 [34mINFO [0;39m semeru - building heap abstraction for graph with 18 nodes and 15 edges
+13:28:36.516 [39mDEBUG[0;39m semeru - loaded types for all objects: 93
+13:28:36.517 [39mDEBUG[0;39m semeru - done graph with 16 nodes and 12 edges class types: 8 array types: 0 instance types: 8
+13:28:36.517 [39mDEBUG[0;39m semeru - batch insert graph with 18 nodes and 15 edges into neo4j at var/localhost/FrameworkUsage/neo
+13:28:36.537 [39mDEBUG[0;39m semeru - creating nodes
+13:28:36.539 [39mDEBUG[0;39m semeru - creating edges
+13:28:36.540 [39mDEBUG[0;39m semeru - finished adding edges
+13:28:36.705 [39mDEBUG[0;39m semeru - done
+13:28:36.707 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:28:37.173 [39mDEBUG[0;39m semeru - done expanding to graph with 37 nodes and 77 edges
+13:28:37.206 [39mDEBUG[0;39m semeru - simplify: 11
+13:28:37.218 [39mDEBUG[0;39m semeru - simplify: 10
+13:28:37.259 [39mDEBUG[0;39m semeru - ($contents,592 ms), (local,78 ms), (heap,12 ms), (cover,5 ms), ($iterator,2 ms), (static,0 ms), ($values,0 ms), ($array,0 ms), (#runtime,689 ms), (#expansions,37/5120), (graph,graph with 37 nodes and 77 edges), (lines,8/10), (#project,12 ms), (#generate,13 ms), (#simplify,30 ms), (max-depth,6/7)
+[0m[[0minfo[0m] [0m[32m- synthesis: basic[0m[0m
+13:28:37.340 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes
+13:28:37.392 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:28:37.498 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:37.508 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:28:37.729 [39mDEBUG[0;39m semeru - done expanding to graph with 28 nodes and 60 edges
+13:28:37.736 [39mDEBUG[0;39m semeru - simplify: 14
+13:28:37.738 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(24,96639997,java.util.Iterator), Var(20,1147985808,java.util.HashSet), Var(18,1349277854,java.util.HashMap))
+13:28:37.739 [39mDEBUG[0;39m semeru - simplify: 13
+13:28:37.740 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(27,1051754451,test.cap.client.Subtypes$Sub[]))
+13:28:37.741 [39mDEBUG[0;39m semeru - simplify: 5
+[0m[[0minfo[0m] [0m[32m- synthesis: container elimination[0m[0m
+13:28:37.782 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes
+13:28:38.036 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:28:38.081 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:38.083 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:28:38.350 [39mDEBUG[0;39m semeru - done expanding to graph with 22 nodes and 40 edges
+13:28:38.354 [39mDEBUG[0;39m semeru - simplify: 9
+[0m[[0minfo[0m] [0m[32m- synthesis: type hierarchy collapse[0m[0m
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+13:28:39.193 [34mINFO [0;39m semeru - loading metadata meta_swing into 5 fields, 1 methods, 12 classes
+13:28:39.440 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 20063 fields, 52199 methods, 4690 classes
+13:28:39.484 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:39.488 [31mWARN [0;39m semeru - field type collision for java.text.Collator.cache: sun.misc.SoftCache and java.util.concurrent.ConcurrentMap
+13:28:39.488 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:39.494 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:28:39.503 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:28:39.505 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.subKeyFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:28:39.535 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:28:39.610 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:28:39.612 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.valueFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:28:39.623 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:28:39.640 [31mWARN [0;39m semeru - field type collision for java.util.Currency.instances: java.util.HashMap and java.util.concurrent.ConcurrentMap
+13:28:39.643 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.LambdaForm$Name.type: char and java.lang.invoke.LambdaForm$BasicType
+13:28:39.653 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:28:40.529 [34mINFO [0;39m semeru - loading metadata meta_test into 103180 fields, 218034 methods, 22498 classes
+13:28:40.554 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:28:40.555 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:28:40.555 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:28:40.555 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:28:40.556 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:28:40.557 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:28:40.561 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:40.565 [31mWARN [0;39m semeru - field type collision for java.text.Collator.cache: sun.misc.SoftCache and java.util.concurrent.ConcurrentMap
+13:28:40.565 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:40.578 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.valueFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:28:40.589 [31mWARN [0;39m semeru - field type collision for java.lang.reflect.WeakCache.subKeyFactory: java.lang.reflect.WeakCache$BiFunction and java.util.function.BiFunction
+13:28:40.619 [31mWARN [0;39m semeru - field type collision for java.util.Currency.instances: java.util.HashMap and java.util.concurrent.ConcurrentMap
+13:28:40.623 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.LambdaForm$Name.type: char and java.lang.invoke.LambdaForm$BasicType
+13:28:41.187 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 103317 fields, 218249 methods, 22558 classes
+13:28:41.195 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.entrySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$EntrySetView
+13:28:41.200 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.keySet: java.util.Set and java.util.concurrent.ConcurrentHashMap$KeySetView
+13:28:41.201 [31mWARN [0;39m semeru - field type collision for java.lang.invoke.MethodType.internTable: java.lang.invoke.MethodType$WeakInternSet and java.lang.invoke.MethodType$ConcurrentWeakInternSet
+13:28:41.202 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.current: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:41.202 [31mWARN [0;39m semeru - field type collision for java.util.concurrent.ConcurrentHashMap.values: java.util.Collection and java.util.concurrent.ConcurrentHashMap$ValuesView
+13:28:41.202 [31mWARN [0;39m semeru - field type collision for java.util.HashMap$HashIterator.next: java.util.HashMap$Entry and java.util.HashMap$Node
+13:28:41.203 [31mWARN [0;39m semeru - field type collision for sun.reflect.UnsafeFieldAccessorImpl.fieldOffset: int and long
+13:28:41.204 [31mWARN [0;39m semeru - field type collision for java.util.HashMap.table: java.util.HashMap$Entry[] and java.util.HashMap$Node[]
+13:28:41.252 [34mINFO [0;39m semeru - initialized 128 traces, 41 missing, 103321 fields, 218287 methods, 22569 classes
+13:28:41.260 [39mDEBUG[0;39m semeru - connected to swing_components_TextAreaDemo@localhost
+13:28:41.261 [39mDEBUG[0;39m semeru - search =moveCaretPosition() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:28:41.269 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:41.280 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/swing_components_TextAreaDemo/neo
+13:28:41.839 [39mDEBUG[0;39m semeru - failed to resolve 1255446206:java.awt.event.InvocationEvent at 166049 inside java.awt.EventQueue
+13:28:42.027 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:28:42.056 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 164138 inside java.util.EventObject
+13:28:42.064 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 122993 inside java.util.EventObject
+13:28:42.064 [39mDEBUG[0;39m semeru - done expanding to graph with 135 nodes and 292 edges
+13:28:42.073 [39mDEBUG[0;39m semeru - simplify: 15
+13:28:42.075 [39mDEBUG[0;39m semeru - simplify: 14
+13:28:42.080 [39mDEBUG[0;39m semeru - (local,348 ms), (heap,322 ms), (cover,81 ms), ($array,4 ms), ($contents,2 ms), ($iterator,2 ms), (static,1 ms), ($values,0 ms), (#runtime,760 ms), (#expansions,135/5120), (graph,graph with 135 nodes and 292 edges), (lines,10/14), (#project,7 ms), (#generate,1 ms), (#simplify,3 ms), (max-depth,9/15)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: moveCaretPosition[0m[0m
+13:28:42.083 [39mDEBUG[0;39m semeru - search +actionPerformed() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:28:43.738 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:43.860 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 247537 inside java.awt.AWTKeyStroke
+13:28:43.907 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 21449 inside java.awt.AWTKeyStroke
+13:28:43.910 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 34268 inside java.awt.AWTKeyStroke
+13:28:43.973 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:28:44.058 [39mDEBUG[0;39m semeru - failed to resolve 591998098:sun.awt.CausedFocusEvent at 140016 inside java.awt.KeyboardFocusManager
+13:28:44.070 [39mDEBUG[0;39m semeru - failed to resolve 1506464818:java.awt.event.KeyEvent at 246905 inside java.awt.EventQueue
+13:28:44.073 [39mDEBUG[0;39m semeru - done expanding to graph with 202 nodes and 440 edges
+13:28:44.079 [39mDEBUG[0;39m semeru - simplify: 10
+13:28:44.080 [39mDEBUG[0;39m semeru - removeOwnedFields: textArea
+13:28:44.080 [39mDEBUG[0;39m semeru - simplify: 9
+13:28:44.081 [39mDEBUG[0;39m semeru - simplify: 7
+13:28:44.084 [39mDEBUG[0;39m semeru - (local,241 ms), (cover,40 ms), ($values,25 ms), (heap,12 ms), ($array,3 ms), (static,1 ms), ($contents,0 ms), ($iterator,0 ms), (#runtime,322 ms), (#expansions,202/5120), (graph,graph with 202 nodes and 440 edges), (lines,6/9), (#project,4 ms), (#generate,0 ms), (#simplify,4 ms), (max-depth,9/28)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: actionPerformed[0m[0m
+13:28:44.085 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+13:28:44.086 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+13:28:44.090 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+13:28:44.095 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+13:28:44.461 [39mDEBUG[0;39m semeru - done expanding to graph with 133 nodes and 376 edges
+13:28:44.545 [39mDEBUG[0;39m semeru - simplify: 11
+13:28:44.546 [39mDEBUG[0;39m semeru - simplify: 10
+13:28:44.555 [39mDEBUG[0;39m semeru - (heap,246 ms), (local,87 ms), (cover,19 ms), ($values,2 ms), (static,1 ms), ($contents,0 ms), ($iterator,0 ms), ($array,0 ms), (#runtime,355 ms), (#expansions,124/5120), (graph,graph with 133 nodes and 376 edges), (lines,6/10), (#project,3 ms), (#generate,0 ms), (#simplify,86 ms), (max-depth,9/9)
+[0m[[0minfo[0m] [0m[32m- eclipse_jdt: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+13:28:44.565 [39mDEBUG[0;39m semeru - connected to eclipse_py@localhost
+13:28:44.566 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_py, eclipse_py@localhost for 1 matches
+13:28:44.570 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:44.574 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_py/neo
+13:28:45.049 [39mDEBUG[0;39m semeru - failed to resolve 626349039:org.eclipse.jface.text.contentassist.ContentAssistant$2 at 18645483 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9
+13:28:49.853 [39mDEBUG[0;39m semeru - failed to resolve 659564984:org.eclipse.ui.internal.EditorReference at 5891380 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:28:49.923 [39mDEBUG[0;39m semeru - failed to resolve 302740522:org.eclipse.ui.internal.registry.EditorRegistry at 4188534 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:28:50.032 [39mDEBUG[0;39m semeru - done expanding to graph with 341 nodes and 1076 edges
+13:28:50.119 [39mDEBUG[0;39m semeru - simplify: 18
+13:28:50.122 [39mDEBUG[0;39m semeru - removeOwnedFields: editConfiguration
+13:28:50.125 [39mDEBUG[0;39m semeru - simplify: 17
+13:28:50.140 [39mDEBUG[0;39m semeru - (local,5 s), (heap,281 ms), (cover,41 ms), ($contents,20 ms), ($values,15 ms), ($array,13 ms), ($iterator,7 ms), (static,1 ms), (#runtime,5 s), (#expansions,341/5120), (graph,graph with 341 nodes and 1076 edges), (lines,12/17), (#project,80 ms), (#generate,0 ms), (#simplify,24 ms), (max-depth,10/21)
+[0m[[0minfo[0m] [0m[32m- eclipse_py: computeCompletionProposals[0m[0m
+13:28:50.145 [39mDEBUG[0;39m semeru - connected to eclipse_ant@localhost
+13:28:50.145 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_ant, eclipse_ant@localhost for 1 matches
+13:28:50.155 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:28:50.169 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_ant/neo
+13:28:50.722 [39mDEBUG[0;39m semeru - failed to resolve 1146742270:java.lang.Class at 6433737 inside org.eclipse.ui.texteditor.ContentAssistAction
+13:28:50.993 [39mDEBUG[0;39m semeru - failed to resolve 1887933630:org.eclipse.ui.internal.handlers.E4HandlerProxy at 9414609 inside org.eclipse.e4.core.commands.internal.HandlerServiceHandler
+13:28:51.153 [39mDEBUG[0;39m semeru - failed to resolve 272066966:org.eclipse.ui.internal.EditorReference at 5982605 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:28:51.193 [39mDEBUG[0;39m semeru - failed to resolve 1984987465:org.eclipse.ui.internal.registry.EditorRegistry at 4190146 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:28:51.217 [39mDEBUG[0;39m semeru - done expanding to graph with 353 nodes and 1018 edges
+13:28:51.224 [39mDEBUG[0;39m semeru - simplify: 20
+13:28:51.230 [39mDEBUG[0;39m semeru - removeOwnedFields: fContentAssistant
+13:28:51.231 [39mDEBUG[0;39m semeru - simplify: 19
+13:28:51.236 [39mDEBUG[0;39m semeru - (local,484 ms), (heap,410 ms), (cover,75 ms), ($contents,11 ms), ($values,9 ms), ($iterator,6 ms), ($array,5 ms), (static,1 ms), (#runtime,1 s), (#expansions,353/5120), (graph,graph with 353 nodes and 1018 edges), (lines,7/19), (#project,5 ms), (#generate,1 ms), (#simplify,8 ms), (max-depth,6/27)
+[0m[[0minfo[0m] [0m[32m- eclipse_ant: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[32mGraphSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- digraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- multidigraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- subgraph[0m[0m
+13:28:51.407 [39mDEBUG[0;39m semeru - computing condensation
+13:28:51.410 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 1[0m[0m
+13:28:51.417 [39mDEBUG[0;39m semeru - computing condensation
+13:28:51.417 [39mDEBUG[0;39m semeru - done
+13:28:51.418 [39mDEBUG[0;39m semeru - computing condensation
+13:28:51.418 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- transitive[0m[0m
+[0m[[0minfo[0m] [0m[32mConceptSpec:[0m[0m
+[0m[[0minfo[0m] [0m[33m- FCA library !!! IGNORED !!![0m[0m
+[0m[[0minfo[0m] [0m[32mIntervalSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty, forever[0m[0m
+[0m[[0minfo[0m] [0m[32m- union, union normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- intersection, intersection normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- complement, complement normal form[0m[0m
+[0m[[0minfo[0m] [0m[32mTreeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- linked tree[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 24 seconds, 533 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 24[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 23, failed 1, canceled 0, ignored 1, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> test[3G[KrunMain edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_ant[83G[K[82G[Kw[82G[K[81G[Kwiki
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_wiki[0m
+13:34:38.574 [34mINFO [0;39m semeru - *** Running in full mode ***
+13:34:38.577 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:34:38.637 [34mINFO [0;39m semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/eclipse
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist: org.eclipse.jface.util.Util org.eclipse.jdt.internal.core.index.DiskIndex org.eclipse.jdt.internal.core.util.Util org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct org.eclipse.jdt.core.compiler.CharOperation org.eclipse.jdt.internal.core.util.SimpleWordSet org.python.pydev.shared_core.string.FastStringBuffer org.python.pydev.core.FastBufferedReader org.python.antlr.runtime.* org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: org.eclipse.osgi.* org.osgi.* org.eclipse.emf.* org.eclipse.swt.* org.eclipse.e4.* org.eclipse.core.runtime.Path org.eclipse.core.internal.registry.* com.ibm.* com.sun.* org.xml.* org.w3c.* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 425 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] closing output streams
+13:35:37.597 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_eclipse
+13:35:37.818 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes
+13:35:40.391 [39mDEBUG[0;39m semeru - saving metadata 88755 fields, 181381 methods, 19207 classes
+13:35:40.392 [39mDEBUG[0;39m semeru - create database meta_eclipse
+13:35:41.347 [39mDEBUG[0;39m semeru - create and load 19194 rows into TYPE from csv/TYPE-REPLACE.csv
+13:35:41.466 [39mDEBUG[0;39m semeru - create and load 13 rows into TYPE from csv/TYPE-IGNORE.csv
+13:35:41.468 [39mDEBUG[0;39m semeru - create and load 41038 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:35:41.610 [39mDEBUG[0;39m semeru - create and load 181380 rows into METHOD from csv/METHOD-REPLACE.csv
+13:35:42.813 [39mDEBUG[0;39m semeru - create and load 88750 rows into FIELD from csv/FIELD-REPLACE.csv
+13:35:43.344 [39mDEBUG[0;39m semeru - committing metadata
+13:35:43.345 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:35:43.346 [34mINFO [0;39m semeru - create log eclipse_wiki
+13:35:45.917 [34mINFO [0;39m semeru - LOG counter = 1M
+13:35:47.814 [34mINFO [0;39m semeru - LOG counter = 2M
+13:35:50.000 [34mINFO [0;39m semeru - LOG counter = 3M
+13:35:52.063 [34mINFO [0;39m semeru - LOG counter = 4M
+13:35:52.173 [34mINFO [0;39m semeru - PARAMS counter = 1M
+13:35:54.389 [34mINFO [0;39m semeru - LOG counter = 5M
+13:35:56.782 [34mINFO [0;39m semeru - LOG counter = 6M
+13:35:59.160 [34mINFO [0;39m semeru - LOG counter = 7M
+13:35:59.694 [34mINFO [0;39m semeru - PARAMS counter = 2M
+13:36:01.565 [34mINFO [0;39m semeru - LOG counter = 8M
+13:36:03.750 [34mINFO [0;39m semeru - LOG counter = 9M
+13:36:06.035 [34mINFO [0;39m semeru - LOG counter = 10M
+13:36:06.971 [34mINFO [0;39m semeru - PARAMS counter = 3M
+13:36:08.275 [34mINFO [0;39m semeru - LOG counter = 11M
+13:36:10.620 [34mINFO [0;39m semeru - LOG counter = 12M
+13:36:12.557 [34mINFO [0;39m semeru - PARAMS counter = 4M
+13:36:13.045 [34mINFO [0;39m semeru - LOG counter = 13M
+13:36:15.489 [34mINFO [0;39m semeru - LOG counter = 14M
+13:36:17.023 [34mINFO [0;39m semeru - PARAMS counter = 5M
+13:36:17.858 [34mINFO [0;39m semeru - LOG counter = 15M
+13:36:20.255 [34mINFO [0;39m semeru - LOG counter = 16M
+13:36:21.630 [34mINFO [0;39m semeru - PARAMS counter = 6M
+13:36:22.890 [34mINFO [0;39m semeru - LOG counter = 17M
+13:36:25.395 [34mINFO [0;39m semeru - LOG counter = 18M
+13:36:26.344 [34mINFO [0;39m semeru - PARAMS counter = 7M
+13:36:27.993 [34mINFO [0;39m semeru - LOG counter = 19M
+13:36:30.472 [34mINFO [0;39m semeru - LOG counter = 20M
+13:36:32.974 [34mINFO [0;39m semeru - LOG counter = 21M
+13:36:33.619 [34mINFO [0;39m semeru - OBJECTS counter = 1M
+13:36:33.869 [34mINFO [0;39m semeru - PARAMS counter = 8M
+13:36:34.735 [34mINFO [0;39m semeru - detected missing closing event for 2 threads
+13:36:34.735 [39mDEBUG[0;39m semeru - drop database eclipse_wiki
+13:36:34.742 [39mDEBUG[0;39m semeru - delete cache var/localhost/eclipse_wiki
+13:36:34.743 [39mDEBUG[0;39m semeru - create database eclipse_wiki
+13:36:34.758 [39mDEBUG[0;39m semeru - create and load 21731296 rows into LOG from csv/LOG-REPLACE.csv
+13:37:25.024 [39mDEBUG[0;39m semeru - create and load 8112460 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:37:37.587 [39mDEBUG[0;39m semeru - create and load 1015525 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:37:39.993 [39mDEBUG[0;39m semeru - create and load 207831 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:37:40.426 [39mDEBUG[0;39m semeru - committing log
+13:37:40.427 [34mINFO [0;39m semeru - postprocessing
+13:37:40.432 [39mDEBUG[0;39m semeru - connected to eclipse_wiki@localhost
+13:37:40.456 [39mDEBUG[0;39m semeru - SQL update to eclipse_wiki: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:39:23.208 [39mDEBUG[0;39m semeru - SQL update to eclipse_wiki: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:40:39.894 [39mDEBUG[0;39m semeru - SQL update to eclipse_wiki: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:40:42.622 [39mDEBUG[0;39m semeru - SQL update to eclipse_wiki: ANALYZE TABLE `LOG`
+13:40:47.683 [34mINFO [0;39m semeru - *** Configuration: eclipse_wiki
+> q[3G[KrunMain edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_wiki[84G[K[83G[K[82G[K[81G[K[80G[K[79G[K[78G[K[77G[K[76G[K[75G[K[74G[K[73G[K[72G[K[71G[K[70G[K[69G[K[68G[K[67G[Ktu[68G[Krue
+[0m[[31merror[0m] [0m/Users/kuat/Documents/semeru/src/main/scala/Metadata.scala:66: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : edu.mit.csail.cap.query.Field[0m
+[0m[[31merror[0m] [0m required: (edu.mit.csail.cap.query.Field, edu.mit.csail.cap.query.Field)[0m
+[0m[[31merror[0m] [0m            fieldTypeCollisions += (elt, j)[0m
+[0m[[31merror[0m] [0m                                    ^[0m
+[0m[[31merror[0m] [0m/Users/kuat/Documents/semeru/src/main/scala/Metadata.scala:66: type mismatch;[0m
+[0m[[31merror[0m] [0m found   : edu.mit.csail.cap.query.Field[0m
+[0m[[31merror[0m] [0m required: (edu.mit.csail.cap.query.Field, edu.mit.csail.cap.query.Field)[0m
+[0m[[31merror[0m] [0m            fieldTypeCollisions += (elt, j)[0m
+[0m[[31merror[0m] [0m                                         ^[0m
+[0m[[31merror[0m] [0mtwo errors found[0m
+[0m[[31merror[0m] [0m(compile:[31mcompile[0m) Compilation failed[0m
+> runMain edu.mit.csail.cap.query.experiments.Experiments eclipse true
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.experiments.Experiments eclipse true[0m
+13:44:03.851 [34mINFO [0;39m semeru - *** Running in demo mode ***
+13:44:03.856 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:44:03.939 [34mINFO [0;39m semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/demo_eclipse
+[agent] recording: cfg declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: java.* javax.* org.eclipse.core* org.osgi* org.eclipse.osgi* org.eclipse.swt* org.eclipse.e4* org.eclipse.jface* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] management port: 13338
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] starting management server
+[agent] runtime disabled
+[agent] finished transformation of 464 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] accepted a connection from: Socket[addr=/0:0:0:0:0:0:0:1,port=51512,localport=13338]
+[agent] closing output streams
+13:45:12.237 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_eclipse
+13:45:12.471 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:45:15.106 [39mDEBUG[0;39m semeru - saving metadata 88771 fields, 181404 methods, 19211 classes, 0 field type collisions
+13:45:15.107 [39mDEBUG[0;39m semeru - create database meta_eclipse
+13:45:16.158 [39mDEBUG[0;39m semeru - create and load 19211 rows into TYPE from csv/TYPE-REPLACE.csv
+13:45:16.274 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:45:16.275 [39mDEBUG[0;39m semeru - create and load 41384 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:45:16.415 [39mDEBUG[0;39m semeru - create and load 181403 rows into METHOD from csv/METHOD-REPLACE.csv
+13:45:17.624 [39mDEBUG[0;39m semeru - create and load 88766 rows into FIELD from csv/FIELD-REPLACE.csv
+13:45:18.169 [39mDEBUG[0;39m semeru - committing metadata
+13:45:18.171 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:45:18.174 [34mINFO [0;39m semeru - create log demo
+13:45:18.176 [39mDEBUG[0;39m semeru - drop database demo
+13:45:18.183 [39mDEBUG[0;39m semeru - delete cache var/localhost/demo
+13:45:18.183 [39mDEBUG[0;39m semeru - create database demo
+13:45:18.201 [39mDEBUG[0;39m semeru - create and load 0 rows into LOG from csv/LOG-REPLACE.csv
+13:45:18.215 [39mDEBUG[0;39m semeru - create and load 0 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:45:18.227 [39mDEBUG[0;39m semeru - create and load 0 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:45:18.240 [39mDEBUG[0;39m semeru - create and load 0 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:45:18.255 [39mDEBUG[0;39m semeru - committing log
+13:45:18.257 [34mINFO [0;39m semeru - postprocessing
+13:45:18.267 [39mDEBUG[0;39m semeru - connected to demo@localhost
+13:45:18.293 [39mDEBUG[0;39m semeru - SQL update to demo: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:45:18.320 [39mDEBUG[0;39m semeru - SQL update to demo: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:45:18.321 [39mDEBUG[0;39m semeru - SQL update to demo: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:45:18.335 [39mDEBUG[0;39m semeru - SQL update to demo: ANALYZE TABLE `LOG`
+13:45:18.335 [34mINFO [0;39m semeru - create log demo_eclipse_wiki_autocomplete
+13:45:18.632 [34mINFO [0;39m semeru - detected missing closing event for 7 threads
+13:45:18.632 [39mDEBUG[0;39m semeru - drop database demo_eclipse_wiki_autocomplete
+13:45:18.637 [39mDEBUG[0;39m semeru - delete cache var/localhost/demo_eclipse_wiki_autocomplete
+13:45:18.637 [39mDEBUG[0;39m semeru - create database demo_eclipse_wiki_autocomplete
+13:45:18.655 [39mDEBUG[0;39m semeru - create and load 59590 rows into LOG from csv/LOG-REPLACE.csv
+13:45:18.785 [39mDEBUG[0;39m semeru - create and load 18147 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:45:18.839 [39mDEBUG[0;39m semeru - create and load 2857 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:45:18.872 [39mDEBUG[0;39m semeru - create and load 318 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:45:18.900 [39mDEBUG[0;39m semeru - committing log
+13:45:18.901 [34mINFO [0;39m semeru - postprocessing
+13:45:18.901 [39mDEBUG[0;39m semeru - connected to demo_eclipse_wiki_autocomplete@localhost
+13:45:18.901 [39mDEBUG[0;39m semeru - SQL update to demo_eclipse_wiki_autocomplete: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:45:19.044 [39mDEBUG[0;39m semeru - SQL update to demo_eclipse_wiki_autocomplete: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:45:19.166 [39mDEBUG[0;39m semeru - SQL update to demo_eclipse_wiki_autocomplete: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:45:19.188 [39mDEBUG[0;39m semeru - SQL update to demo_eclipse_wiki_autocomplete: ANALYZE TABLE `LOG`
+13:45:19.220 [34mINFO [0;39m semeru - *** Configuration: demo
+> run
+[0m[[0minfo[0m] [0mRunning edu.mit.csail.cap.query.web.Server [0m
+13:45:24.068 [34mINFO [0;39m semeru - loading metadata meta_swing into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:45:24.997 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 20063 fields, 52199 methods, 4690 classes, 0 field type collisions
+13:45:26.780 [34mINFO [0;39m semeru - loading metadata meta_test into 103986 fields, 219835 methods, 22745 classes, 13 field type collisions
+13:45:27.313 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 104123 fields, 220050 methods, 22805 classes, 13 field type collisions
+13:45:27.353 [34mINFO [0;39m semeru - initialized 130 traces, 41 missing, 104127 fields, 220088 methods, 22816 classes, 13 field type collisions
+13:45:27.522 [34mINFO [0;39m semeru - starting server... [Press ENTER to terminate]
+13:46:05.507 [39mDEBUG[0;39m semeru - eval: size for demo_eclipse_wiki_autocomplete, 1 trace(s)
+13:46:07.612 [39mDEBUG[0;39m semeru - connected to demo_eclipse_wiki_autocomplete@localhost
+13:46:10.186 [39mDEBUG[0;39m semeru - eval: t for demo_eclipse_wiki_autocomplete, 1 trace(s)
+13:46:29.699 [39mDEBUG[0;39m semeru - eval: search("compute completion proposal") for demo_eclipse_wiki_autocomplete, 1 trace(s)
+13:46:30.414 [34mINFO [0;39m semeru - saving index to var/localhost/demo_eclipse_wiki_autocomplete/methods
+13:46:30.475 [39mDEBUG[0;39m semeru - keywords Set(compute, completion, proposal) expanded to +(contents:comput) +(contents:complet) +(contents:propos)
+13:46:49.677 [34mINFO [0;39m semeru - terminate on ENTER
+13:46:49.678 [34mINFO [0;39m semeru - terminating server...
+> e[3G[Ktest
+[0m[[0minfo[0m] [0m[32mSyntheticExamples:[0m[0m
+13:48:22.471 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:48:22.515 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/test -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.Test
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+a BB
+A
+arr[0]=4
+arr[1]=3
+arr[2]=2
+Finish!
+Lists:
+[Hi, World]
+[World]
+[]
+Linked list:
+1->2
+Arrays:
+0->1->2
+Hash map:
+one
+Finish!
+HelloHeap!
+stack tests passed
+int0long1double1.0booltruechar1greeting from 	
+ outer class
+[agent] closing output streams
+13:48:24.020 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_test
+13:48:24.253 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:48:25.330 [39mDEBUG[0;39m semeru - saving metadata 44566 fields, 85392 methods, 8478 classes, 0 field type collisions
+13:48:25.331 [39mDEBUG[0;39m semeru - create database meta_test
+13:48:25.865 [39mDEBUG[0;39m semeru - create and load 8478 rows into TYPE from csv/TYPE-REPLACE.csv
+13:48:25.920 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:48:25.921 [39mDEBUG[0;39m semeru - create and load 12630 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:48:25.976 [39mDEBUG[0;39m semeru - create and load 85391 rows into METHOD from csv/METHOD-REPLACE.csv
+13:48:26.619 [39mDEBUG[0;39m semeru - create and load 44561 rows into FIELD from csv/FIELD-REPLACE.csv
+13:48:26.908 [39mDEBUG[0;39m semeru - committing metadata
+13:48:26.909 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:48:26.911 [34mINFO [0;39m semeru - create log test
+13:48:26.930 [39mDEBUG[0;39m semeru - drop database test
+13:48:26.955 [39mDEBUG[0;39m semeru - delete cache var/localhost/test
+13:48:26.967 [39mDEBUG[0;39m semeru - create database test
+13:48:26.977 [39mDEBUG[0;39m semeru - create and load 502 rows into LOG from csv/LOG-REPLACE.csv
+13:48:27.010 [39mDEBUG[0;39m semeru - create and load 143 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:48:27.036 [39mDEBUG[0;39m semeru - create and load 150 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:48:27.060 [39mDEBUG[0;39m semeru - create and load 134 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:48:27.090 [39mDEBUG[0;39m semeru - committing log
+13:48:27.091 [34mINFO [0;39m semeru - postprocessing
+13:48:27.105 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:48:27.131 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:48:27.153 [39mDEBUG[0;39m semeru - SQL update to test: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:48:27.154 [39mDEBUG[0;39m semeru - SQL update to test: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:48:27.170 [39mDEBUG[0;39m semeru - SQL update to test: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- collection[0m[0m
+13:48:27.191 [39mDEBUG[0;39m semeru - writing agent JAR file
+13:48:27.220 [34mINFO [0;39m semeru - java -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/FrameworkUsage -cp /Users/kuat/Documents/semeru/target/agent.jar test.cap.framework.FrameworkUsage
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist:  org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library:  java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 424 classes
+test succeeded
+[agent] closing output streams
+13:48:28.752 [34mINFO [0;39m semeru - processing /tmp/metadata.bin into meta_FrameworkUsage
+13:48:28.766 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:48:28.955 [39mDEBUG[0;39m semeru - saving metadata 1984 fields, 7260 methods, 472 classes, 0 field type collisions
+13:48:28.956 [39mDEBUG[0;39m semeru - create database meta_FrameworkUsage
+13:48:29.063 [39mDEBUG[0;39m semeru - create and load 472 rows into TYPE from csv/TYPE-REPLACE.csv
+13:48:29.070 [39mDEBUG[0;39m semeru - create and load 0 rows into TYPE from csv/TYPE-IGNORE.csv
+13:48:29.073 [39mDEBUG[0;39m semeru - create and load 1366 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:48:29.084 [39mDEBUG[0;39m semeru - create and load 7259 rows into METHOD from csv/METHOD-REPLACE.csv
+13:48:29.158 [39mDEBUG[0;39m semeru - create and load 1979 rows into FIELD from csv/FIELD-REPLACE.csv
+13:48:29.179 [39mDEBUG[0;39m semeru - committing metadata
+13:48:29.180 [34mINFO [0;39m semeru - processing /tmp/log.bin
+13:48:29.180 [34mINFO [0;39m semeru - create log FrameworkUsage
+13:48:29.184 [39mDEBUG[0;39m semeru - drop database FrameworkUsage
+13:48:29.206 [39mDEBUG[0;39m semeru - delete cache var/localhost/FrameworkUsage
+13:48:29.218 [39mDEBUG[0;39m semeru - create database FrameworkUsage
+13:48:29.234 [39mDEBUG[0;39m semeru - create and load 237 rows into LOG from csv/LOG-REPLACE.csv
+13:48:29.264 [39mDEBUG[0;39m semeru - create and load 71 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:48:29.291 [39mDEBUG[0;39m semeru - create and load 93 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:48:29.318 [39mDEBUG[0;39m semeru - create and load 113 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:48:29.346 [39mDEBUG[0;39m semeru - committing log
+13:48:29.347 [34mINFO [0;39m semeru - postprocessing
+13:48:29.347 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:48:29.347 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:48:29.381 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:48:29.385 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:48:29.397 [39mDEBUG[0;39m semeru - SQL update to FrameworkUsage: ANALYZE TABLE `LOG`
+[0m[[0minfo[0m] [0m[32m- framework usage collection[0m[0m
+13:48:29.604 [34mINFO [0;39m semeru - loading metadata meta_test into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:48:30.603 [39mDEBUG[0;39m semeru - connected to test@localhost
+13:48:30.605 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:48:30.619 [39mDEBUG[0;39m semeru - building field abstraction
+13:48:30.670 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:48:30.687 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:48:30.689 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:48:31.034 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:48:31.038 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:48:31.043 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:48:31.051 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:48:31.054 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:48:31.067 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:48:31.093 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:48:31.100 [34mINFO [0;39m semeru - building heap series for test@localhost
+13:48:31.100 [39mDEBUG[0;39m semeru - building field abstraction
+13:48:31.103 [39mDEBUG[0;39m semeru - transferring active fields graph with 24 nodes and 21 edges
+13:48:31.104 [39mDEBUG[0;39m semeru - done field heap graph with 24 nodes and 23 edges
+13:48:31.104 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:48:31.136 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:48:31.137 [39mDEBUG[0;39m semeru - transferring heap of 4 arrays
+13:48:31.145 [39mDEBUG[0;39m semeru - transferring 4 arrays
+13:48:31.146 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:48:31.146 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:48:31.150 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:48:31.154 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:48:31.156 [39mDEBUG[0;39m semeru - batch insert graph with 41 nodes and 50 edges into neo4j at var/localhost/test/neo
+13:48:31.583 [39mDEBUG[0;39m semeru - creating nodes
+13:48:31.643 [39mDEBUG[0;39m semeru - creating edges
+13:48:31.656 [39mDEBUG[0;39m semeru - finished adding edges
+13:48:31.845 [39mDEBUG[0;39m semeru - done
+13:48:31.858 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/test/neo
+13:48:32.684 [34mINFO [0;39m semeru - building heap abstraction for graph with 41 nodes and 50 edges
+13:48:32.697 [39mDEBUG[0;39m semeru - loaded types for all objects: 150
+13:48:32.701 [39mDEBUG[0;39m semeru - done graph with 19 nodes and 15 edges class types: 11 array types: 0 instance types: 8
+13:48:32.744 [39mDEBUG[0;39m semeru - building call graph for test@localhost
+13:48:32.766 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- construction and storage[0m[0m
+13:48:32.951 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44566 fields, 85392 methods, 8478 classes, 0 field type collisions
+13:48:33.069 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:48:33.308 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:33.409 [34mINFO [0;39m semeru - building heap series for FrameworkUsage@localhost
+13:48:33.409 [39mDEBUG[0;39m semeru - building field abstraction
+13:48:33.421 [39mDEBUG[0;39m semeru - transferring active fields graph with 8 nodes and 6 edges
+13:48:33.422 [39mDEBUG[0;39m semeru - done field heap graph with 8 nodes and 6 edges
+13:48:33.422 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:48:33.438 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:48:33.439 [39mDEBUG[0;39m semeru - transferring heap of 1 arrays
+13:48:33.439 [39mDEBUG[0;39m semeru - transferring 1 arrays
+13:48:33.439 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:48:33.439 [34mINFO [0;39m semeru - building heap abstraction for graph with 18 nodes and 15 edges
+13:48:33.441 [39mDEBUG[0;39m semeru - loaded types for all objects: 93
+13:48:33.443 [39mDEBUG[0;39m semeru - done graph with 16 nodes and 12 edges class types: 8 array types: 0 instance types: 8
+13:48:33.443 [39mDEBUG[0;39m semeru - batch insert graph with 18 nodes and 15 edges into neo4j at var/localhost/FrameworkUsage/neo
+13:48:33.498 [39mDEBUG[0;39m semeru - creating nodes
+13:48:33.501 [39mDEBUG[0;39m semeru - creating edges
+13:48:33.502 [39mDEBUG[0;39m semeru - finished adding edges
+13:48:33.635 [39mDEBUG[0;39m semeru - done
+13:48:33.636 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:48:34.385 [39mDEBUG[0;39m semeru - done expanding to graph with 37 nodes and 77 edges
+13:48:34.455 [39mDEBUG[0;39m semeru - simplify: 11
+13:48:34.487 [39mDEBUG[0;39m semeru - simplify: 10
+13:48:34.580 [39mDEBUG[0;39m semeru - ($contents,874 ms), (local,119 ms), (cover,38 ms), (heap,11 ms), ($iterator,2 ms), (static,1 ms), ($array,1 ms), ($values,0 ms), (#runtime,1 s), (#expansions,37/5120), (graph,graph with 37 nodes and 77 edges), (lines,8/10), (#project,13 ms), (#generate,22 ms), (#simplify,109 ms), (max-depth,6/7)
+[0m[[0minfo[0m] [0m[32m- synthesis: basic[0m[0m
+13:48:34.623 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes, 0 field type collisions
+13:48:34.710 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:48:34.774 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:34.794 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:48:35.190 [39mDEBUG[0;39m semeru - done expanding to graph with 28 nodes and 60 edges
+13:48:35.196 [39mDEBUG[0;39m semeru - simplify: 14
+13:48:35.199 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(24,96639997,java.util.Iterator), Var(20,1147985808,java.util.HashSet), Var(18,1349277854,java.util.HashMap))
+13:48:35.200 [39mDEBUG[0;39m semeru - simplify: 13
+13:48:35.201 [39mDEBUG[0;39m semeru - removeLocalContainers: Set(Var(27,1051754451,test.cap.client.Subtypes$Sub[]))
+13:48:35.202 [39mDEBUG[0;39m semeru - simplify: 5
+[0m[[0minfo[0m] [0m[32m- synthesis: container elimination[0m[0m
+13:48:35.259 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 44570 fields, 85430 methods, 8489 classes, 0 field type collisions
+13:48:35.324 [39mDEBUG[0;39m semeru - connected to FrameworkUsage@localhost
+13:48:35.401 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:35.406 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/FrameworkUsage/neo
+13:48:35.662 [39mDEBUG[0;39m semeru - done expanding to graph with 22 nodes and 40 edges
+13:48:35.665 [39mDEBUG[0;39m semeru - simplify: 9
+[0m[[0minfo[0m] [0m[32m- synthesis: type hierarchy collapse[0m[0m
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+13:48:36.511 [34mINFO [0;39m semeru - loading metadata meta_swing into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:48:36.768 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 20063 fields, 52199 methods, 4690 classes, 0 field type collisions
+13:48:37.997 [34mINFO [0;39m semeru - loading metadata meta_test into 103986 fields, 219835 methods, 22745 classes, 13 field type collisions
+13:48:38.682 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 104123 fields, 220050 methods, 22805 classes, 13 field type collisions
+13:48:38.731 [34mINFO [0;39m semeru - initialized 130 traces, 41 missing, 104127 fields, 220088 methods, 22816 classes, 13 field type collisions
+13:48:38.738 [39mDEBUG[0;39m semeru - connected to swing_components_TextAreaDemo@localhost
+13:48:38.738 [39mDEBUG[0;39m semeru - search =moveCaretPosition() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:48:38.761 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:38.786 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/swing_components_TextAreaDemo/neo
+13:48:39.307 [39mDEBUG[0;39m semeru - failed to resolve 1255446206:java.awt.event.InvocationEvent at 166049 inside java.awt.EventQueue
+13:48:39.349 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:48:39.383 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 164138 inside java.util.EventObject
+13:48:39.390 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 122993 inside java.util.EventObject
+13:48:39.391 [39mDEBUG[0;39m semeru - done expanding to graph with 135 nodes and 292 edges
+13:48:39.402 [39mDEBUG[0;39m semeru - simplify: 15
+13:48:39.407 [39mDEBUG[0;39m semeru - simplify: 14
+13:48:39.420 [39mDEBUG[0;39m semeru - (heap,285 ms), (local,263 ms), (cover,49 ms), ($array,13 ms), (static,0 ms), ($contents,0 ms), ($iterator,0 ms), ($values,0 ms), (#runtime,610 ms), (#expansions,135/5120), (graph,graph with 135 nodes and 292 edges), (lines,10/14), (#project,8 ms), (#generate,1 ms), (#simplify,9 ms), (max-depth,9/15)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: moveCaretPosition[0m[0m
+13:48:39.426 [39mDEBUG[0;39m semeru - search +actionPerformed() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:48:40.939 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:41.065 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 247537 inside java.awt.AWTKeyStroke
+13:48:41.113 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 21449 inside java.awt.AWTKeyStroke
+13:48:41.115 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 34268 inside java.awt.AWTKeyStroke
+13:48:41.210 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:48:41.274 [39mDEBUG[0;39m semeru - failed to resolve 591998098:sun.awt.CausedFocusEvent at 140016 inside java.awt.KeyboardFocusManager
+13:48:41.293 [39mDEBUG[0;39m semeru - failed to resolve 1506464818:java.awt.event.KeyEvent at 246905 inside java.awt.EventQueue
+13:48:41.296 [39mDEBUG[0;39m semeru - done expanding to graph with 202 nodes and 440 edges
+13:48:41.301 [39mDEBUG[0;39m semeru - simplify: 10
+13:48:41.303 [39mDEBUG[0;39m semeru - removeOwnedFields: textArea
+13:48:41.303 [39mDEBUG[0;39m semeru - simplify: 9
+13:48:41.304 [39mDEBUG[0;39m semeru - simplify: 7
+13:48:41.307 [39mDEBUG[0;39m semeru - (local,231 ms), (static,31 ms), (cover,28 ms), (heap,22 ms), ($values,21 ms), ($array,3 ms), ($contents,1 ms), ($iterator,0 ms), (#runtime,337 ms), (#expansions,202/5120), (graph,graph with 202 nodes and 440 edges), (lines,6/9), (#project,4 ms), (#generate,0 ms), (#simplify,3 ms), (max-depth,9/28)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: actionPerformed[0m[0m
+13:48:41.308 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+13:48:41.308 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+13:48:41.335 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+13:48:41.344 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+13:48:42.139 [39mDEBUG[0;39m semeru - done expanding to graph with 133 nodes and 376 edges
+13:48:42.162 [39mDEBUG[0;39m semeru - simplify: 11
+13:48:42.164 [39mDEBUG[0;39m semeru - simplify: 10
+13:48:42.169 [39mDEBUG[0;39m semeru - (heap,494 ms), (local,234 ms), (cover,50 ms), ($values,10 ms), (static,1 ms), ($contents,1 ms), ($iterator,0 ms), ($array,0 ms), (#runtime,790 ms), (#expansions,124/5120), (graph,graph with 133 nodes and 376 edges), (lines,6/10), (#project,20 ms), (#generate,0 ms), (#simplify,6 ms), (max-depth,9/9)
+[0m[[0minfo[0m] [0m[32m- eclipse_jdt: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+13:48:42.185 [39mDEBUG[0;39m semeru - connected to eclipse_wiki@localhost
+13:48:42.185 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_wiki, eclipse_wiki@localhost for 1 matches
+13:48:42.193 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:48:42.199 [34mINFO [0;39m semeru - building heap series for eclipse_wiki@localhost
+13:48:42.200 [39mDEBUG[0;39m semeru - building field abstraction
+13:48:46.321 [39mDEBUG[0;39m semeru - transferring active fields graph with 399178 nodes and 500114 edges
+13:48:50.465 [39mDEBUG[0;39m semeru - done field heap graph with 399178 nodes and 536157 edges
+13:48:50.465 [39mDEBUG[0;39m semeru - building container abstractions: $contents, $iterator, $values, $array
+13:51:53.690 [39mDEBUG[0;39m semeru - transferring final state to heap
+13:51:53.916 [39mDEBUG[0;39m semeru - transferring heap of 85907 arrays
+13:51:54.606 [39mDEBUG[0;39m semeru - transferring 89412 arrays
+13:51:54.770 [39mDEBUG[0;39m semeru - finished constructing container abstractions
+13:51:54.824 [34mINFO [0;39m semeru - building heap abstraction for graph with 675742 nodes and 2161158 edges
+13:52:00.427 [34mINFO [0;39m semeru - streaming 1000000 rows from database...
+13:52:00.440 [39mDEBUG[0;39m semeru - loaded types for all objects: 1015525
+13:52:10.187 [39mDEBUG[0;39m semeru - done graph with 116073 nodes and 158799 edges class types: 3664 array types: 0 instance types: 112409
+13:52:10.246 [39mDEBUG[0;39m semeru - batch insert graph with 675742 nodes and 2161158 edges into neo4j at var/localhost/eclipse_wiki/neo
+13:52:10.265 [39mDEBUG[0;39m semeru - creating nodes
+13:52:15.603 [39mDEBUG[0;39m semeru - creating edges
+13:52:24.082 [39mDEBUG[0;39m semeru - finished adding edges
+13:52:26.155 [39mDEBUG[0;39m semeru - done
+13:52:26.340 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_wiki/neo
+13:52:26.964 [31mWARN [0;39m semeru - exceeded 3 m execution time
+13:52:26.964 [39mDEBUG[0;39m semeru - done expanding to graph with 9 nodes and 8 edges
+13:52:26.965 [39mDEBUG[0;39m semeru - simplify: 1
+13:52:26.966 [39mDEBUG[0;39m semeru - (heap,3 m), (local,4 ms), (cover,4 ms), (static,0 ms), ($contents,0 ms), ($iterator,0 ms), ($values,0 ms), ($array,0 ms), (#runtime,3 m), (#expansions,3/5120), (graph,graph with 9 nodes and 8 edges), (lines,0/0), (#project,0 ms), (#generate,1 ms), (#simplify,0 ms), (max-depth,-1/1)
+13:52:26.967 [31mWARN [0;39m semeru - class UIContentAssistProcessor implements IContentAssistProcessor {
+  @Override ICompletionProposal[] computeCompletionProposals(ITextViewer a0, int a1) {
+  }
+}
+[0m[[0minfo[0m] [0m[31m- eclipse_wiki: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  eclipse_wiki-computeCompletionProposals code changed (CodeComparison.scala:30)[0m[0m
+13:52:26.972 [39mDEBUG[0;39m semeru - connected to eclipse_py@localhost
+13:52:26.973 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_py, eclipse_py@localhost for 1 matches
+13:52:26.994 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:27.003 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_py/neo
+13:52:28.281 [39mDEBUG[0;39m semeru - failed to resolve 626349039:org.eclipse.jface.text.contentassist.ContentAssistant$2 at 18645483 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9
+13:52:32.642 [39mDEBUG[0;39m semeru - failed to resolve 659564984:org.eclipse.ui.internal.EditorReference at 5891380 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:52:32.697 [39mDEBUG[0;39m semeru - failed to resolve 302740522:org.eclipse.ui.internal.registry.EditorRegistry at 4188534 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:52:32.788 [39mDEBUG[0;39m semeru - done expanding to graph with 341 nodes and 1076 edges
+13:52:32.933 [39mDEBUG[0;39m semeru - simplify: 18
+13:52:32.934 [39mDEBUG[0;39m semeru - removeOwnedFields: editConfiguration
+13:52:32.935 [39mDEBUG[0;39m semeru - simplify: 17
+13:52:32.942 [39mDEBUG[0;39m semeru - (local,4 s), (heap,643 ms), (cover,109 ms), ($values,37 ms), ($contents,24 ms), ($array,14 ms), ($iterator,3 ms), (static,0 ms), (#runtime,5 s), (#expansions,341/5120), (graph,graph with 341 nodes and 1076 edges), (lines,12/17), (#project,139 ms), (#generate,1 ms), (#simplify,10 ms), (max-depth,10/21)
+[0m[[0minfo[0m] [0m[32m- eclipse_py: computeCompletionProposals[0m[0m
+13:52:32.943 [39mDEBUG[0;39m semeru - connected to eclipse_ant@localhost
+13:52:32.944 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_ant, eclipse_ant@localhost for 1 matches
+13:52:32.949 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:32.966 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_ant/neo
+13:52:33.502 [39mDEBUG[0;39m semeru - failed to resolve 1146742270:java.lang.Class at 6433737 inside org.eclipse.ui.texteditor.ContentAssistAction
+13:52:33.686 [39mDEBUG[0;39m semeru - failed to resolve 1887933630:org.eclipse.ui.internal.handlers.E4HandlerProxy at 9414609 inside org.eclipse.e4.core.commands.internal.HandlerServiceHandler
+13:52:33.882 [39mDEBUG[0;39m semeru - failed to resolve 272066966:org.eclipse.ui.internal.EditorReference at 5982605 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:52:33.915 [39mDEBUG[0;39m semeru - failed to resolve 1984987465:org.eclipse.ui.internal.registry.EditorRegistry at 4190146 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:52:33.931 [39mDEBUG[0;39m semeru - done expanding to graph with 353 nodes and 1018 edges
+13:52:33.941 [39mDEBUG[0;39m semeru - simplify: 20
+13:52:33.942 [39mDEBUG[0;39m semeru - removeOwnedFields: fContentAssistant
+13:52:33.942 [39mDEBUG[0;39m semeru - simplify: 19
+13:52:33.945 [39mDEBUG[0;39m semeru - (local,504 ms), (heap,390 ms), (cover,33 ms), ($values,15 ms), ($contents,7 ms), ($array,4 ms), ($iterator,3 ms), (static,0 ms), (#runtime,956 ms), (#expansions,353/5120), (graph,graph with 353 nodes and 1018 edges), (lines,7/19), (#project,9 ms), (#generate,0 ms), (#simplify,3 ms), (max-depth,6/27)
+[0m[[0minfo[0m] [0m[32m- eclipse_ant: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[32mGraphSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- digraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- multidigraph[0m[0m
+[0m[[0minfo[0m] [0m[32m- subgraph[0m[0m
+13:52:34.150 [39mDEBUG[0;39m semeru - computing condensation
+13:52:34.153 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 1[0m[0m
+13:52:34.155 [39mDEBUG[0;39m semeru - computing condensation
+13:52:34.156 [39mDEBUG[0;39m semeru - done
+13:52:34.156 [39mDEBUG[0;39m semeru - computing condensation
+13:52:34.156 [39mDEBUG[0;39m semeru - done
+[0m[[0minfo[0m] [0m[32m- scc 2[0m[0m
+[0m[[0minfo[0m] [0m[32m- transitive[0m[0m
+[0m[[0minfo[0m] [0m[32mConceptSpec:[0m[0m
+[0m[[0minfo[0m] [0m[33m- FCA library !!! IGNORED !!![0m[0m
+[0m[[0minfo[0m] [0m[32mIntervalSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty, forever[0m[0m
+[0m[[0minfo[0m] [0m[32m- union, union normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- intersection, intersection normal form[0m[0m
+[0m[[0minfo[0m] [0m[32m- complement, complement normal form[0m[0m
+[0m[[0minfo[0m] [0m[32mTreeSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32m- linked tree[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 4 minutes, 12 seconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 25[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 6, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 23, failed 2, canceled 0, ignored 1, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 2 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> testO
+testOnly      testOptions   
+> testOn> testOnly test> testOnly test.F> testOnly test.FullExamples
+[0m[[0minfo[0m] [0m[32mFullExamples:[0m[0m
+13:52:47.067 [34mINFO [0;39m semeru - loading metadata meta_swing into 5 fields, 1 methods, 12 classes, 0 field type collisions
+13:52:47.688 [34mINFO [0;39m semeru - loading metadata meta_eclipse into 20063 fields, 52199 methods, 4690 classes, 0 field type collisions
+13:52:49.048 [34mINFO [0;39m semeru - loading metadata meta_test into 103986 fields, 219835 methods, 22745 classes, 13 field type collisions
+13:52:49.660 [34mINFO [0;39m semeru - loading metadata meta_FrameworkUsage into 104123 fields, 220050 methods, 22805 classes, 13 field type collisions
+13:52:49.700 [34mINFO [0;39m semeru - initialized 130 traces, 41 missing, 104127 fields, 220088 methods, 22816 classes, 13 field type collisions
+13:52:49.728 [39mDEBUG[0;39m semeru - connected to swing_components_TextAreaDemo@localhost
+13:52:49.735 [39mDEBUG[0;39m semeru - search =moveCaretPosition() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:52:49.771 [39mDEBUG[0;39m semeru - slice expansion of graph with 1 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:49.810 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/swing_components_TextAreaDemo/neo
+13:52:50.750 [39mDEBUG[0;39m semeru - failed to resolve 1255446206:java.awt.event.InvocationEvent at 166049 inside java.awt.EventQueue
+13:52:50.789 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:52:50.868 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 164138 inside java.util.EventObject
+13:52:50.873 [39mDEBUG[0;39m semeru - failed to resolve 1340523068:javax.swing.JTextArea at 122993 inside java.util.EventObject
+13:52:50.875 [39mDEBUG[0;39m semeru - done expanding to graph with 135 nodes and 292 edges
+13:52:50.917 [39mDEBUG[0;39m semeru - simplify: 15
+13:52:50.924 [39mDEBUG[0;39m semeru - simplify: 14
+13:52:50.969 [39mDEBUG[0;39m semeru - (heap,827 ms), (local,176 ms), (cover,56 ms), ($array,5 ms), (static,1 ms), ($contents,1 ms), ($values,1 ms), ($iterator,0 ms), (#runtime,1 s), (#expansions,135/5120), (graph,graph with 135 nodes and 292 edges), (lines,10/14), (#project,21 ms), (#generate,13 ms), (#simplify,31 ms), (max-depth,9/15)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: moveCaretPosition[0m[0m
+13:52:50.975 [39mDEBUG[0;39m semeru - search +actionPerformed() in swing_components_TextAreaDemo, swing_components_TextAreaDemo@localhost for 1 matches
+13:52:52.363 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:52.507 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 247537 inside java.awt.AWTKeyStroke
+13:52:52.546 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 21449 inside java.awt.AWTKeyStroke
+13:52:52.549 [39mDEBUG[0;39m semeru - failed to resolve 775780476:java.util.HashMap at 34268 inside java.awt.AWTKeyStroke
+13:52:52.624 [39mDEBUG[0;39m semeru - failed to resolve 730150347:java.awt.event.InvocationEvent at 4449 inside java.awt.EventQueue
+13:52:52.674 [39mDEBUG[0;39m semeru - failed to resolve 591998098:sun.awt.CausedFocusEvent at 140016 inside java.awt.KeyboardFocusManager
+13:52:52.692 [39mDEBUG[0;39m semeru - failed to resolve 1506464818:java.awt.event.KeyEvent at 246905 inside java.awt.EventQueue
+13:52:52.697 [39mDEBUG[0;39m semeru - done expanding to graph with 202 nodes and 440 edges
+13:52:52.702 [39mDEBUG[0;39m semeru - simplify: 10
+13:52:52.704 [39mDEBUG[0;39m semeru - removeOwnedFields: textArea
+13:52:52.704 [39mDEBUG[0;39m semeru - simplify: 9
+13:52:52.705 [39mDEBUG[0;39m semeru - simplify: 7
+13:52:52.708 [39mDEBUG[0;39m semeru - (local,207 ms), (cover,38 ms), ($values,33 ms), (heap,23 ms), (static,3 ms), ($array,3 ms), ($contents,1 ms), ($iterator,1 ms), (#runtime,309 ms), (#expansions,202/5120), (graph,graph with 202 nodes and 440 edges), (lines,6/9), (#project,5 ms), (#generate,0 ms), (#simplify,4 ms), (max-depth,9/28)
+[0m[[0minfo[0m] [0m[32m- TextAreaDemo: actionPerformed[0m[0m
+13:52:52.710 [39mDEBUG[0;39m semeru - connected to eclipse_jdt@localhost
+13:52:52.711 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_jdt, eclipse_jdt@localhost for 1 matches
+13:52:52.720 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,8)
+13:52:52.728 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_jdt/neo
+13:52:53.233 [39mDEBUG[0;39m semeru - done expanding to graph with 133 nodes and 376 edges
+13:52:53.239 [39mDEBUG[0;39m semeru - simplify: 11
+13:52:53.241 [39mDEBUG[0;39m semeru - simplify: 10
+13:52:53.247 [39mDEBUG[0;39m semeru - (heap,267 ms), (local,199 ms), (cover,23 ms), ($values,4 ms), (static,0 ms), ($contents,0 ms), ($iterator,0 ms), ($array,0 ms), (#runtime,493 ms), (#expansions,124/5120), (graph,graph with 133 nodes and 376 edges), (lines,6/10), (#project,4 ms), (#generate,1 ms), (#simplify,7 ms), (max-depth,9/9)
+[0m[[0minfo[0m] [0m[32m- eclipse_jdt: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[31m- eclipse_md: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  java.lang.RuntimeException: missing trace eclipse_md[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:151)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.t(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.search(Analysis.scala:156)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.search(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:173)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.analysis.TraceAnalysis$class.synthesize(Analysis.scala:176)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at edu.mit.csail.cap.query.web.package$TraceConfig.synthesize(DataProvider.scala:131)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:60)[0m[0m
+[0m[[0minfo[0m] [0m[31m  at test.FullExamples$$anonfun$4.apply(FullExamples.scala:58)[0m[0m
+[0m[[0minfo[0m] [0m[31m  ...[0m[0m
+13:52:53.258 [39mDEBUG[0;39m semeru - connected to eclipse_wiki@localhost
+13:52:53.258 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_wiki, eclipse_wiki@localhost for 1 matches
+13:52:53.262 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:53.268 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_wiki/neo
+13:52:53.633 [39mDEBUG[0;39m semeru - failed to resolve 21934637:java.lang.Class at 6306982 inside org.eclipse.ui.texteditor.ContentAssistAction
+13:52:53.830 [39mDEBUG[0;39m semeru - failed to resolve 879202857:org.eclipse.ui.internal.handlers.E4HandlerProxy at 19734600 inside org.eclipse.e4.core.commands.internal.HandlerServiceHandler
+13:52:53.862 [39mDEBUG[0;39m semeru - failed to resolve 404611096:org.eclipse.ui.internal.EditorReference at 5991698 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:52:53.990 [39mDEBUG[0;39m semeru - failed to resolve 1840631520:org.eclipse.ui.internal.registry.EditorRegistry at 4184715 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:52:53.998 [39mDEBUG[0;39m semeru - done expanding to graph with 432 nodes and 1313 edges
+13:52:54.016 [39mDEBUG[0;39m semeru - simplify: 32
+13:52:54.019 [39mDEBUG[0;39m semeru - removeOwnedFields: sourceViewerConfiguration, viewer
+13:52:54.019 [39mDEBUG[0;39m semeru - simplify: 31
+13:52:54.040 [39mDEBUG[0;39m semeru - (local,342 ms), (heap,272 ms), (cover,51 ms), ($contents,9 ms), ($values,6 ms), ($array,5 ms), (static,4 ms), ($iterator,3 ms), (#runtime,692 ms), (#expansions,432/5120), (graph,graph with 432 nodes and 1313 edges), (lines,16/30), (#project,12 ms), (#generate,2 ms), (#simplify,17 ms), (max-depth,12/23)
+13:52:54.042 [31mWARN [0;39m semeru - class USourceViewerConfiguration extends SourceViewerConfiguration {
+  @Override IContentAssistant getContentAssistant(ISourceViewer a0) {
+    UIContentAssistProcessor uicap = new UIContentAssistProcessor();
+    ContentAssistant ca = new ContentAssistant();
+    ca.setContentAssistProcessor(uicap, ??);
+    String[] s = UObject.f1;
+    String s0 = s[??];
+    ca.setContentAssistProcessor(uicap, s0);
+    return ca;
+  }
+}
+class UIContentAssistProcessor implements IContentAssistProcessor {
+  @Override ICompletionProposal[] computeCompletionProposals(ITextViewer a0, int a1) {
+  }
+}
+class UTextFileDocumentProvider extends TextFileDocumentProvider {
+  @Override void connect(Object a0) {
+    String[] s = new String[??];
+    s[??] = ??;
+    UObject.f1 = s;
+  }
+}
+class UTextEditor extends TextEditor {
+  UTextEditor() {
+    UTextFileDocumentProvider utfdp = new UTextFileDocumentProvider();
+    setDocumentProvider(utfdp);
+    USourceViewerConfiguration usvc = new USourceViewerConfiguration();
+    setSourceViewerConfiguration(usvc);
+  }
+  @Override void createActions() {
+    super.createActions();
+    Object o = new Object();
+    ContentAssistAction caa = new ContentAssistAction(o, ??, this);
+    setAction(??, caa);
+  }
+  @Override ISourceViewer createSourceViewer(Composite a0, IVerticalRuler a1, int a2) {
+    ISourceViewer isv = new ISourceViewer();
+    return isv;
+  }
+}
+class UObject {
+  static String[] f1;
+}
+[0m[[0minfo[0m] [0m[31m- eclipse_wiki: computeCompletionProposals *** FAILED ***[0m[0m
+[0m[[0minfo[0m] [0m[31m  eclipse_wiki-computeCompletionProposals code changed (CodeComparison.scala:30)[0m[0m
+13:52:54.055 [39mDEBUG[0;39m semeru - connected to eclipse_py@localhost
+13:52:54.055 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_py, eclipse_py@localhost for 1 matches
+13:52:54.061 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:54.065 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_py/neo
+13:52:54.522 [39mDEBUG[0;39m semeru - failed to resolve 626349039:org.eclipse.jface.text.contentassist.ContentAssistant$2 at 18645483 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9
+13:52:58.760 [39mDEBUG[0;39m semeru - failed to resolve 659564984:org.eclipse.ui.internal.EditorReference at 5891380 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:52:58.792 [39mDEBUG[0;39m semeru - failed to resolve 302740522:org.eclipse.ui.internal.registry.EditorRegistry at 4188534 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:52:58.849 [39mDEBUG[0;39m semeru - done expanding to graph with 341 nodes and 1076 edges
+13:52:58.855 [39mDEBUG[0;39m semeru - simplify: 18
+13:52:58.856 [39mDEBUG[0;39m semeru - removeOwnedFields: editConfiguration
+13:52:58.856 [39mDEBUG[0;39m semeru - simplify: 17
+13:52:58.861 [39mDEBUG[0;39m semeru - (local,4 s), (heap,248 ms), (cover,42 ms), ($values,12 ms), ($contents,10 ms), ($array,8 ms), ($iterator,3 ms), (static,0 ms), (#runtime,4 s), (#expansions,341/5120), (graph,graph with 341 nodes and 1076 edges), (lines,12/17), (#project,5 ms), (#generate,1 ms), (#simplify,3 ms), (max-depth,10/21)
+[0m[[0minfo[0m] [0m[32m- eclipse_py: computeCompletionProposals[0m[0m
+13:52:58.862 [39mDEBUG[0;39m semeru - connected to eclipse_ant@localhost
+13:52:58.862 [39mDEBUG[0;39m semeru - search +computeCompletionProposals() in eclipse_ant, eclipse_ant@localhost for 1 matches
+13:52:58.868 [39mDEBUG[0;39m semeru - slice expansion of graph with 2 nodes and 0 edges with Parameters(true,true,true,true,1,5120,30720,2147483647)
+13:52:58.871 [39mDEBUG[0;39m semeru - connected to neo4j var/localhost/eclipse_ant/neo
+13:52:59.183 [39mDEBUG[0;39m semeru - failed to resolve 1146742270:java.lang.Class at 6433737 inside org.eclipse.ui.texteditor.ContentAssistAction
+13:52:59.292 [39mDEBUG[0;39m semeru - failed to resolve 1887933630:org.eclipse.ui.internal.handlers.E4HandlerProxy at 9414609 inside org.eclipse.e4.core.commands.internal.HandlerServiceHandler
+13:52:59.438 [39mDEBUG[0;39m semeru - failed to resolve 272066966:org.eclipse.ui.internal.EditorReference at 5982605 inside org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$7
+13:52:59.463 [39mDEBUG[0;39m semeru - failed to resolve 1984987465:org.eclipse.ui.internal.registry.EditorRegistry at 4190146 inside org.eclipse.e4.core.internal.contexts.EclipseContext
+13:52:59.472 [39mDEBUG[0;39m semeru - done expanding to graph with 353 nodes and 1018 edges
+13:52:59.478 [39mDEBUG[0;39m semeru - simplify: 20
+13:52:59.479 [39mDEBUG[0;39m semeru - removeOwnedFields: fContentAssistant
+13:52:59.479 [39mDEBUG[0;39m semeru - simplify: 19
+13:52:59.484 [39mDEBUG[0;39m semeru - (local,274 ms), (heap,245 ms), (cover,42 ms), ($contents,6 ms), ($values,6 ms), (static,1 ms), ($iterator,1 ms), ($array,1 ms), (#runtime,576 ms), (#expansions,353/5120), (graph,graph with 353 nodes and 1018 edges), (lines,7/19), (#project,4 ms), (#generate,1 ms), (#simplify,3 ms), (max-depth,6/27)
+[0m[[0minfo[0m] [0m[32m- eclipse_ant: computeCompletionProposals[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 13 seconds, 842 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mTotal number of tests run: 7[0m[0m
+[0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
+[0m[[0minfo[0m] [0m[36mTests: succeeded 5, failed 2, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0minfo[0m] [0m[31m*** 2 TESTS FAILED ***[0m[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	test.FullExamples[0m
+[0m[[31merror[0m] [0m(test:[31mtestOnly[0m) sbt.TestsFailedException: Tests unsuccessful[0m
+> c[3G[Kexit

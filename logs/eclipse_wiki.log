@@ -1,0 +1,77 @@
+
+> runMain edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_wiki
+[info] Running edu.mit.csail.cap.query.experiments.Experiments eclipse false eclipse_wiki
+13:34:38.574 INFO  semeru - *** Running in full mode ***
+13:34:38.577 DEBUG semeru - writing agent JAR file
+13:34:38.637 INFO  semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/eclipse
+objc[1389]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/MacOS/libjli.dylib and /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will be used. Which one is undefined.
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist: org.eclipse.jface.util.Util org.eclipse.jdt.internal.core.index.DiskIndex org.eclipse.jdt.internal.core.util.Util org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct org.eclipse.jdt.core.compiler.CharOperation org.eclipse.jdt.internal.core.util.SimpleWordSet org.python.pydev.shared_core.string.FastStringBuffer org.python.pydev.core.FastBufferedReader org.python.antlr.runtime.* org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: org.eclipse.osgi.* org.osgi.* org.eclipse.emf.* org.eclipse.swt.* org.eclipse.e4.* org.eclipse.core.runtime.Path org.eclipse.core.internal.registry.* com.ibm.* com.sun.* org.xml.* org.w3c.* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 425 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] closing output streams
+13:35:37.597 INFO  semeru - processing /tmp/metadata.bin into meta_eclipse
+13:35:37.818 INFO  semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes
+13:35:40.391 DEBUG semeru - saving metadata 88755 fields, 181381 methods, 19207 classes
+13:35:40.392 DEBUG semeru - create database meta_eclipse
+13:35:41.347 DEBUG semeru - create and load 19194 rows into TYPE from csv/TYPE-REPLACE.csv
+13:35:41.466 DEBUG semeru - create and load 13 rows into TYPE from csv/TYPE-IGNORE.csv
+13:35:41.468 DEBUG semeru - create and load 41038 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+13:35:41.610 DEBUG semeru - create and load 181380 rows into METHOD from csv/METHOD-REPLACE.csv
+13:35:42.813 DEBUG semeru - create and load 88750 rows into FIELD from csv/FIELD-REPLACE.csv
+13:35:43.344 DEBUG semeru - committing metadata
+13:35:43.345 INFO  semeru - processing /tmp/log.bin
+13:35:43.346 INFO  semeru - create log eclipse_wiki
+13:35:45.917 INFO  semeru - LOG counter = 1M
+13:35:47.814 INFO  semeru - LOG counter = 2M
+13:35:50.000 INFO  semeru - LOG counter = 3M
+13:35:52.063 INFO  semeru - LOG counter = 4M
+13:35:52.173 INFO  semeru - PARAMS counter = 1M
+^Ac13:35:54.389 INFO  semeru - LOG counter = 5M
+^R
+13:35:56.782 INFO  semeru - LOG counter = 6M
+13:35:59.160 INFO  semeru - LOG counter = 7M
+13:35:59.694 INFO  semeru - PARAMS counter = 2M
+13:36:01.565 INFO  semeru - LOG counter = 8M
+13:36:03.750 INFO  semeru - LOG counter = 9M
+13:36:06.035 INFO  semeru - LOG counter = 10M
+13:36:06.971 INFO  semeru - PARAMS counter = 3M
+13:36:08.275 INFO  semeru - LOG counter = 11M
+13:36:10.620 INFO  semeru - LOG counter = 12M
+13:36:12.557 INFO  semeru - PARAMS counter = 4M
+13:36:13.045 INFO  semeru - LOG counter = 13M
+13:36:15.489 INFO  semeru - LOG counter = 14M
+13:36:17.023 INFO  semeru - PARAMS counter = 5M
+13:36:17.858 INFO  semeru - LOG counter = 15M
+13:36:20.255 INFO  semeru - LOG counter = 16M
+13:36:21.630 INFO  semeru - PARAMS counter = 6M
+13:36:22.890 INFO  semeru - LOG counter = 17M
+13:36:25.395 INFO  semeru - LOG counter = 18M
+13:36:26.344 INFO  semeru - PARAMS counter = 7M
+13:36:27.993 INFO  semeru - LOG counter = 19M
+13:36:30.472 INFO  semeru - LOG counter = 20M
+13:36:32.974 INFO  semeru - LOG counter = 21M
+13:36:33.619 INFO  semeru - OBJECTS counter = 1M
+13:36:33.869 INFO  semeru - PARAMS counter = 8M
+13:36:34.735 INFO  semeru - detected missing closing event for 2 threads
+13:36:34.735 DEBUG semeru - drop database eclipse_wiki
+13:36:34.742 DEBUG semeru - delete cache var/localhost/eclipse_wiki
+13:36:34.743 DEBUG semeru - create database eclipse_wiki
+13:36:34.758 DEBUG semeru - create and load 21731296 rows into LOG from csv/LOG-REPLACE.csv
+13:37:25.024 DEBUG semeru - create and load 8112460 rows into PARAMS from csv/PARAMS-REPLACE.csv
+13:37:37.587 DEBUG semeru - create and load 1015525 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+13:37:39.993 DEBUG semeru - create and load 207831 rows into STRINGS from csv/STRINGS-REPLACE.csv
+13:37:40.426 DEBUG semeru - committing log
+13:37:40.427 INFO  semeru - postprocessing
+13:37:40.432 DEBUG semeru - connected to eclipse_wiki@localhost
+13:37:40.456 DEBUG semeru - SQL update to eclipse_wiki: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+13:39:23.208 DEBUG semeru - SQL update to eclipse_wiki: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+13:40:39.894 DEBUG semeru - SQL update to eclipse_wiki: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+13:40:42.622 DEBUG semeru - SQL update to eclipse_wiki: ANALYZE TABLE `LOG`
+13:40:47.683 INFO  semeru - *** Configuration: eclipse_wiki]])]])]])]])]])]])

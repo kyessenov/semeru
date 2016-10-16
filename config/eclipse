@@ -1,0 +1,38 @@
+# Eclipse 4.4 Luna Release
+
+# Enable ERROR LOG view to see unhandled assertion errors thrown by the the agent!
+# Check for stack.self in case of missing events!
+
+# Carefully crafted library list:
+# - jface should be application since it contains base abstract classes for plug-ins
+# - org.eclipse.core has runtime.ListenerList which needs to be fully monitored to track listeners
+listen.library=\
+  org.eclipse.osgi.*,\
+  org.osgi.*,\
+  org.eclipse.emf.*,\
+  org.eclipse.swt.*,\
+  org.eclipse.e4.*,\
+  org.eclipse.core.runtime.Path,\
+  org.eclipse.core.internal.registry.*,\
+  com.ibm.*,\
+  com.sun.*,\
+  org.xml.*,\
+  org.w3c.*
+
+# Adding too big part of the framework here leads
+# to missing dependencies
+listen.exclude=\
+  org.eclipse.jface.util.Util,\
+  org.eclipse.jdt.internal.core.index.DiskIndex,\
+  org.eclipse.jdt.internal.core.util.Util,\
+  org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider,\
+  org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct,\
+  org.eclipse.jdt.core.compiler.CharOperation,\
+  org.eclipse.jdt.internal.core.util.SimpleWordSet,\
+  org.python.pydev.shared_core.string.FastStringBuffer,\
+  org.python.pydev.core.FastBufferedReader,\
+  org.python.antlr.runtime.*
+
+#agent.management=true
+
+# vim: set filetype=jproperties :

@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jel>
+	<admin creation="Wed Nov 14 11:54:56 EST 2012" xsdversion="1.0.0" version="1.0.0" />
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.CamelCaseTokenizer" type="CamelCaseTokenizer">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.Tokenizer" type="Tokenizer" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="CamelCaseTokenizer" />
+			<method visibility="public" name="splitIdentifer" fulltype="char[]" type="char">
+				<params>
+					<param name="identifier" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.CLI" type="CLI">
+		<methods>
+			<constructor visibility="public" name="CLI" />
+			<method static="true" visibility="public" name="usage" fulltype="void" type="void" />
+			<method static="true" visibility="public" name="main" fulltype="void" type="void">
+				<params>
+					<param name="args" fulltype="java.lang.String[]" type="String" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.io.IOException" type="IOException" />
+				</exceptions>
+			</method>
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.CompletionEngine" type="CompletionEngine">
+		<methods>
+			<constructor visibility="public" name="CompletionEngine" />
+			<method visibility="public" name="loadIdentifiers" fulltype="void" type="void">
+				<comment>
+					<description>Reads in a list of identifiers from provider, and generates
+        its internal data structures using the splitting rules given
+        by each tokenizer in tokenizers. Note that you can call this method
+        multiple times to build up a big store of identifiers.</description>
+					<attribute name="@param">
+						<description>provider Used to load a list of identifiers.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>tokenizers Used to split identifiers into their constituent parts.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>minparts Any identifiers with fewer than minparts tokens are discarded from
+                        our internal store.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>maxparts Any identifiers with more than maxparts tokens are discarded from
+                        our internal store.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>ignoreCase Should our matching be case insensitive? If subsequent calls
+                          to this method pass different values of ignoreCase, completion
+                          probabaly won&apos;t work well.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>filterRegex If this is not-null, any identifier matching this regular expression
+                           will not be processed.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="provider" comment="Used to load a list of identifiers." fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+					<param name="tokenizers" comment="Used to split identifiers into their constituent parts." fulltype="java.util.List" type="List" />
+					<param name="minparts" comment="Any identifiers with fewer than minparts tokens are discarded from
+                        our internal store." fulltype="int" type="int" />
+					<param name="maxparts" comment="Any identifiers with more than maxparts tokens are discarded from
+                        our internal store." fulltype="int" type="int" />
+					<param name="ignoreCase" comment="Should our matching be case insensitive? If subsequent calls
+                          to this method pass different values of ignoreCase, completion
+                          probabaly won&apos;t work well." fulltype="boolean" type="boolean" />
+					<param name="filterRegex" comment="If this is not-null, any identifier matching this regular expression
+                           will not be processed." fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="retokenize" fulltype="void" type="void">
+				<comment>
+					<description>If you want to change the method of tokenizing the identifiers,
+        but don&apos;t have the original IdentifierProvider(s) hanging around,
+        you can call this method to retokenize all the existing identifiers
+        in this CompletionEngine.</description>
+					<attribute name="@see">
+						<description>loadIdentifiers</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="tokenizers" fulltype="java.util.List" type="List" />
+					<param name="minparts" fulltype="int" type="int" />
+					<param name="maxparts" fulltype="int" type="int" />
+					<param name="ignoreCase" fulltype="boolean" type="boolean" />
+					<param name="filterRegex" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="clearTokens" fulltype="void" type="void">
+				<comment>
+					<description>Makes this CompletionEngine forget all the tokens that were fed to it
+        using loadIdentifiers(). In effect, it resets it to its newly created
+        state.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="complete" returncomment="A list of possible completions, or null if there are none." fulltype="java.util.List" type="List">
+				<comment>
+					<description>Completes the identifier suggested by acronym.</description>
+					<attribute name="@param">
+						<description>acronym The acronym of the identifier one wishes to find.
+                        For instance, acronym would be &quot;AIOOBE&quot; if you wanted
+                        ArrayIndexOutOfBoundsException.</description>
+					</attribute>
+					<attribute name="@param">
+						<description>sort Should we sort the resulting list in natural order?</description>
+					</attribute>
+					<attribute name="@return">
+						<description>A list of possible completions, or null if there are none.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="acronym" comment="The acronym of the identifier one wishes to find.
+                        For instance, acronym would be &quot;AIOOBE&quot; if you wanted
+                        ArrayIndexOutOfBoundsException." fulltype="java.lang.String" type="String" />
+					<param name="sort" comment="Should we sort the resulting list in natural order?" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method visibility="public" name="numIdentifiers" fulltype="int" type="int" />
+			<method visibility="public" name="getIdentifiers" fulltype="java.util.List" type="List" />
+			<method visibility="public" name="serializeData" fulltype="void" type="void">
+				<comment>
+					<description>This method writes the data store to stream in some undefined
+        serialization format.</description>
+					<attribute name="@param">
+						<description>stream The OutputStream to which we&apos;ll save our data store.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="stream" comment="The OutputStream to which we&apos;ll save our data store." fulltype="java.io.OutputStream" type="OutputStream" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.io.IOException" type="IOException" />
+				</exceptions>
+			</method>
+			<method visibility="public" name="deserializeData" fulltype="void" type="void">
+				<comment>
+					<description>Reconstructs the data store from stream, which should be opened to
+        a resource previously written by serializeData().</description>
+					<attribute name="@param">
+						<description>stream The InputStream from which to read serialized data.</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="stream" comment="The InputStream from which to read serialized data." fulltype="java.io.InputStream" type="InputStream" />
+				</params>
+				<exceptions>
+					<exception fulltype="java.io.IOException" type="IOException" />
+				</exceptions>
+			</method>
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.CTagsFileProvider" type="CTagsFileProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="CTagsFileProvider">
+				<params>
+					<param name="f" fulltype="java.io.File" type="File" />
+				</params>
+			</constructor>
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass abstract="true" visibility="public" package="com.illengineer.jcc" interface="true" fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider">
+		<implements>
+			<interface fulltype="java.lang.Iterable" type="Iterable" />
+		</implements>
+		<methods>
+			<method visibility="public" name="process" fulltype="void" type="void">
+				<comment>
+					<description>Processes the data source known by this IdentifierProvider, to prepare
+        it for availability through iterator().</description>
+				</comment>
+			</method>
+			<method visibility="public" name="forget" fulltype="void" type="void">
+				<comment>
+					<description>In the course of process(), the IdentifierProvider may build up a large amount
+        of data. This method makes it discard this cached data. process() will need
+        to be called again before iterator() is valid.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator">
+				<comment>
+					<description>Returns an Iterator that will enumerate all the identifiers that
+        this IdentifierProvider knows about.</description>
+				</comment>
+			</method>
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.JarFileProvider" type="JarFileProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="JarFileProvider">
+				<params>
+					<param name="f" fulltype="java.io.File" type="File" />
+				</params>
+			</constructor>
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.jedit.BufferWordsProvider" type="BufferWordsProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="BufferWordsProvider">
+				<params>
+					<param name="regex" fulltype="java.lang.String" type="String" />
+					<param name="searchAllBuffers" fulltype="boolean" type="boolean" />
+				</params>
+			</constructor>
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="EditPlugin" visibility="public" package="com.illengineer.jcc.jedit" superclassfulltype="EditPlugin" fulltype="com.illengineer.jcc.jedit.CamelCompletePlugin" type="CamelCompletePlugin">
+		<fields>
+			<field final="true" static="true" const="camelcomplete" visibility="public" name="NAME" constexpr="&quot;camelcomplete&quot;" fulltype="java.lang.String" type="String" />
+			<field final="true" static="true" const="options.camelcomplete." visibility="public" name="OPTION_PREFIX" constexpr="&quot;options.camelcomplete.&quot;" fulltype="java.lang.String" type="String" />
+			<field final="true" static="true" const="default" visibility="public" name="DEFAULT_ENGINE_NAME" constexpr="&quot;default&quot;" fulltype="java.lang.String" type="String" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="CamelCompletePlugin" />
+			<method visibility="public" name="start" fulltype="void" type="void" />
+			<method visibility="public" name="stop" fulltype="void" type="void" />
+			<method static="true" visibility="public" name="processConfiguration" fulltype="void" type="void">
+				<comment>
+					<description>This routine reads all the configuration options in the optionsMap and creates the
+            appropriate IdentifierProviders and Tokenizers, and sends them to the CompletionEngine.</description>
+				</comment>
+			</method>
+			<method static="true" visibility="public" name="processConfiguration" fulltype="void" type="void">
+				<params>
+					<param name="engineName" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="deleteEngine" fulltype="void" type="void">
+				<params>
+					<param name="engineName" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="setOption" fulltype="void" type="void">
+				<params>
+					<param name="key" fulltype="java.lang.String" type="String" />
+					<param name="val" fulltype="java.lang.Object" type="Object" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getOption" fulltype="java.lang.Object" type="Object">
+				<params>
+					<param name="key" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="complete" fulltype="void" type="void">
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="textArea" fulltype="JEditTextArea" type="JEditTextArea" />
+					<param name="completionType" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="complete" fulltype="void" type="void">
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="textArea" fulltype="JEditTextArea" type="JEditTextArea" />
+					<param name="completionType" fulltype="int" type="int" />
+					<param name="engineNames" fulltype="java.util.List" type="List" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="simpleComplete" fulltype="void" type="void">
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="textArea" fulltype="JEditTextArea" type="JEditTextArea" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getCompletions" fulltype="java.util.List" type="List">
+				<params>
+					<param name="word" fulltype="java.lang.String" type="String" />
+					<param name="engineNames" fulltype="java.util.List" type="List" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getNormalCompletions" fulltype="java.util.List" type="List">
+				<params>
+					<param name="word" fulltype="java.lang.String" type="String" />
+					<param name="engineNames" fulltype="java.util.List" type="List" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getTotalCompletions" fulltype="java.util.List" type="List">
+				<params>
+					<param name="word" fulltype="java.lang.String" type="String" />
+					<param name="engineNames" fulltype="java.util.List" type="List" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="debugPrint" fulltype="void" type="void">
+				<params>
+					<param name="s" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="debugPrintStacktrace" fulltype="void" type="void">
+				<params>
+					<param name="ex" fulltype="java.lang.Exception" type="Exception" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="getEngineNames" fulltype="java.util.Set" type="Set" />
+			<method static="true" visibility="public" name="isEngineEnabled" fulltype="boolean" type="boolean">
+				<params>
+					<param name="engineName" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method static="true" visibility="public" name="clearCacheDir" fulltype="void" type="void" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="CompletionPopup" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="com.illengineer.jcc.jedit.CompletionPopup" fulltype="com.illengineer.jcc.jedit.CompleteWord" type="CompleteWord">
+		<comment>
+			<description>A completion popup class.</description>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="CompleteWord">
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="completions" fulltype="java.util.List" type="List" />
+					<param name="location" fulltype="java.awt.Point" type="Point" />
+				</params>
+			</constructor>
+			<method static="true" visibility="public" name="completeWord" fulltype="void" type="void">
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="completionType" fulltype="int" type="int" />
+					<param name="engineNames" fulltype="java.util.List" type="List" />
+				</params>
+			</method>
+			<method visibility="protected" name="keyPressed" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.awt.event.KeyEvent" type="KeyEvent" />
+				</params>
+			</method>
+			<method visibility="protected" name="keyTyped" fulltype="void" type="void">
+				<params>
+					<param name="e" fulltype="java.awt.event.KeyEvent" type="KeyEvent" />
+				</params>
+			</method>
+		</methods>
+	</jelclass>
+	<jelclass superclass="JWindow" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="javax.swing.JWindow" fulltype="com.illengineer.jcc.jedit.CompletionPopup" type="CompletionPopup">
+		<comment>
+			<description>Popup window for word completion in text area.
+ This class provides basic UI of completion popup.</description>
+		</comment>
+		<methods>
+			<constructor visibility="public" name="CompletionPopup">
+				<comment>
+					<description>Create a completion popup.
+ It is not shown until reset() method is called with valid
+ candidates. All key events for the view are intercepted by
+ this popup untill end of completion.</description>
+				</comment>
+				<params>
+					<param name="view" fulltype="View" type="View" />
+					<param name="location" fulltype="java.awt.Point" type="Point" />
+				</params>
+			</constructor>
+			<method visibility="public" name="dispose" fulltype="void" type="void">
+				<comment>
+					<description>Quit completion.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="reset" fulltype="void" type="void">
+				<comment>
+					<description>Start completion.</description>
+					<attribute name="@param">
+						<description>candidates The candidates of this completion</description>
+					</attribute>
+					<attribute name="@param">
+						<description>active Ser focus to the popup</description>
+					</attribute>
+				</comment>
+				<params>
+					<param name="candidates" comment="The candidates of this completion" fulltype="com.illengineer.jcc.jedit.CompletionPopup.Candidates" type="CompletionPopup.Candidates" />
+					<param name="active" comment="Ser focus to the popup" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method visibility="public" name="getCandidates" fulltype="com.illengineer.jcc.jedit.CompletionPopup.Candidates" type="CompletionPopup.Candidates">
+				<comment>
+					<description>Current candidates of completion.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="getSelectedIndex" fulltype="int" type="int">
+				<comment>
+					<description>Returns index of current selection.
+ Returns -1 if nothing is selected.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="setSelectedIndex" fulltype="void" type="void">
+				<comment>
+					<description>Set selection.</description>
+				</comment>
+				<params>
+					<param name="index" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method visibility="public" name="doSelectedCompletion" fulltype="boolean" type="boolean">
+				<comment>
+					<description>Do completion with current selection and quit.</description>
+				</comment>
+			</method>
+			<method visibility="protected" name="keyPressed" fulltype="void" type="void">
+				<comment>
+					<description>Handle key pressed events.
+ Override this method to make additional key handing.</description>
+				</comment>
+				<params>
+					<param name="e" fulltype="java.awt.event.KeyEvent" type="KeyEvent" />
+				</params>
+			</method>
+			<method visibility="protected" name="keyTyped" fulltype="void" type="void">
+				<comment>
+					<description>Handle key typed events.
+ Override this method to make additional key handing.</description>
+				</comment>
+				<params>
+					<param name="e" fulltype="java.awt.event.KeyEvent" type="KeyEvent" />
+				</params>
+			</method>
+		</methods>
+		<jelclass abstract="true" visibility="public" package="com.illengineer.jcc.jedit" interface="true" fulltype="com.illengineer.jcc.jedit.CompletionPopup.Candidates" type="CompletionPopup.Candidates">
+			<comment>
+				<description>Candidates of completion.</description>
+			</comment>
+			<methods>
+				<method visibility="public" name="getSize" fulltype="int" type="int">
+					<comment>
+						<description>Returns the number of candidates.</description>
+					</comment>
+				</method>
+				<method visibility="public" name="isValid" fulltype="boolean" type="boolean">
+					<comment>
+						<description>Returns whether this completion is still valid.</description>
+					</comment>
+				</method>
+				<method visibility="public" name="complete" fulltype="void" type="void">
+					<comment>
+						<description>Do the completion.</description>
+					</comment>
+					<params>
+						<param name="index" fulltype="int" type="int" />
+					</params>
+				</method>
+				<method visibility="public" name="getCellRenderer" fulltype="java.awt.Component" type="Component">
+					<comment>
+						<description>Returns a component to render a cell for the index
+ in the popup.</description>
+					</comment>
+					<params>
+						<param name="list" fulltype="javax.swing.JList" type="JList" />
+						<param name="index" fulltype="int" type="int" />
+						<param name="isSelected" fulltype="boolean" type="boolean" />
+						<param name="cellHasFocus" fulltype="boolean" type="boolean" />
+					</params>
+				</method>
+				<method visibility="public" name="getDescription" fulltype="java.lang.String" type="String">
+					<comment>
+						<description>Returns a description text shown when the index is
+ selected in the popup, or null if no description is
+ available.</description>
+					</comment>
+					<params>
+						<param name="index" fulltype="int" type="int" />
+					</params>
+				</method>
+			</methods>
+		</jelclass>
+	</jelclass>
+	<jelclass abstract="true" visibility="public" package="com.illengineer.jcc.jedit" interface="true" fulltype="com.illengineer.jcc.jedit.CompletionPopup.Candidates" type="CompletionPopup.Candidates">
+		<comment>
+			<description>Candidates of completion.</description>
+		</comment>
+		<methods>
+			<method visibility="public" name="getSize" fulltype="int" type="int">
+				<comment>
+					<description>Returns the number of candidates.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="isValid" fulltype="boolean" type="boolean">
+				<comment>
+					<description>Returns whether this completion is still valid.</description>
+				</comment>
+			</method>
+			<method visibility="public" name="complete" fulltype="void" type="void">
+				<comment>
+					<description>Do the completion.</description>
+				</comment>
+				<params>
+					<param name="index" fulltype="int" type="int" />
+				</params>
+			</method>
+			<method visibility="public" name="getCellRenderer" fulltype="java.awt.Component" type="Component">
+				<comment>
+					<description>Returns a component to render a cell for the index
+ in the popup.</description>
+				</comment>
+				<params>
+					<param name="list" fulltype="javax.swing.JList" type="JList" />
+					<param name="index" fulltype="int" type="int" />
+					<param name="isSelected" fulltype="boolean" type="boolean" />
+					<param name="cellHasFocus" fulltype="boolean" type="boolean" />
+				</params>
+			</method>
+			<method visibility="public" name="getDescription" fulltype="java.lang.String" type="String">
+				<comment>
+					<description>Returns a description text shown when the index is
+ selected in the popup, or null if no description is
+ available.</description>
+				</comment>
+				<params>
+					<param name="index" fulltype="int" type="int" />
+				</params>
+			</method>
+		</methods>
+	</jelclass>
+	<jelclass superclass="JDialog" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="javax.swing.JDialog" fulltype="com.illengineer.jcc.jedit.MessageDialog" type="MessageDialog">
+		<fields>
+			<field visibility="public" name="panel1" fulltype="javax.swing.JPanel" type="JPanel" />
+			<field visibility="public" name="messageLabel" fulltype="javax.swing.JLabel" type="JLabel" />
+		</fields>
+		<methods>
+			<constructor visibility="public" name="MessageDialog" />
+			<constructor visibility="public" name="MessageDialog">
+				<params>
+					<param name="owner" fulltype="java.awt.Frame" type="Frame" />
+				</params>
+			</constructor>
+			<constructor visibility="public" name="MessageDialog">
+				<params>
+					<param name="owner" fulltype="java.awt.Dialog" type="Dialog" />
+				</params>
+			</constructor>
+			<method visibility="public" name="showDlg" fulltype="void" type="void">
+				<params>
+					<param name="title" fulltype="java.lang.String" type="String" />
+					<param name="msg" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="closeDlg" fulltype="void" type="void" />
+			<method visibility="public" name="repaintDlg" fulltype="void" type="void" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="AbstractOptionPane" visibility="public" package="com.illengineer.jcc.jedit" superclassfulltype="AbstractOptionPane" fulltype="com.illengineer.jcc.jedit.OptionPanel" type="OptionPanel">
+		<implements>
+			<interface fulltype="java.awt.event.ActionListener" type="ActionListener" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="OptionPanel" />
+			<method visibility="protected" name="_init" fulltype="void" type="void" />
+			<method visibility="protected" name="_save" fulltype="void" type="void" />
+			<method visibility="public" name="actionPerformed" fulltype="void" type="void">
+				<params>
+					<param name="ev" fulltype="java.awt.event.ActionEvent" type="ActionEvent" />
+				</params>
+			</method>
+		</methods>
+		<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.jedit.OptionPanel.OptionGroup" type="OptionPanel.OptionGroup">
+			<implements>
+				<interface fulltype="java.io.Serializable" type="Serializable" />
+			</implements>
+			<methods>
+				<constructor visibility="public" name="OptionPanel.OptionGroup" />
+				<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+				<method visibility="public" name="copy" fulltype="com.illengineer.jcc.jedit.OptionPanel.OptionGroup" type="OptionPanel.OptionGroup" />
+			</methods>
+		</jelclass>
+		<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.jedit.OptionPanel.EngineOpts" type="OptionPanel.EngineOpts">
+			<implements>
+				<interface fulltype="java.io.Serializable" type="Serializable" />
+			</implements>
+			<methods>
+				<constructor visibility="public" name="OptionPanel.EngineOpts" />
+			</methods>
+		</jelclass>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.jedit.OptionPanel.OptionGroup" type="OptionPanel.OptionGroup">
+		<implements>
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="OptionPanel.OptionGroup" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+			<method visibility="public" name="copy" fulltype="com.illengineer.jcc.jedit.OptionPanel.OptionGroup" type="OptionPanel.OptionGroup" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc.jedit" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.jedit.OptionPanel.EngineOpts" type="OptionPanel.EngineOpts">
+		<implements>
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="OptionPanel.EngineOpts" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.NullProvider" type="NullProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+			<interface fulltype="java.util.Iterator" type="Iterator" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="NullProvider" />
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="hasNext" fulltype="boolean" type="boolean" />
+			<method visibility="public" name="next" fulltype="java.lang.String" type="String" />
+			<method visibility="public" name="remove" fulltype="void" type="void" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.ReaderProvider" type="ReaderProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="ReaderProvider">
+				<params>
+					<param name="r" fulltype="java.io.Reader" type="Reader" />
+				</params>
+			</constructor>
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.RegexpTokenizer" type="RegexpTokenizer">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.Tokenizer" type="Tokenizer" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="RegexpTokenizer">
+				<params>
+					<param name="regexp" fulltype="java.lang.String" type="String" />
+					<param name="ignoreCase" fulltype="boolean" type="boolean" />
+				</params>
+			</constructor>
+			<method visibility="public" name="splitIdentifer" fulltype="char[]" type="char">
+				<params>
+					<param name="identifier" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass superclass="Object" visibility="public" package="com.illengineer.jcc" serializable="true" superclassfulltype="java.lang.Object" fulltype="com.illengineer.jcc.TextFileProvider" type="TextFileProvider">
+		<implements>
+			<interface fulltype="com.illengineer.jcc.IdentifierProvider" type="IdentifierProvider" />
+			<interface fulltype="java.io.Serializable" type="Serializable" />
+		</implements>
+		<methods>
+			<constructor visibility="public" name="TextFileProvider">
+				<params>
+					<param name="f" fulltype="java.io.File" type="File" />
+				</params>
+			</constructor>
+			<method visibility="public" name="process" fulltype="void" type="void" />
+			<method visibility="public" name="forget" fulltype="void" type="void" />
+			<method visibility="public" name="iterator" fulltype="java.util.Iterator" type="Iterator" />
+			<method visibility="public" name="toString" fulltype="java.lang.String" type="String" />
+		</methods>
+	</jelclass>
+	<jelclass abstract="true" visibility="public" package="com.illengineer.jcc" interface="true" fulltype="com.illengineer.jcc.Tokenizer" type="Tokenizer">
+		<comment>
+			<description>Perhaps this isn&apos;t a &apos;real&apos; tokenizer since it returns not the
+    parts of the word, but rather only the first letter of the word
+    parts, but the idea is the same.</description>
+		</comment>
+		<methods>
+			<method visibility="public" name="splitIdentifer" fulltype="char[]" type="char">
+				<params>
+					<param name="identifier" fulltype="java.lang.String" type="String" />
+				</params>
+			</method>
+		</methods>
+	</jelclass>
+</jel>

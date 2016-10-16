@@ -1,0 +1,7 @@
+# Capture internal state
+# listen.library=javax.*,java.*
+listen.fields=false
+listen.arrays=false
+listen.strings=true
+agent.management=true
+# vim: set filetype=jproperties :

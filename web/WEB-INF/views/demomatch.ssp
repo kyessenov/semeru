@@ -1,0 +1,119 @@
+#import(edu.mit.csail.cap.query._)
+#import(analysis._)
+<%@ val data: web.DataProvider %>
+#{
+val t: List[String] = multiParams("t").filter(_ != "").toList.distinct
+val baseline: List[String] = multiParams("baseline").filter(_ != "").toList.distinct
+
+val pos = t.map(data.get).fold(Group(Nil))(_ ++ _)
+val neg = baseline.map(data.get).fold(Group(Nil))(_ ++ _)
+
+val scope = params.getOrElse("scope", "").trim()
+val under = params.getOrElse("under", "true")
+val arity = params.getOrElse("arity", "unary")
+
+var result = 
+  if (arity == "unary")    
+    pos.demoMatch(
+      baseline = neg,
+      scope = if (scope == "") None else Some(CallQuery.fromString(data.meta, scope)),
+      under = under.toBoolean
+    )
+  else
+    pos.binaryDemoMatch(
+      baseline = neg
+    )
+
+val target = params.getOrElse("target", "swing_components")
+result = result.idf(data.get(target))
+
+val keywords = params.getOrElse("keywords", "")
+result = result.keyword(data.meta, keywords)
+
+// use a demo as the framework boundary
+implicit val ctx = web.RenderContext(if (pos.isEmpty) AllFramework else pos.traces.head.b)
+
+def uri(s: String) = java.net.URLEncoder.encode(s, "UTF-8")
+
+import scala.math.Ordering.Implicits._
+
+}# 
+<div class='container-fluid'>
+<h1>DemoMatch</h1>
+<p style='font-size:small'>Pass 'show' parameter to show filtered tree from first trace</p>
+<form>
+<p><label>Demo:</label><br>
+#for(i <- 0 to 3)
+<% render("demos.ssp", Map("data" -> data, "id" -> "t", "key" -> t.lift(i).getOrElse(""))) %>
+#end
+
+<p><label>Baseline:</label><br>
+#for(i <- 0 to 2)
+<% render("demos.ssp", Map("data" -> data, "id" -> "baseline", "key" -> baseline.lift(i).getOrElse(""))) %>
+#end
+
+<p><label>Target:</label><br>
+<% render("demos.ssp", Map("data" -> data, "id" -> "target", "key" -> target)) %>
+
+<p><label>Keywords (comma-separated):</label>
+<input size=50 name='keywords' value='${keywords}' />
+
+<p><label>Scope:</label>
+<input size=15 name='scope' id='scope' value='${scope}' />
+<select name='under'><option value='true'>under</option><option value='false'>over</option></select>
+
+<select name='arity'>
+  <option value='unary' ${if (arity == "unary") "selected" else ""}>unary</option>
+  <option value='binary' ${if (arity == "binary") "selected" else ""}>binary</option>
+</select>
+
+<p><button class='btn btn-default'>Run</button>
+</form>
+
+<h1>Call Queries: # ${result.scores.size}</h1>
+<table class='table table-condensed'>
+<tr>
+<th>Query
+<th>Dep
+<th>IDF
+<th>Heu
+<th>Key
+<th>
+#for (score <- result.sorted)
+<tr>
+<td>${ data.render(score.q) }
+<td>${ score.depth }
+<td>${ score.IDF }
+<td>${ score.heuristics }
+<td>${ score.keyword }
+<td>
+<a href='/search?target=${uri(target)}&q=${uri(score.q.toString)}'>Search</a>
+<a onclick="$('#scope').val('${score.q.toString}')">&darr;</a>
+<a onclick="$('#scope').val('${score.q.toString}')">&uarr;</a>
+#end
+</table>
+
+<h1>Class Queries</h1>
+<table class='table table-condensed'>
+<tr>
+<th>Class
+<th>#
+<th>Dep
+<th>IDF
+#for (score <- result.groupByClass.sorted)
+<tr>
+<td>${ score.q.asInstanceOf[ClassQuery].clazz.name }
+<td>${ score.q.asInstanceOf[ClassQuery].queries.size }
+<td>${ score.depth }
+<td>${ score.IDF }
+#end
+</table>
+
+#if(t.size > 0 && params.getOrElse("show", "no") != "no")
+<h1>Filtered trees of ${ t(0) }</h1>
+${ data.render(data.get(t(0)).traces(0).trees.filterWithParents(
+  result.scores.map(_.q.methods).flatten
+))}
+#end
+
+</div>

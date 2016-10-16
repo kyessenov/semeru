@@ -1,0 +1,14 @@
+Monitoring Eclipse with fields, abstractions, and CA set of filters.
+
+[cap.db] DB logger finished; caches:
+[java]     401446 objects;
+[java]     4637 fields;
+[java]     8920 methods;
+[java]     2864 types
+
+Total time: 19 minutes 9 seconds
+
+Database: eclipse
+Size: 409Mb
+Number of events: 6M
+

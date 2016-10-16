@@ -1,0 +1,32 @@
+*** Command line
+time java -javaagent:agent.jar=tracecollector.properties -jar ../dacapo-9.12-bach.jar lusearch -size small
+
+*** Result
+real	1m23.952s
+user	0m32.350s
+sys		0m2.836s
+
+*** Database size
+rows:	5498780 
+data: 	222M
+     [java] 	32259 objects;
+     [java] 	369 fields;
+     [java] 	680 methods;
+     [java] 	173 types
+
+*** Rate
+6.34Mb/s
+157108e/s
+
+*** Configuration
+listen.fields=true
+listen.exclude=\
+	cap.*,\
+	org.objectweb.asm.*,\
+	sun.*,\
+	com.sun.*,\
+	com.apple.*,\
+	java.*,\
+	javax.*,\
+	org.xml.*,\
+	org.w3c.*		

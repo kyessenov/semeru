@@ -1,0 +1,69 @@
+19:59:15.803 INFO  semeru - *** Running in full mode ***
+19:59:15.807 DEBUG semeru - writing agent JAR file
+19:59:15.866 INFO  semeru - /Users/kuat/Documents/eclipse-luna/eclipse -vmargs -ea:edu.mit.csail.cap... -Xverify:none -javaagent:/Users/kuat/Documents/semeru/target/agent.jar=/Users/kuat/Documents/semeru/config/eclipse
+objc[5273]: Class JavaLaunchHelper is implemented in both /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/MacOS/libjli.dylib and /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/libinstrument.dylib. One of the two will be used. Which one is undefined.
+[agent] recording: cfg fields arrays declarations strings
+[agent] blacklist: org.eclipse.jface.util.Util org.eclipse.jdt.internal.core.index.DiskIndex org.eclipse.jdt.internal.core.util.Util org.eclipse.jdt.internal.ui.text.spelling.engine.DefaultPhoneticHashProvider org.eclipse.jdt.internal.compiler.classfmt.ClassFileStruct org.eclipse.jdt.core.compiler.CharOperation org.eclipse.jdt.internal.core.util.SimpleWordSet org.python.pydev.shared_core.string.FastStringBuffer org.python.pydev.core.FastBufferedReader org.python.antlr.runtime.* org.objectweb.asm.* edu.mit.csail.cap.* java.lang.* sun.* com.sun.* java.util.concurrent.locks.* java.security.* java.io.* java.nio.* java.net.*
+[agent] library: org.eclipse.osgi.* org.osgi.* org.eclipse.emf.* org.eclipse.swt.* org.eclipse.e4.* org.eclipse.core.runtime.Path org.eclipse.core.internal.registry.* com.ibm.* com.sun.* org.xml.* org.w3c.* java.util.* java.math.* java.sql.* java.text.* javax.sql.* javax.xml.* org.xml.* org.w3c.dom.*
+[agent] app: *
+[agent] override: *.invoke*:1 *.copyOf([BI)[B:0 *.copyOf([CI)[C:0 *.copyOf([II)[I:0 *.copyOfRange([BII)[B:0 *.copyOfRange([CII)[C:0 *.copyOfRange([III)[I:0 null.hashCode()I:0 null.equals(Ljava/lang/Object;)Z:0
+[agent] writing to /tmp/log.bin, /tmp/metadata.bin
+[agent] finished transformation of 425 classes
+org.eclipse.m2e.logback.configuration: The org.eclipse.m2e.logback.configuration bundle was activated before the state location was initialized.  Will retry after the state location is initialized.
+org.eclipse.m2e.logback.configuration: Logback config file: /Users/kuat/Documents/workspace-luna/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.5.1.20150109-1820.xml
+org.eclipse.m2e.logback.configuration: Initializing logback
+[agent] closing output streams
+19:59:58.823 INFO  semeru - processing /tmp/metadata.bin into meta_eclipse
+19:59:59.059 INFO  semeru - loading metadata meta_eclipse into 5 fields, 1 methods, 12 classes, 0 field type collisions
+20:00:01.612 DEBUG semeru - saving metadata 89493 fields, 182910 methods, 19407 classes, 0 field type collisions
+20:00:01.612 DEBUG semeru - create database meta_eclipse
+20:00:02.637 DEBUG semeru - create and load 19403 rows into TYPE from csv/TYPE-REPLACE.csv
+20:00:02.784 DEBUG semeru - create and load 4 rows into TYPE from csv/TYPE-IGNORE.csv
+20:00:02.785 DEBUG semeru - create and load 40755 rows into SUBTYPE from csv/SUBTYPE-REPLACE.csv
+20:00:02.957 DEBUG semeru - create and load 182909 rows into METHOD from csv/METHOD-REPLACE.csv
+20:00:04.392 DEBUG semeru - create and load 89488 rows into FIELD from csv/FIELD-REPLACE.csv
+20:00:05.023 DEBUG semeru - committing metadata
+20:00:05.024 INFO  semeru - processing /tmp/log.bin
+20:00:05.025 INFO  semeru - create log eclipse_tex
+20:00:07.880 INFO  semeru - LOG counter = 1M
+20:00:10.524 INFO  semeru - LOG counter = 2M
+20:00:12.906 INFO  semeru - LOG counter = 3M
+20:00:15.428 INFO  semeru - LOG counter = 4M
+20:00:15.675 INFO  semeru - PARAMS counter = 1M
+20:00:18.044 INFO  semeru - LOG counter = 5M
+20:00:21.233 INFO  semeru - LOG counter = 6M
+20:00:24.012 INFO  semeru - LOG counter = 7M
+20:00:25.565 INFO  semeru - PARAMS counter = 2M
+20:00:27.238 INFO  semeru - LOG counter = 8M
+20:00:29.760 INFO  semeru - LOG counter = 9M
+20:00:31.868 INFO  semeru - PARAMS counter = 3M
+20:00:32.280 INFO  semeru - LOG counter = 10M
+20:00:34.837 INFO  semeru - LOG counter = 11M
+20:00:36.852 INFO  semeru - PARAMS counter = 4M
+20:00:37.275 INFO  semeru - LOG counter = 12M
+20:00:39.610 INFO  semeru - LOG counter = 13M
+20:00:41.220 INFO  semeru - PARAMS counter = 5M
+20:00:41.955 INFO  semeru - LOG counter = 14M
+20:00:44.274 INFO  semeru - LOG counter = 15M
+20:00:45.749 INFO  semeru - PARAMS counter = 6M
+20:00:46.585 INFO  semeru - LOG counter = 16M
+20:00:48.949 INFO  semeru - LOG counter = 17M
+20:00:50.155 INFO  semeru - PARAMS counter = 7M
+20:00:51.279 INFO  semeru - LOG counter = 18M
+20:00:53.489 INFO  semeru - LOG counter = 19M
+20:00:54.489 INFO  semeru - detected missing closing event for 3 threads
+20:00:54.489 DEBUG semeru - drop database eclipse_tex
+20:00:54.496 DEBUG semeru - delete cache var/localhost/eclipse_tex
+20:00:54.497 DEBUG semeru - create database eclipse_tex
+20:00:54.520 DEBUG semeru - create and load 19471138 rows into LOG from csv/LOG-REPLACE.csv
+20:01:38.010 DEBUG semeru - create and load 7645886 rows into PARAMS from csv/PARAMS-REPLACE.csv
+20:01:49.313 DEBUG semeru - create and load 717309 rows into OBJECTS from csv/OBJECTS-REPLACE.csv
+20:01:50.863 DEBUG semeru - create and load 145629 rows into STRINGS from csv/STRINGS-REPLACE.csv
+20:01:51.184 DEBUG semeru - committing log
+20:01:51.185 INFO  semeru - postprocessing
+20:01:51.190 DEBUG semeru - connected to eclipse_tex@localhost
+20:01:51.212 DEBUG semeru - SQL update to eclipse_tex: ALTER TABLE `LOG`  ADD INDEX caller (caller), ADD INDEX elt (id, event_type)
+20:03:28.406 DEBUG semeru - SQL update to eclipse_tex: UPDATE `LOG` L1, `LOG` L2  SET L1.succ = L2.counter, L1.value = L2.value WHERE L1.event_type = 1 AND L2.caller = L1.counter AND (L2.event_type = 2 OR L2.event_type = 4)
+20:04:38.730 DEBUG semeru - SQL update to eclipse_tex: ALTER TABLE `OBJECTS` ADD INDEX types (type)
+20:04:40.609 DEBUG semeru - SQL update to eclipse_tex: ANALYZE TABLE `LOG`
+20:04:44.876 INFO  semeru - *** Configuration: eclipse_tex]])]])]])]])]])]])

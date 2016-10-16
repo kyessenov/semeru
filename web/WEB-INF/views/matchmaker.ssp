@@ -1,0 +1,45 @@
+#import(edu.mit.csail.cap.query._)
+#import(analysis._)
+<%@ val data: edu.mit.csail.cap.query.web.DataProvider %>
+<%@ val db: Option[String] %>
+<%@ val src: Option[String] %>
+<%@ val dst: Option[String] %>
+
+<h2>MatchMaker</h2>
+
+<form class='form-inline'>
+  <label>Trace</label>
+  <% render("selector.ssp", Map("data" -> data, "id" -> "db", "db" -> db.getOrElse(""))) %>
+  <label>Source</label>
+  <input class='form-control' name="src" value='${src}' />
+  <label>Destination</label>
+  <input class='form-control' name="dst" value='${dst}' />
+  <button class='btn btn-default' type='submit'>Run</button>
+</form>
+
+#if (! db.isEmpty && ! src.isEmpty && ! dst.isEmpty)
+<%
+val t = data(db.get).get
+val from = data.meta.clazz(src.get).get
+val to = data.meta.clazz(dst.get).get
+implicit val b = t.b
+implicit val ctx = web.RenderContext(AllFramework)
+%>
+
+Trace: ${ data.render(t) }
+<hr>
+<h3>From ${ data.render(from) }</h3>
+${ data.render(t.c.instances(from).map(o => t.typeOf(o))) }
+
+<h3>To ${ data.render(to) }</h3>
+${ data.render(t.c.instances(to).map(o => t.typeOf(o))) }
+
+<h3>Chains</h3>
+${ data.render(t.matchMake(from, to)) }
+#end
+
+<h2>Examples</h2>
+<ol>
+<li><a href='?src=java.awt.Component&dst=java.awt.event.ActionListener'>Component - Action</a>
+<li><a href='?src=org.eclipse.ui.texteditor.AbstractTextEditor&dst=org.eclipse.jface.text.rules.RuleBasedScanner'>Editor - Scanner</a>
+</ol>

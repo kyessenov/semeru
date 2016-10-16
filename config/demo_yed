@@ -1,0 +1,11 @@
+target=/home/kuat/opt/java/yed-3.12.2/yed.jar
+db.metadata=meta_yed
+db.log=yed_demo
+
+listen.library=javax.*
+listen.exclude=y.*,B.*,A.*,C.*
+
+# Demo mode
+listen.fields=false
+listen.arrays=false
+agent.management=true

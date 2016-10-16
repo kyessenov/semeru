@@ -1,0 +1,4 @@
+A simple web interface to search for a Java type from a keyword.
+Uses Google and Stackoverflow to look for things that look like type names.
+
+There is a quote on the number of queries performed using Google web service and StackExchange API.

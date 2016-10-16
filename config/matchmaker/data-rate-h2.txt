@@ -1,0 +1,33 @@
+*** Command line
+time java -javaagent:agent.jar=tracecollector.properties -jar ../dacapo-9.12-bach.jar h2 -size small
+
+*** Result
+java.lang.ArrayIndexOutOfBoundsException: 11534335
+java.lang.ArrayIndexOutOfBoundsException: 11534335
+	at java.io.ObjectOutputStream$HandleTable.insert(ObjectOutputStream.java:2285)
+	...
+
+real	1m39.205s
+user	0m38.346s
+sys		0m9.653s
+
+*** Database size
+rows: 	5892990
+data:	234M (+46M index)
+
+*** Rate
+4.8Mb/s
+123000e/s
+
+*** Configuration
+listen.fields=true
+listen.exclude=\
+	cap.*,\
+	org.objectweb.asm.*,\
+	sun.*,\
+	com.sun.*,\
+	com.apple.*,\
+	java.*,\
+	javax.*,\
+	org.xml.*,\
+	org.w3c.*		

@@ -1,0 +1,59 @@
+#import(edu.mit.csail.cap.query._)
+<%@ val data: web.DataProvider %>
+<div class='container-fluid' id='sheet'/>
+  <% render("selector.ssp", Map("data" -> data, "id" -> "db", "db" -> params.getOrElse("db", ""))) %>
+  <div id="query"></div>
+  <i id='busy' class="hidden fa fa-cog fa-spin fa-5x"></i>
+  <div id="result"></div>
+</div>
+<script>
+var sheet = $('#sheet');
+var editor = ace.edit("query");
+
+$(function() {
+  editor.setTheme("ace/theme/chrome");
+  editor.session.setMode("ace/mode/scala");
+  editor.commands.removeCommand('find');
+  editor.focus();
+  editor.setValue('${ unescape(params.getOrElse("q", "").replace("\n", "\\n")) }');
+});
+
+var execute = function() {
+  var db = $('#db').val();
+  var q = editor.getValue();
+
+  if (q.trim() !== '') {
+    editor.setReadOnly(true);
+    $('#busy').removeClass('hidden');
+    $.ajax('/repl/run', { data : {q : q, db : db}}).done(
+    function(data) {
+      history.pushState({ q: q, db: db, data: data }, "", "/repl?q=" + encodeURIComponent(q) + "&db=" + db);
+      $('#result').html(data);
+    }).fail(
+    function(xhr, status) {
+      console.log(xhr.responseText)
+    }).always(
+    function() {
+      editor.setReadOnly(false);
+      $('#busy').addClass('hidden');
+      editor.focus();        
+      Prism.highlightAll();
+    });
+}	    
+}
+
+window.onpopstate = function(event) {
+  editor.setValue(event.state.q);
+  $('#db').val(event.state.db);
+  $('#result').html(event.state.data);
+}
+
+editor.commands.addCommand({
+    name: 'execute',
+    bindKey: {win: 'Ctrl-Enter',  mac: 'Command-Enter'},
+    exec: function(editor) {
+      execute();
+    }
+});
+
+</script>

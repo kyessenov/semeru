@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>concept2type</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <style media="screen" type="text/css">
+      .result {
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      .code {
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="search-form">
+      <label for="keywords">Search Google and Stackoverflow for:</label>
+      <input type="search" size=50 placeholder="Google search" id="keywords"/>
+      <input type="submit" value="Search" />
+    </form>
+    <div id="results"/>
+  </body>
+  <script type="text/javascript">
+    var GOOGLE_API="AIzaSyBKYuKtLlaa-QpxFpWXlcniGGmbplF9wZU";
+    var GOOGLE_CX="009800752948202534443:-czh5ur4bcs";
+
+    var results = $('#results');
+    
+    $('#search-form').submit(function (e) {
+      e.preventDefault();  
+      var keywords = $('#keywords').val();
+      results.html('');
+      $.get("https://www.googleapis.com/customsearch/v1", 
+        {
+          cx: GOOGLE_CX,
+          key: GOOGLE_API,
+          q: keywords          
+        }, 
+        function (data) {
+          data.items.forEach(function (item) {
+            var url = item.link;
+            var title = item.htmlTitle;
+            populate(url, title);
+          });
+        }
+      );
+    });   
+
+
+    // add an element to the results list
+    var populate = function (url, title) {
+      var result = "<div>" + title + "</div><a href='" + url + "'>question</a>";
+      var prefix = "http://stackoverflow.com/questions/";
+      if (url.indexOf(prefix) === 0) {
+        var rest = url.substring(prefix.length);
+        var i = rest.indexOf('/');
+        if (i > 0) {
+          var id = rest.substring(0, i);
+          var divID = "so" + id;
+          result = result + "<div class='code' id='" + divID + "'/>";
+
+          // extract question body
+          stackoverflow("https://api.stackexchange.com/2.1/questions/" + id, divID);
+
+          // extract question comments
+          stackoverflow("https://api.stackexchange.com/2.1/questions/" + id + "/comments", divID);
+
+          // extract question answers
+          stackoverflow("https://api.stackexchange.com/2.1/questions/" + id + "/answers", divID);
+
+        } else {
+          console.log("wrong suffix: " + url);
+        }
+      } else {
+        console.log("wrong prefix: " + url);
+      }
+
+      results.append("<div class='result'>" + result + "</div>");
+    };
+
+    var stackoverflow = function (url, divID) {
+      $.get(url,
+        {
+          site: "stackoverflow",
+          filter: "withbody"
+        },
+        function (data) {
+          data.items.forEach(function (item) {
+            extractCode(divID, item.body); 
+          });
+        }
+      );
+    };
+
+    var extractCode = function (divID, html) {    
+      var codes = $($.parseHTML(html)).find('code');
+      for (var i = 0; i < codes.length; i++) {
+        var code = codes[i];      
+        $('#' + divID).append("<hr/><pre>" + $(code).html() + "</pre>");
+      }
+    };
+  </script>
+</html>

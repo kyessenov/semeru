@@ -1,0 +1,10 @@
+#import(edu.mit.csail.cap.query._)
+<%@ val data: web.DataProvider %>
+<%@ val db: String %>
+<%@ val id: String %>
+
+<select class='phoenix form-control' name=${id} id=${id}>
+#for(t <- data.traces)
+  <option value=${t.name} ${ if (t.name == db) "selected" else ""}>${unescape(t.description)}</option>
+#end
+</select>

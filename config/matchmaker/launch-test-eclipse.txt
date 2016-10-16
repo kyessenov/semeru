@@ -1,0 +1,68 @@
+Database: test_eclipse
+Collection method: launch Eclipse with agent and dump into a file
+
+Actions:
+* open Java file (editor)
+* switch to XML editor
+* close Java editor
+* type in Java editor
+  * type "@" in Java editor in comments and invoke autocomplete
+  * type "a" and choose "a" variable from autocomplete
+  * type "." and choose ".f" from autocomplete
+  * type " = a" and remove a few characters
+* type in XML editor
+  * type "<a>" and wait for </a> to autocomplete
+  * invoke autcomplete and choose <comment>
+* use package explorer
+
+Dump file size: 
+-rw-rw-r-- 1 kuat kuat 6.3G 2010-10-21 18:11 dump
+
+Execution time: ~5 minutes (slowed down due to instrumentation)
+
+Time to write to database and postprocess: 170 minutes 59 seconds 
+
+Configuration: 
+
+vm.server.name=localhost
+vm.server.port=8000
+
+agent.server.name=localhost
+agent.server.port=16000
+
+agent.admin=false
+agent.admin.wait=false
+agent.admin.port=16001
+
+agent.dump.file=dump
+
+db.server.name=sketch1.csail.mit.edu
+db.name=test_eclipse
+db.user=root
+db.password=lambda1337ARMANDO
+
+listen.fields=true
+
+listen.abstract=\
+  java.util.ArrayList.get,\
+  java.util.ArrayList.set,\
+  java.util.ArrayList.add,\
+  java.util.ArrayList.addAll,\
+  java.util.ArrayList.clear,\
+  java.util.ArrayList.remove,\
+  java.util.HashMap.put,\
+  java.util.HashMap.remove,\
+  java.util.HashMap.clear	
+
+listen.exclude=\
+  cap.*, \
+  org.objectweb.asm.*,\
+  sun.*,\
+  com.sun.*,\
+  com.apple.*,\
+  java.*,\
+  javax.*,\
+  com.ibm.*,\
+  org.eclipse.swt.internal.*
+	
+
