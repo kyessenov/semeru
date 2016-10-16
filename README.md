@@ -42,6 +42,13 @@ To enable debugging:
 
 In Scala IDE, create a new Remote Scala/Java Application debug configuration.
 
+## Trace database
+
+Semeru uses MySQL (version 5.7) as the underlying storage. 
+The caches and graph representations are reconstructed from the database and stored in the "var" directory.
+
+A base set of traces used by the test cases can be downloaded from [a backup of MySQL data directory](http://groups.csail.mit.edu/cap/semeru/semeru-dataset.tar.gz). 
+
 ## Temporary files
 
 Strongly recommended to run on an SSD drive!
