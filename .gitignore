@@ -1,0 +1,15 @@
+syntax:regexp
+^agent\.jar$
+^log\.bin$
+^metadata\.bin$
+^target/.*$
+^project/target/.*$
+^project/project/target/.*$
+^bin/.*$
+^var/.*$
+^csv/.*\.csv$
+^\..*$
+^lib/tools.jar$
+^data/jars/log\.txt$
+^.*/\.DS_Store$
+^log\.txt$
