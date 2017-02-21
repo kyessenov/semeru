@@ -113,7 +113,7 @@ Execute the following command to collect jEdit complete traces:
 
     ./sbt runMain edu.mit.csail.cap.query.experiments.Experiments jedit false jedit_test
 
-launches jEdit in full-collection mode (`false`) and stores the trace data under `jedit_test`. 
+What this command does is to launch jEdit with the instrumentation agent operating in full-collection mode (`false` parameter) and then store the collected trace data under `jedit_test` trace name (the third parameter). 
 
 To record a demo trace, pass `true` to the script. Then use `manage.sh` to communicate with the injected instrumentation agent over a network socket.
 
