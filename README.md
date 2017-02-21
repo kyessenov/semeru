@@ -125,7 +125,7 @@ Once you start the server with `./sbt run` command, visit `localhost:8080/demoma
 
 1. List of positive demonstration traces that exhibit the feature of interest.
 
-2. List of negative demonstration traces that act as baseline or a negative test of the presence of the framework feature.
+2. List of negative demonstration traces that act as baseline or a negative test for presence of the framework feature.
 
 3. Target traces is a group of complete traces that cover a large set of features of the framework.
 
