@@ -129,4 +129,7 @@ Once you start the server with `./sbt run` command, visit `localhost:8080/demoma
 
 3. Target traces is a group of complete traces that cover a large set of features of the framework.
 
-The results are below and enumerate snippets of the input traces that are likely the signatures of the framework feature. You can click on `search` button to compute the code slices from the target traces from snippet matches.
+The results are shown below as a ranked list of trace snippets that are likely the signatures of the framework feature. You can click on `search` button to compute the code slices from the target traces from snippet matches.
+
+_Note_:
+You can use a trace group name instead of individual traces (e.g. `demo_eclipse` for all eclipse demonstration trace). The UI will expand it automatically. You can also list a trace twice in both positive and negative sections. The UI will treat it as a positive trace in that case.
