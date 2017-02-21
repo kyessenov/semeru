@@ -117,4 +117,4 @@ launches jEdit in full-collection mode (`false`) and stores the trace data under
 
 To record a demo trace, pass `true` to the script. Then use `manage.sh` to communicate with the injected instrumentation agent over a network socket.
 
-We recommend using consistent naming scheme for traces. For example, a trace for a feature to select a menu item in `jedit` should be called  `jedit_selectmenuitem`. See `web/config.json` for the list of traces and trace groups. Trace groups use regular expressions to group traces by feature (`eclipse_autocomplete`) or by application (`passwordstore`, `demo_eclipse`).
+We recommend using consistent naming scheme for traces. For example, a trace for a feature to select a menu item in `jedit` should be called  `jedit_selectmenuitem`. See `web/config.json` for the list of traces and trace groups. Trace groups use regular expressions over trace names to organize traces by feature (`eclipse_autocomplete`) or by application (`passwordstore`, `demo_eclipse`).
