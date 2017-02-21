@@ -115,4 +115,4 @@ Execute the following command to collect jEdit complete traces:
 
 launches jEdit in full-collection mode (`false`) and stores the trace data into `jedit_test` trace database. 
 
-To record a demo trace, pass `true` to the script. Then use `manage.sh` to communicate with the injected instrumented agent over a network socket.
+To record a demo trace, pass `true` to the script. Then use `manage.sh` to communicate with the injected instrumentation agent over a network socket.
