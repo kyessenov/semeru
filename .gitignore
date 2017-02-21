@@ -6,7 +6,6 @@ project/target/
 project/project/target/
 bin/
 var/
-csv/
 lib/tools.jar
 data/jars/log.txt
 log.txt
