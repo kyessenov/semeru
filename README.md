@@ -118,3 +118,15 @@ launches jEdit in full-collection mode (`false`) and stores the trace data under
 To record a demo trace, pass `true` to the script. Then use `manage.sh` to communicate with the injected instrumentation agent over a network socket.
 
 We recommend using consistent naming scheme for traces. For example, a trace for a feature to select a menu item in `jedit` should be called  `jedit_selectmenuitem`. See `web/config.json` for the list of traces and trace groups. Trace groups use regular expressions over trace names to organize traces by feature (`eclipse_autocomplete`) or by application (`passwordstore`, `demo_eclipse`).
+
+## Example: DemoMatch web UI
+
+Once you start the server with `./sbt run` command, visit `localhost:8080/demomatch`. Here is a [screenshot](doc/demomatch-webui.PDF) of the UI in action for the autocomplete feature demonstrations. The query consists of three main parts:
+
+1. List of positive demonstration traces that exhibit the feature of interest.
+
+2. List of negative demonstration traces that act as baseline or a negative test of the presence of the framework feature.
+
+3. Target traces is a group of complete traces that cover a large set of features of the framework.
+
+The results are below and enumerate snippets of the input traces that are likely the signatures of the framework feature. You can click on `search` button to compute the code slices from the target traces from snippet matches.
