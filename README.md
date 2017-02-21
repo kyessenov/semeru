@@ -52,7 +52,7 @@ To enable debugging in Scala IDE, create a new Remote Scala/Java Application deb
 3. Various caches are built from MySQL canonical traces in `var` directory under the repository root. These caches are created on-demand. Please provide sufficient storage for the pre-processing output.
 
 _Note_:
-A base set of traces used by the test cases and experiments can be downloaded from [a backup of MySQL data directory](http://groups.csail.mit.edu/cap/semeru/semeru-dataset.tar.gz). Use the data dump as the data directory in MySQL, and give the tool some time (~ several hours) to recreate the caches.
+A base set of traces used by the test cases and experiments can be downloaded from [a backup of MySQL data directory (27GB)](http://groups.csail.mit.edu/cap/semeru/semeru-dataset.tar.gz). Use the data dump as the data directory in MySQL, and give the tool some time (~ several hours) to recreate the caches.
 
 ## Trace collection and ingestion
 
@@ -99,7 +99,7 @@ Below is a brief overview of the code organization by directory:
 ## Example: trace collection
 
 _Note_:
-The scripts to collect traces expect to have `semeru-data` directory next to `semeru` directory that contains JAR files for the subject applications. 
+The scripts to collect traces expect to have `semeru-data` directory next to `semeru` directory that contains JAR files for the subject applications. This archive can be downloaded from [here (500MB)](http://groups.csail.mit.edu/cap/semeru/semeru-data.tar.gz).
 
 Execute the following command to collect jEdit complete traces:
 
