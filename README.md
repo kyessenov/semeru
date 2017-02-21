@@ -121,7 +121,7 @@ We recommend using consistent naming scheme for traces. For example, a trace for
 
 ## Example: DemoMatch web UI
 
-Once you start the server with `./sbt run` command, visit `localhost:8080/demomatch`. Here is a [screenshot](doc/demomatch-webui.PDF) of the UI in action for the autocomplete feature demonstrations. The query consists of three main parts:
+Once you start the server with `./sbt run` command, visit [http://localhost:8080/demomatch](http://localhost:8080/demomatch). Here is a [screenshot](doc/demomatch-webui.PDF) of the UI in action for the autocomplete feature demonstrations. The query consists of three main parts:
 
 1. List of positive demonstration traces that exhibit the feature of interest.
 
@@ -133,3 +133,6 @@ The results are shown below as a ranked list of trace snippets that are likely t
 
 _Note_:
 You can use a trace group name instead of individual traces (e.g. `demo_eclipse` for all eclipse demonstration trace). The UI will expand it automatically. You can also list a trace twice in both positive and negative sections. The UI will treat it as a positive trace in that case.
+
+_Note_:
+The default configuration with trace names is in [config.json](web/config.json).
