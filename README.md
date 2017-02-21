@@ -1,15 +1,8 @@
-```
-     ____
-    / ___|  ___ _ __ ___   ___ _ __ _   _
-    \___ \ / _ \ '_ ` _ \ / _ \ '__| | | |
-     ___) |  __/ | | | | |  __/ |  | |_| |
-    |____/ \___|_| |_| |_|\___|_|   \__,_|
-```
+# Semeru data-driven programming assistant
 
-About
-=====
+## About
 
-Programming assistant using dynamic traces.
+Semeru is a programming assistant using dynamic traces for Java.
 
 This repository contains the trace collection and aggregation tool, and a series of analysis
 built on top of it to produce symbolic code from a demo trace query.
@@ -18,8 +11,7 @@ Essentially, this is programming-by-demonstration paradigm applied to software f
 The user of this tool records a short demonstration of a framework feature, and the tool generates the code
 necessary to reproduce this feature by matching the demo trace against a large body of collected framework usage traces
 
-Build Instructions
-==================
+## Build instructions
 
 Semeru is implemented in Scala and Java, and relies on MySQL, Neo4J and Lucene for storage backends.
 
