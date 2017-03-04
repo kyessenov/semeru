@@ -42,11 +42,13 @@ case class Server(data: DataProvider) extends ScalatraServlet with ScalateSuppor
   }
 
   post("/collect") {
-    val log = params("log")
-    val exp = experiments.Experiments.All.find(_.name == params("app")).get
-    data.LogApp = Some(exp)
-    data.LogName = Some(log)
-    exp.collect(log.startsWith("demo"), log)
+    data.synchronized{
+      val log = params("log")
+      val exp = experiments.Experiments.All.find(_.name == params("app")).get
+      data.LogApp = Some(exp)
+      data.LogName = Some(log)
+      exp.collect(log.startsWith("demo"), log)
+    }
     redirect("/experiments")
   }
 
@@ -61,27 +63,54 @@ case class Server(data: DataProvider) extends ScalatraServlet with ScalateSuppor
   }
 
   post("/start") {
-    assert(!data.LogApp.isEmpty, "need to start an app first")
-    val f = java.io.File.createTempFile("log", ".bin", null)
-    f.deleteOnExit()
-    data.LogBin = Some(f.getAbsolutePath)
-    data.LogName = Some(params("log"))
-    
-    // wait 2 seconds for the user to switch focus back to target application
-    info("waiting 500ms before sending activation command")
-    java.lang.Thread.sleep(500);
-    
-    info("sending command")
-    sendAgent(
-      "out " + data.LogBin.get,
-      "start")
-    redirect("/experiments")
+    val log = params("log")
+
+    if (log.isEmpty || data.LogApp.isEmpty) {
+      redirect("/experiments")
+    } else {
+      data.synchronized{
+        val f = java.io.File.createTempFile("log", ".bin", null)
+        f.deleteOnExit()
+        data.LogBin = Some(f.getAbsolutePath)
+        data.LogName = Some(params("log"))
+
+        // don't allow overriding
+        val t = data(data.LogName.get)
+        assert(t.isEmpty, "do not allow overriding existing traces")
+        
+        // wait 500ms for the user to switch focus back to target application
+        info("waiting 500ms before sending activation command")
+        java.lang.Thread.sleep(500);
+        
+        info("sending command")
+        sendAgent(
+          "out " + data.LogBin.get,
+          "start")
+
+        // block for 10 seconds before issuing stop
+        java.lang.Thread.sleep(10*1000)
+        stopRecording()
+      }
+      redirect(s"/demomatch?t=${log}&target=swing_components")
+    }
   }
 
-  post("/stop") {
-    assert(!data.LogApp.isEmpty, "need to start an app first")
-    assert(!data.LogBin.isEmpty, "need to start recording first")
-    assert(!data.LogName.isEmpty, "need to name log first")
+  def stopRecording() {
+    if (data.LogApp.isEmpty) {
+      info("need to start an app first")
+      return
+    }
+
+    if (data.LogBin.isEmpty) {
+      info("need to start recording first")
+      return
+    }
+
+    if (data.LogName.isEmpty) {
+      info("need to name log first")
+      return
+    }
+
     sendAgent(
       "stop",
       "flush")
@@ -106,8 +135,18 @@ case class Server(data: DataProvider) extends ScalatraServlet with ScalateSuppor
     }
   
     data.add(config)
+  }
 
-    redirect(s"/demomatch?t=${log}&target=swing_components")
+  post("/stop") {
+    if (data.LogName.isEmpty) {
+      info("need to name log first")
+    } else {
+      val log = data.LogName.get
+      data.synchronized{
+        stopRecording()
+      }
+      redirect(s"/demomatch?t=${log}&target=swing_components")
+    }
   }
   
   post("/remove") {

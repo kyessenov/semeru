@@ -16,7 +16,7 @@
 #if (!data.LogApp.isEmpty && data.LogBin.isEmpty)
 <button class='btn btn-danger' type='submit' formaction='/start'>Start</button>
 #end
-#if (!data.LogBin.isEmpty)
+#if (!data.LogBin.isEmpty && false)
 <button class='btn btn-info' type='submit' formaction='/stop'>Stop</button>
 #end
 </form>

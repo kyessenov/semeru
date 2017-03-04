@@ -1,2 +1,2 @@
 #!/bin/bash
-java -Xmx8G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -jar sbt-launch.jar "$@"
+java -Xmx10G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -jar sbt-launch.jar "$@"

@@ -1,6 +1,12 @@
 {
   "modules":["org.eclipse.help.*","org.eclipse.pdf.*","org.eclipse.core.*","org.eclipse.ui.*","org.eclipse.jface.*","org.eclipse.swt.*","org.eclipse.jdt.*","org.eclipse.compare.*","org.eclipse.wst.*","org.eclipse.e4.ui.*","org.eclipse.e4.core.*","org.eclipse.e4.model.*","org.eclipse.egit.*","org.eclipse.emf.*","org.eclipse.osgi.*","org.eclipse.ant.*","org.eclipse.debug.*","org.eclipse.team.*","org.eclipse.epp.*","org.eclipse.ecf.*","org.eclipse.mylyn.*","org.eclipse.batik.*","org.eclipse.recommenders.*","org.eclipse.ltk.*","org.eclipse.jgit.*","org.eclipse.felix.*","org.eclipse.equinox.*","org.eclipse.update.*","org.eclipse.aether.*","org.eclipse.text.*","org.eclipse.m2e.*","com.sun.org.apache.xerces.*","com.sun.org.apache.xalan.*","org.apache.xerces.*","org.apache.xalan.*","org.apache.commons.*","org.apache.felix.*","org.apache.batik.*","org.apache.maven.*","org.apache.lucene.*","org.codehaus.plexus.*","org.osgi.*","org.slf4j.*","ch.qos.*","org.xml.*","com.ibm.*","com.google.*","org.apache.tools.ant.*","org.w3c.*","sun.misc.*","sun.net.*","sun.reflect.*","sun.security.*","components.*","java.*","javax.*"],
   "databases":[{
+    "name":"demo_passwordstore_deleteme",
+    "user":"passwordstore.*"
+  },{
+    "name":"demo_passwordstore_cut",
+    "user":"passwordstore.*"
+  },{
     "name":"demo",
     "customMeta":"meta_swing",
     "user":"hirondelle.*"
@@ -129,9 +135,6 @@
     "user":"passwordstore.*"
   },{
     "name":"demo_passwordstore_paste",
-    "user":"passwordstore.*"
-  },{
-    "name":"demo_passwordstore_cut",
     "user":"passwordstore.*"
   },{
     "name":"demo_passwordstore_tableswitch",
